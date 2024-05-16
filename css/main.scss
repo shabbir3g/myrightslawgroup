@@ -1,7 +1,9 @@
-// function area 
+// Attribute area
 
 $bgcolor : #041127;
-$textcolor : #f1ebeb;
+$textcolor : #f7eded;
+$textheader-bgcolor : rgb(215, 6, 6);
+$viewcolor : rgb(153 27 27);
 
 
 // header style
@@ -89,6 +91,7 @@ header {
                                     padding-left: 0.75rem;
                                     padding-right: 0.75rem;
                                     text-decoration: inherit;
+                                    border-radius: 0.375rem;
                                 }
                             }
 
@@ -98,9 +101,282 @@ header {
 
 
             }
+
+            .mobile-menu {
+                display: none;
+
+                .sub-mobile-menu {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.75rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+
+                    a {
+                        background-color: $bgcolor;
+                        color: $textcolor;
+                        display: block;
+                        border-radius: 0.375rem;
+                        text-decoration: inherit;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        padding: 0.5rem 0.75rem;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .page-heading {
+        background-color: $textheader-bgcolor;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+
+        a {
+            color: $textcolor;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            text-decoration: inherit;
+            text-align: center;
         }
     }
 }
+
+.first-section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .company {
+        display: flex;
+        flex-direction: row;
+        margin-inline-start: 1.5rem;
+
+        .sub-company {
+            flex-basis: 25%;
+            padding: 2.25rem;
+
+            p {
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: #565661;
+            }
+        }
+
+        .company-logo {
+            display: flex;
+            flex-basis: 25%;
+            justify-content: center;
+            padding: 2.25rem;
+        }
+    }
+}
+
+.second-section {
+    background-color: $bgcolor;
+    margin-top: 2.5rem;
+
+    .page-heading {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+
+        p {
+            color: $textcolor;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            margin-top: 2.25rem;
+            text-align: center;
+        }
+    }
+
+    .company {
+        display: flex;
+        flex-direction: row;
+        margin-inline-start: 1.5rem;
+
+        .company-logo {
+            display: flex;
+            flex-basis: 25%;
+            justify-content: center;
+            padding: 2.25rem;
+        }
+    }
+}
+
+.third-section {
+    .text {
+        margin-top: 3rem;
+
+        p {
+            font-size: 3rem;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .devider {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.25rem;
+            padding: 2rem 0;
+
+            hr {
+                border-top: 4px solid #180b0b;
+                border-radius: 0.25rem;
+                width: 33.333333%;
+            }
+        }
+
+        .second-text {
+            p {
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+                padding: 2rem;
+                margin: 0 8rem;
+            }
+        }
+
+        .middle-text {
+            margin: 0 8rem;
+
+            p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                text-align: start;
+                padding: 9px 0;
+            }
+
+            .last-text {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: center;
+                padding: 2rem;
+                margin: 0 8rem;
+            }
+
+            .button-area {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    text-align: center;
+                    padding: 0.75rem;
+                    margin-bottom: 4rem;
+                    margin-top: 2.5rem;
+                    color: $textcolor;
+                    background-color: $textheader-bgcolor ;
+                }
+            }
+        }
+    }
+
+    .owner {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-inline-start: 6rem;
+        margin-inline-end: 6rem;
+
+        p {
+            font-size: 22px;
+            text-align: center;
+            padding-top: 1.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: bold;
+            color: #465268;
+        }
+
+        a {
+            font-size: 19px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            color: $viewcolor;
+        }
+    }
+
+    .banner-area {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        text-align: center;
+        margin: 0 9rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: $textcolor;
+
+        .banner {
+            margin: 1rem;
+            padding: 1.25rem;
+            background-color: #0d44aa;
+        }
+    }
+
+    .page-heading {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+
+        a {
+            font-weight: 700;
+            color: $viewcolor;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            text-align: center;
+
+        }
+    }
+}
+
+.last-section {
+    padding-top: 7rem;
+    text-align: center;
+    background-color: rgb(241 245 249);
+
+    .content {
+        margin: 0 8rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .heading-content {
+        margin: 0 5rem;
+        padding: 2rem;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $bgcolor;
+    }
+
+    .button-area {
+        display: flex;
+        justify-content: center;
+
+        button {
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            text-align: center;
+            padding: 0.75rem;
+            margin-bottom: 4rem;
+            margin-top: 2.5rem;
+            color: $textcolor;
+            background-color: $textheader-bgcolor ;
+        }
+    }
+}
+
+
 
 /* responsive css */
 @import 'responsive.scss';
