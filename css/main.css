@@ -1,0 +1,37 @@
+header nav {
+  padding: 1.5rem;
+  background-color: #041127;
+}
+header nav .header-area {
+  margin: auto;
+  max-width: 80rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+header nav .header-area .header-middle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .header-area .header-middle .header-last-area {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media all and (min-width: 1024px) {
+  header nav .header-area {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media all and (min-width: 640px) {
+  header nav .header-area {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */

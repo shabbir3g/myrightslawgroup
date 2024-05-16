@@ -1,0 +1,30 @@
+header{
+    nav{
+        padding: 1.5rem;
+        background-color: #041127;
+        .header-area{
+            margin: auto;
+            max-width: 80rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .header-middle{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .header-last-area {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    
+
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive.scss';
