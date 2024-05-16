@@ -1,31 +1,48 @@
-
-@media all and (min-width: 1024px){
-	header{
-        .header-area{
+@media all and (min-width: 1024px) {
+    header {
+        .header-area {
             padding-left: 2rem;
             padding-right: 2rem;
         }
     }
 }
 
-@media all and (min-width: 768px){
-	header{
-        .header-last-area{
+@media all and (min-width: 768px) {
+    header {
+        .header-last-area {
             display: none;
+        }
+
+        .header-child-area {
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+
+            .header-second-child-area {
+                display: block;
+                margin-left: 1.5rem;
+
+                .main-menu {
+                    flex-wrap: wrap;
+                }
+            }
         }
     }
 }
 
 
-@media all and (min-width: 640px){
-	header{
-        nav{
-            .header-area{
+@media all and (min-width: 640px) {
+    header {
+        nav {
+            .header-area {
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-            .header-middle{
 
-            }
+                .header-pre-last-area {
+                    justify-content: space-between;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                }
             }
         }
     }

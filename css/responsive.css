@@ -8,10 +8,27 @@
   header .header-last-area {
     display: none;
   }
+  header .header-child-area {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  header .header-child-area .header-second-child-area {
+    display: block;
+    margin-left: 1.5rem;
+  }
+  header .header-child-area .header-second-child-area .main-menu {
+    flex-wrap: wrap;
+  }
 }
 @media all and (min-width: 640px) {
   header nav .header-area {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  header nav .header-area .header-pre-last-area {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=responsive.css.map */
