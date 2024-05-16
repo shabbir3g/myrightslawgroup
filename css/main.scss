@@ -1,0 +1,105 @@
+// function area 
+
+$bgcolor : #041127;
+$textcolor : #f1ebeb;
+
+
+// header style
+
+
+header {
+    nav {
+        padding: 1.5rem;
+        background-color: $bgcolor;
+
+        .header-area {
+            margin: auto;
+            max-width: 80rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .header-middle {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .header-last-area {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+
+                .header-pre-last-area {
+                    display: flex;
+                    flex: 1 1 0%;
+                    justify-content: center;
+                    align-items: center;
+
+                    .header-child-area {
+                        display: flex;
+                        flex: 1 1 0%;
+                        align-items: center;
+
+                        .header-first-child-area {
+                            display: flex;
+                            flex-shrink: 0;
+                            align-items: center;
+                        }
+
+                        .header-second-child-area {
+                            display: flex;
+
+                            .header-third-child-area-1 {
+                                display: flex;
+                                padding-bottom: 1rem;
+                                justify-content: flex-end;
+                                align-items: center;
+                                color: $textcolor;
+
+                                p {
+                                    font-weight: 700;
+                                }
+
+                                .fa-phone-volume {
+                                    padding: 0 8px;
+                                }
+
+                                a {
+                                    font-size: 1.5rem;
+                                    line-height: 2rem;
+                                }
+                            }
+
+                            .main-menu {
+                                display: flex;
+                                text-transform: uppercase;
+                                color: $textcolor;
+
+                                a {
+                                    font-weight: 500;
+                                    font-size: 0.875rem;
+                                    line-height: 1.25rem;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.75rem;
+                                    padding-right: 0.75rem;
+                                    text-decoration: inherit;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/* responsive css */
+@import 'responsive.scss';
