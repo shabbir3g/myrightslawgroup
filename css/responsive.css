@@ -31,4 +31,12 @@
     align-items: stretch;
     flex-wrap: wrap;
   }
+}
+@media all and (max-width: 768px) {
+  header nav .header-area .header-middle .header-pre-last-area .header-child-area {
+    justify-content: center;
+  }
+  header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area {
+    display: none;
+  }
 }/*# sourceMappingURL=responsive.css.map */
