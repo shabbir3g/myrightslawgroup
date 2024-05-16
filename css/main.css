@@ -24,9 +24,14 @@ header nav .header-area .header-middle .header-last-area {
 }
 
 @media all and (min-width: 1024px) {
-  header nav .header-area {
+  header .header-area {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media all and (min-width: 768px) {
+  header .header-last-area {
+    display: none;
   }
 }
 @media all and (min-width: 640px) {
