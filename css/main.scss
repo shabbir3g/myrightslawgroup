@@ -376,6 +376,75 @@ header {
     }
 }
 
+footer {
+    background-color: $bgcolor;
+
+    .footer-area {
+        display: flex;
+
+        .footer-left {
+            flex-shrink: 0;
+            margin-left: 1.5rem;
+            padding: 2.25rem;
+
+            img {
+                height: 3rem;
+                width: auto;
+            }
+
+            .call {
+                color: $textcolor;
+                padding: 0.5rem;
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+                margin-top: 1rem;
+            }
+
+            a {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+                color: $textcolor;
+
+            }
+
+            .logo {
+                font-size: 3rem;
+                line-height: 1;
+                padding-top: 1rem;
+                color: $textcolor;
+            }
+        }
+
+        .footer-right {
+            margin-left: 1.5rem;
+            padding: 2.25rem;
+            flex-grow: 1;
+            font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+            color: $textcolor;
+
+            h2 {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 1.25rem;
+
+        p {
+            padding: 4px;
+            text-align: center;
+            color: $textcolor;
+        }
+    }
+}
 
 
 /* responsive css */

@@ -307,6 +307,64 @@ header .page-heading a {
   background-color: rgb(215, 6, 6);
 }
 
+footer {
+  background-color: #041127;
+}
+footer .footer-area {
+  display: flex;
+}
+footer .footer-area .footer-left {
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+  padding: 2.25rem;
+}
+footer .footer-area .footer-left img {
+  height: 3rem;
+  width: auto;
+}
+footer .footer-area .footer-left .call {
+  color: #f7eded;
+  padding: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+footer .footer-area .footer-left a {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #f7eded;
+}
+footer .footer-area .footer-left .logo {
+  font-size: 3rem;
+  line-height: 1;
+  padding-top: 1rem;
+  color: #f7eded;
+}
+footer .footer-area .footer-right {
+  margin-left: 1.5rem;
+  padding: 2.25rem;
+  flex-grow: 1;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #f7eded;
+}
+footer .footer-area .footer-right h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+footer .footer-area .footer-right p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+footer .copyright {
+  padding: 1.25rem;
+}
+footer .copyright p {
+  padding: 4px;
+  text-align: center;
+  color: #f7eded;
+}
+
 /* responsive css */
 @media all and (min-width: 1024px) {
   header .header-area {
