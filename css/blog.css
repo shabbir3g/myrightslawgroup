@@ -1,0 +1,34 @@
+.blog-section {
+  gap: 50px;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.blog-section .rotate_right {
+  width: 66%;
+}
+.blog-section .rotate_right .blog-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-section .rotate_right h1 {
+  font-size: 38px;
+  margin-left: 17%;
+  font-weight: bold;
+}
+.blog-section .pre-section {
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  margin-right: 20px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.blog-section .rotate_left {
+  background-color: rgb(243, 243, 243);
+  width: 36%;
+  padding: 30px;
+  margin-right: 7%;
+}/*# sourceMappingURL=blog.css.map */

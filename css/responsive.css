@@ -5,6 +5,10 @@
   }
 }
 @media all and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
   header .header-last-area {
     display: none;
   }
@@ -20,8 +24,15 @@
   header .header-child-area .header-second-child-area .main-menu {
     flex-wrap: wrap;
   }
+  header nav .header-area .header-middle .header-last-area .toogle-button {
+    display: none;
+  }
 }
 @media all and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin: auto;
+  }
   header nav .header-area {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -32,11 +43,67 @@
     flex-wrap: wrap;
   }
 }
+@media all and (max-width: 991px) {
+  .first-section .banner-area .banner-content {
+    padding-top: 3rem;
+    color: #f7eded;
+    display: flex;
+    justify-content: center;
+  }
+  .first-section .banner-area .banner-content .banner-text {
+    width: 80%;
+  }
+  .first-section .company {
+    flex-wrap: wrap;
+  }
+}
 @media all and (max-width: 768px) {
   header nav .header-area .header-middle .header-pre-last-area .header-child-area {
     justify-content: center;
   }
   header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area {
     display: none;
+  }
+  header nav .header-area .header-middle .header-last-area .toogle-button {
+    display: block;
+  }
+  .third-section .case-boxes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  footer .footer-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer-area .footer-left a {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 640px) {
+  header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-first-child-area img {
+    width: 200px;
+    height: auto;
+  }
+  .first-section .company {
+    flex-direction: column;
+  }
+  .second-section .company {
+    flex-direction: column;
+  }
+  .third-section .text .second-text p {
+    padding: 0;
+    margin: 0 2rem;
+  }
+  .third-section .text .middle-text {
+    margin: 0 2rem;
+  }
+  .third-section .text .middle-text .last-text {
+    margin: 0 2rem;
+  }
+  .third-section .owner {
+    flex-direction: column;
+  }
+  .third-section .case-boxes {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }/*# sourceMappingURL=responsive.css.map */
