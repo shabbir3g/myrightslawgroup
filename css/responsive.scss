@@ -28,6 +28,21 @@
             }
         }
     }
+    header {
+        nav {
+            .header-area {
+                .header-middle {
+                    .header-last-area {
+                        .toogle-button{
+                            display: none;
+                        } 
+                    }
+                } 
+            }
+    
+        } 
+    }
+  
 }
 
 
@@ -69,4 +84,6 @@
                 }
             }
         }
+       
+        
 }

@@ -20,6 +20,9 @@
   header .header-child-area .header-second-child-area .main-menu {
     flex-wrap: wrap;
   }
+  header nav .header-area .header-middle .header-last-area .toogle-button {
+    display: none;
+  }
 }
 @media all and (min-width: 640px) {
   header nav .header-area {
