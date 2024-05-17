@@ -185,37 +185,34 @@ header .page-heading a {
   text-align: center;
 }
 
-.first-section {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.first-section .banner-area {
+.banner-area {
   background-image: url("../images/home_ok.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   padding: 6rem 0;
 }
-.first-section .banner-area .banner-content {
+.banner-area .banner-content {
   padding-top: 7rem;
   color: #f7eded;
   display: flex;
   justify-content: flex-end;
 }
-.first-section .banner-area .banner-content .banner-text {
+.banner-area .banner-content .banner-text {
   width: 45%;
 }
-.first-section .banner-area .banner-content .banner-text h1 {
+.banner-area .banner-content .banner-text h1 {
   font-size: 3rem;
   line-height: 1;
   padding-bottom: 1rem;
 }
-.first-section .banner-area .banner-content .banner-text p {
+.banner-area .banner-content .banner-text p {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.first-section .banner-area .banner-content .banner-text button {
+.banner-area .banner-content .banner-text button {
   margin-bottom: 4rem;
   color: #f7eded;
   font-weight: 700;
@@ -227,17 +224,22 @@ header .page-heading a {
   padding: 0.75rem;
   background-color: rgb(215, 6, 6);
   cursor: pointer;
+  transition-duration: 0.3s;
 }
-.first-section .company {
+.banner-area .banner-content .banner-text button:hover {
+  background: #3274c9;
+}
+
+.featured-section {
   display: flex;
   flex-direction: row;
-  margin-inline-start: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.first-section .company .sub-company {
+.featured-section .sub-company {
   flex-basis: 25%;
   padding: 2.25rem;
 }
-.first-section .company .sub-company p {
+.featured-section .sub-company p {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -246,35 +248,34 @@ header .page-heading a {
   line-height: 2rem;
   color: #565661;
 }
-.first-section .company .company-logo {
+.featured-section .logo {
   display: flex;
-  flex-basis: 25%;
   justify-content: center;
   padding: 2.25rem;
 }
 
-.second-section {
+.awards-section {
   background-color: #041127;
   margin-top: 2.5rem;
 }
-.second-section .page-heading {
+.awards-section .awards-heading {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
-.second-section .page-heading p {
+.awards-section .awards-heading h2 {
   color: #f7eded;
   font-size: 1.875rem;
   line-height: 2.25rem;
   margin-top: 2.25rem;
   text-align: center;
 }
-.second-section .company {
+.awards-section .awards {
   display: flex;
   flex-direction: row;
   margin-inline-start: 1.5rem;
 }
-.second-section .company .company-logo {
+.awards-section .awards .awards-logo {
   display: flex;
   flex-basis: 25%;
   justify-content: center;
@@ -447,11 +448,28 @@ footer .footer-area .footer-left a {
   line-height: 2.5rem;
   color: #f7eded;
 }
-footer .footer-area .footer-left .logo {
+footer .footer-area .footer-left .social-icon {
   font-size: 3rem;
   line-height: 1;
   padding-top: 1rem;
   color: #f7eded;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+footer .footer-area .footer-left .social-icon li a {
+  background-color: #1c65c3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition-duration: 0.3s;
+}
+footer .footer-area .footer-left .social-icon li a:hover {
+  opacity: 0.6;
 }
 footer .footer-area .footer-right {
   margin-left: 1.5rem;
@@ -543,16 +561,6 @@ abbr:where([title]) {
 /*
 Remove the default font size and weight for headings.
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
@@ -864,16 +872,19 @@ video {
   }
 }
 @media all and (max-width: 991px) {
-  .first-section .banner-area .banner-content {
+  .banner-area {
+    padding: 0;
+  }
+  .banner-area .banner-content {
     padding-top: 3rem;
     color: #f7eded;
     display: flex;
     justify-content: center;
   }
-  .first-section .banner-area .banner-content .banner-text {
+  .banner-area .banner-content .banner-text {
     width: 80%;
   }
-  .first-section .company {
+  .featured-section {
     flex-wrap: wrap;
   }
 }
@@ -904,10 +915,10 @@ video {
     width: 200px;
     height: auto;
   }
-  .first-section .company {
+  .featured-section {
     flex-direction: column;
   }
-  .second-section .company {
+  .awards-section .awards {
     flex-direction: column;
   }
   .third-section .text .second-text p {

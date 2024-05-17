@@ -36,16 +36,19 @@
   }
 }
 @media all and (max-width: 991px) {
-  .first-section .banner-area .banner-content {
+  .banner-area {
+    padding: 0;
+  }
+  .banner-area .banner-content {
     padding-top: 3rem;
     color: #f7eded;
     display: flex;
     justify-content: center;
   }
-  .first-section .banner-area .banner-content .banner-text {
+  .banner-area .banner-content .banner-text {
     width: 80%;
   }
-  .first-section .company {
+  .featured-section {
     flex-wrap: wrap;
   }
 }
@@ -76,10 +79,10 @@
     width: 200px;
     height: auto;
   }
-  .first-section .company {
+  .featured-section {
     flex-direction: column;
   }
-  .second-section .company {
+  .awards-section .awards {
     flex-direction: column;
   }
   .third-section .text .second-text p {
