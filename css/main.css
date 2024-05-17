@@ -499,10 +499,9 @@ footer .copyright p {
 
 /* responsive css */
 .blog-section {
-  gap: 50px;
   display: flex;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 32px;
   display: flex;
 }
 .blog-section .rotate_right {
@@ -515,22 +514,108 @@ footer .copyright p {
   align-items: center;
 }
 .blog-section .rotate_right h1 {
-  font-size: 38px;
+  font-size: 50px;
   margin-left: 17%;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 .blog-section .pre-section {
-  width: 450px;
+  width: 464px;
   height: auto;
-  padding: 10px;
+  padding: 45px;
   margin-right: 20px;
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  color: rgb(80, 72, 72);
+}
+.blog-section .pre-section h1 {
+  margin-left: 0;
+  font-family: "Playfair Display";
+  font-size: 2em;
+  font-weight: 400;
+}
+.blog-section .pre-section h2 {
+  font-weight: 500;
+  font-size: 19px;
+}
+.blog-section .pre-section h2 a {
+  color: rgb(173, 20, 20);
+}
+.blog-section .pre-section h3 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 44px;
+}
+.blog-section .pre-section button {
+  background-color: rgb(173, 20, 20);
+  color: #fff;
+  padding: 3px 2px;
+  font-size: 19px;
+  font-weight: bold;
 }
 .blog-section .rotate_left {
   background-color: rgb(243, 243, 243);
-  width: 36%;
+  width: 427px;
   padding: 30px;
   margin-right: 7%;
+}
+.blog-section .rotate_left h1 {
+  font-size: 42px;
+  font-weight: 100;
+  font-family: "Playfair Display";
+}
+.blog-section .rotate_left .post-link a {
+  color: rgb(173, 20, 20);
+  font-weight: bold;
+  font-size: 21px;
+  margin: 49px 0;
+  display: block;
+}
+.blog-section .rotate_left .input-area {
+  background-color: rgb(18, 18, 59);
+  padding: 10px;
+  display: flex;
+}
+.blog-section .rotate_left .input-area input {
+  border: none;
+}
+.blog-section .rotate_left h3 {
+  margin: 60px 0;
+  font-weight: normal;
+  font-size: 28px;
+}
+.blog-section .rotate_left .tag-area a {
+  background-color: #fff;
+  border: 1px solid #e7dbdb;
+  padding: 7px 5px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 2px 0;
+}
+.blog-section .rotate_left .criminal-defence-area a {
+  padding: 5px 5px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 2px 0;
+  color: rgb(173, 20, 20);
+  font-weight: bold;
+}
+.blog-section .rotate_left .personal-injury-area a {
+  padding: 5px 5px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 2px 0;
+  color: rgb(173, 20, 20);
+  font-weight: bold;
+}
+
+.next-page {
+  display: flex;
+  justify-content: center;
+}
+.next-page div {
+  padding: 10px 25px;
+  border: 1px solid rgb(232, 222, 222);
+  margin: 40px 0;
 }
 
 /* responsive css */

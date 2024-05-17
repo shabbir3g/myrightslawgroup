@@ -1,9 +1,10 @@
-<<<<<<< HEAD
+$textcolor : rgb(80 72 72);
+$btncolor : rgb(173 20 20);
+
 .blog-section {
-    gap: 50px;
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 32px;
     display: flex;
 
     .rotate_right {
@@ -17,33 +18,142 @@
         }
 
         h1 {
-            font-size: 38px;
+            font-size: 50px;
             margin-left: 17%;
-            font-weight: bold;
+            font-weight: 400;
+            font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+
         }
 
     }
 
     .pre-section {
-        width: 450px;
+        width: 464px;
         height: auto;
-        padding: 10px;
+        padding: 45px;
         margin-right: 20px;
-
         box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+        color: $textcolor;
+
+        h1 {
+            margin-left: 0;
+            font-family: "Playfair Display";
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 19px;
+
+            a {
+                color: $btncolor;
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 16px;
+            padding-bottom: 44px;
+        }
+
+        button {
+            background-color: $btncolor;
+            color: #fff;
+            padding: 3px 2px;
+            font-size: 19px;
+            font-weight: bold;
+        }
     }
+
+
 
     .rotate_left {
         background-color: rgb(243 243 243);
-        width: 36%;
+        width: 427px;
         padding: 30px;
         margin-right: 7%;
 
+        h1 {
+            font-size: 42px;
+            font-weight: 100;
+            font-family: "Playfair Display";
+
+        }
+
+        .post-link {
+            a {
+                color: $btncolor;
+                font-weight: bold;
+                font-size: 21px;
+                margin: 49px 0;
+                display: block;
+
+            }
+
+        }
+
+
+        .input-area {
+            background-color: rgb(18, 18, 59);
+            padding: 10px;
+            display: flex;
+
+            input {
+                border: none;
+            }
+        }
+
+        h3 {
+            margin: 60px 0;
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        .tag-area {
+            a {
+                background-color: #fff;
+                border: 1px solid #e7dbdb;
+                padding: 7px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+            }
+        }
+
+        .criminal-defence-area {
+            a {
+                padding: 5px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+                color: $btncolor;
+                font-weight: bold;
+            }
+        }
+
+        .personal-injury-area {
+            a {
+                padding: 5px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+                color: $btncolor;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}
+
+.next-page {
+    display: flex;
+    justify-content: center;
+
+    div {
+        padding: 10px 25px;
+        border: 1px solid rgb(232 222 222);
+        margin: 40px 0;
     }
 }
-||||||| 3d9aab3
-body{
-    
-}
-=======
->>>>>>> 7d3f055a7013a4650eda3f6cc46a6e5a9cef7b4a
