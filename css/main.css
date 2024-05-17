@@ -333,6 +333,7 @@ footer .footer-area .footer-left a {
   font-size: 2.25rem;
   line-height: 2.5rem;
   color: #f7eded;
+  text-decoration: none;
 }
 footer .footer-area .footer-left .logo {
   font-size: 3rem;
