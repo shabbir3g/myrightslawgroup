@@ -8,10 +8,6 @@
 }
 
 @media all and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        margin: auto;
-    }
     header {
         .header-last-area {
             display: none;
@@ -51,17 +47,14 @@
 
 
 @media all and (min-width: 640px) {
-    .container {
-        max-width: 640px;
-        margin: auto;
-    }
+
     header {
         nav {
             .header-area {
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
 
-                .header-pre-last-area {
+                .header-pre-last-area { 
                     justify-content: space-between;
                     align-items: stretch;
                     flex-wrap: wrap;

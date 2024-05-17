@@ -165,6 +165,9 @@ header {
                                     padding-right: 0.75rem;
                                     text-decoration: inherit;
                                     border-radius: 0.375rem;
+                                    &:hover{
+                                        color: $textheader-bgcolor;
+                                    }
                                 }
                             }
 
@@ -207,6 +210,10 @@ header {
         display: flex;
         justify-content: center;
         padding: 1rem 0;
+        &:hover{
+            background-color: $bgcolor;
+            cursor: pointer;
+        }
 
         a {
             color: $textcolor;
@@ -224,13 +231,40 @@ header {
     .banner-area{
         background-image: url('../images/home_ok.jpg');
         background-repeat: no-repeat;
+        background-position: center center;
+        padding: 6rem 0;
         .banner-content{
             padding-top: 7rem;
             color: $textcolor;
             display: flex;
             justify-content: flex-end;
             .banner-text{
-                width: 33%;
+                width: 45%;
+                h1{
+                    font-size: 3rem;
+                    line-height: 1;
+                    padding-bottom: 1rem;
+                }
+                p{
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                }
+                button{
+                    margin-bottom: 4rem;
+                    color: $textcolor;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    padding-left: 2.25rem;
+                    padding-right: 2.25rem;
+                    text-align: center;
+                    padding: 0.75rem;
+                    background-color: $textheader-bgcolor;
+                    cursor: pointer;
+                }
                 
             }
         }
@@ -519,7 +553,7 @@ footer {
                 font-size: 1.5rem;
                 line-height: 2rem;
                 margin-top: 1rem;
-            }
+            } 
         }
     }
 
