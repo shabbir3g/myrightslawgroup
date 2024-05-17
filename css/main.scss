@@ -19,9 +19,8 @@ header {
 
         .header-area {
             margin: auto;
-            max-width: 80rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            // padding-left: 2rem;
+            // padding-right: 2rem;
 
             .header-middle {
                 position: relative;
@@ -121,6 +120,10 @@ header {
                             display: flex;
                             flex-shrink: 0;
                             align-items: center;
+                            img{
+                                height: 3rem; 
+                                width: auto;
+                            }
                         }
 
                         .header-second-child-area {
@@ -220,6 +223,17 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .banner-area{
         background-image: url('../images/home_ok.jpg');
+        background-repeat: no-repeat;
+        .banner-content{
+            padding-top: 7rem;
+            color: $textcolor;
+            display: flex;
+            justify-content: flex-end;
+            .banner-text{
+                width: 33%;
+                
+            }
+        }
     }
 
     .company {
@@ -322,7 +336,6 @@ header {
                 font-size: 1.125rem;
                 line-height: 1.75rem;
                 text-align: start;
-                padding: 9px 0;
             }
 
             .last-text {
@@ -330,7 +343,6 @@ header {
                 line-height: 2rem;
                 text-align: center;
                 padding: 2rem;
-                margin: 0 8rem;
             }
 
             .button-area {
@@ -353,11 +365,15 @@ header {
     }
 
     .owner {
-        display: grid;
-        gap: 5rem;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-inline-start: 6rem;
-        margin-inline-end: 6rem;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        div{
+            img{
+                height: 190px;
+                margin: auto;
+            }
+        }
 
         p {
             font-size: 22px;
@@ -377,17 +393,17 @@ header {
         }
     }
 
-    .banner-area {
+    .case-boxes {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem;
         text-align: center;
-        margin: 0 9rem;
+        // margin: 0 9rem;
         font-size: 1.125rem;
         line-height: 1.75rem;
         color: $textcolor;
 
-        .banner {
+        .case {
             margin: 1rem;
             padding: 1.25rem;
             background-color: #0d44aa;
@@ -416,7 +432,6 @@ header {
     background-color: rgb(241 245 249);
 
     .content {
-        margin: 0 8rem;
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
@@ -519,6 +534,8 @@ footer {
     }
 }
 
+/* responsive css */
+@import 'blog.scss';
 
 /* responsive css */
 @import 'normalize.scss';

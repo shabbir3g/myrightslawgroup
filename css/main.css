@@ -9,9 +9,6 @@ header nav {
 }
 header nav .header-area {
   margin: auto;
-  max-width: 80rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 header nav .header-area .header-middle {
   position: relative;
@@ -106,6 +103,10 @@ header nav .header-area .header-middle .header-pre-last-area .header-child-area 
   flex-shrink: 0;
   align-items: center;
 }
+header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-first-child-area img {
+  height: 3rem;
+  width: auto;
+}
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area {
   display: flex;
 }
@@ -182,6 +183,16 @@ header .page-heading a {
 }
 .first-section .banner-area {
   background-image: url("../images/home_ok.jpg");
+  background-repeat: no-repeat;
+}
+.first-section .banner-area .banner-content {
+  padding-top: 7rem;
+  color: #f7eded;
+  display: flex;
+  justify-content: flex-end;
+}
+.first-section .banner-area .banner-content .banner-text {
+  width: 33%;
 }
 .first-section .company {
   display: flex;
@@ -268,14 +279,12 @@ header .page-heading a {
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-align: start;
-  padding: 9px 0;
 }
 .third-section .text .middle-text .last-text {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
   padding: 2rem;
-  margin: 0 8rem;
 }
 .third-section .text .middle-text .button-area {
   display: flex;
@@ -293,11 +302,13 @@ header .page-heading a {
   background-color: rgb(215, 6, 6);
 }
 .third-section .owner {
-  display: grid;
-  gap: 5rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-inline-start: 6rem;
-  margin-inline-end: 6rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.third-section .owner div img {
+  height: 190px;
+  margin: auto;
 }
 .third-section .owner p {
   font-size: 22px;
@@ -314,17 +325,16 @@ header .page-heading a {
   font-weight: bold;
   color: rgb(153, 27, 27);
 }
-.third-section .banner-area {
+.third-section .case-boxes {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   text-align: center;
-  margin: 0 9rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #f7eded;
 }
-.third-section .banner-area .banner {
+.third-section .case-boxes .case {
   margin: 1rem;
   padding: 1.25rem;
   background-color: #0d44aa;
@@ -348,7 +358,6 @@ header .page-heading a {
   background-color: rgb(241, 245, 249);
 }
 .last-section .content {
-  margin: 0 8rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
@@ -435,6 +444,7 @@ footer .copyright p {
   color: #f7eded;
 }
 
+/* responsive css */
 /* responsive css */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -789,6 +799,10 @@ video {
   }
 }
 @media all and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
   header .header-last-area {
     display: none;
   }
@@ -809,6 +823,10 @@ video {
   }
 }
 @media all and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin: auto;
+  }
   header nav .header-area {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -819,11 +837,67 @@ video {
     flex-wrap: wrap;
   }
 }
+@media all and (max-width: 991px) {
+  .first-section .banner-area .banner-content {
+    padding-top: 3rem;
+    color: #f7eded;
+    display: flex;
+    justify-content: center;
+  }
+  .first-section .banner-area .banner-content .banner-text {
+    width: 80%;
+  }
+  .first-section .company {
+    flex-wrap: wrap;
+  }
+}
 @media all and (max-width: 768px) {
   header nav .header-area .header-middle .header-pre-last-area .header-child-area {
     justify-content: center;
   }
   header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area {
     display: none;
+  }
+  header nav .header-area .header-middle .header-last-area .toogle-button {
+    display: block;
+  }
+  .third-section .case-boxes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  footer .footer-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer-area .footer-left a {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 640px) {
+  header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-first-child-area img {
+    width: 200px;
+    height: auto;
+  }
+  .first-section .company {
+    flex-direction: column;
+  }
+  .second-section .company {
+    flex-direction: column;
+  }
+  .third-section .text .second-text p {
+    padding: 0;
+    margin: 0 2rem;
+  }
+  .third-section .text .middle-text {
+    margin: 0 2rem;
+  }
+  .third-section .text .middle-text .last-text {
+    margin: 0 2rem;
+  }
+  .third-section .owner {
+    flex-direction: column;
+  }
+  .third-section .case-boxes {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }/*# sourceMappingURL=main.css.map */
