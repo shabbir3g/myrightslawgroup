@@ -8,10 +8,6 @@
 }
 
 @media all and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        margin: auto;
-    }
     header {
         .header-last-area {
             display: none;
@@ -51,17 +47,14 @@
 
 
 @media all and (min-width: 640px) {
-    .container {
-        max-width: 640px;
-        margin: auto;
-    }
+
     header {
         nav {
             .header-area {
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
 
-                .header-pre-last-area {
+                .header-pre-last-area { 
                     justify-content: space-between;
                     align-items: stretch;
                     flex-wrap: wrap;
@@ -74,21 +67,23 @@
 // Maximum width style 
 
 @media all and (max-width: 991px) {
-    .first-section{
-        .banner-area .banner-content {
-            padding-top: 3rem;
-            color: #f7eded;
-            display: flex;
-            justify-content: center;
-            .banner-text{
-                width: 80%;
+
+        .banner-area{
+            padding: 0;
+            .banner-content {
+                padding-top: 3rem;
+                color: #f7eded;
+                display: flex;
+                justify-content: center;
+                .banner-text{
+                    width: 80%;
+                }
+               
             }
-           
         }
-        .company {
+        .featured-section {
             flex-wrap: wrap;
         }
-    }
     
 }
 
@@ -157,13 +152,13 @@
                 }
         }
     }
-    .first-section{
-        .company {
-            flex-direction: column;
-        }
+   
+    .featured-section {
+        flex-direction: column;
     }
-    .second-section{
-        .company {
+   
+    .awards-section{
+        .awards {
             flex-direction: column;
         }
     }
