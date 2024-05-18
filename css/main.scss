@@ -246,7 +246,8 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 5rem 0;
-    .banner-content{
+
+    .banner-content {
         padding-top: 7rem;
         color: $textcolor;
         display: flex;
@@ -319,11 +320,14 @@ header {
         padding: 2.25rem;
     }
 }
-.media-section{
+
+.media-section {
     padding: 50px 0;
-    .media-heading{
+
+    .media-heading {
         text-align: center;
-        h2{
+
+        h2 {
             text-transform: uppercase;
             width: 300px;
             background-color: $bgcolor;
@@ -336,6 +340,7 @@ header {
 
     }
 }
+
 .awards-section {
     background-color: $bgcolor;
     margin-top: 2.5rem;
@@ -368,15 +373,17 @@ header {
     }
 }
 
-.middle-content{
+.middle-content {
     .injury-area {
         margin-top: 3rem;
+
         h2 {
             font-size: 3rem;
             line-height: 1;
             text-align: center;
             font-weight: 500;
         }
+
         .devider {
             display: flex;
             justify-content: center;
@@ -390,7 +397,7 @@ header {
             }
         }
 
-        .injury-header{
+        .injury-header {
             h3 {
                 font-size: 1.875rem;
                 line-height: 3rem;
@@ -408,6 +415,7 @@ header {
                 line-height: 1.75rem;
                 text-align: start;
             }
+
             .button-area {
                 display: flex;
                 justify-content: center;
@@ -425,65 +433,72 @@ header {
                 }
             }
         }
+
     }
-.attorneys-section{
-    .attorney-header{
-        text-align: center;
-        padding: 40px 0;
-    }
-    .attorney {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        div{
-            img{
-                height: 280px;
-                margin: auto;
+
+    .attorneys-section {
+        .attorney-header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .attorney {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            div {
+                img {
+                    height: 280px;
+                    margin: auto;
+                }
+            }
+
+            p {
+                font-size: 22px;
+                text-align: center;
+                padding-top: 1.25rem;
+                padding-bottom: 0.25rem;
+                font-weight: bold;
+                color: #465268;
+            }
+
+            a {
+                font-size: 19px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                color: $viewcolor;
             }
         }
+    }
 
-        p {
-            font-size: 22px;
-            text-align: center;
-            padding-top: 1.25rem;
-            padding-bottom: 0.25rem;
-            font-weight: bold;
-            color: #465268;
-        }
-
-        a {
-            font-size: 19px;
+    .case-area {
+        .case-header {
             display: flex;
             justify-content: center;
-            font-weight: bold;
+            padding: 1rem 0;
+
+            h3 {
+                text-align: center;
+                font-size: 1.875rem;
+                font-weight: 400;
+            }
+
+
+        }
+
+        .view-all {
+            font-weight: 600;
             color: $viewcolor;
-        }
-    }
-}
-
-.case-area{
-    .case-header {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0;
-        h3{
+            font-size: 1.25rem;
+            line-height: 1.75rem;
             text-align: center;
-            font-size: 1.875rem;
-            font-weight: 400;
+            margin: 40px 0;
         }
+    }
 
-        
-    }
-    .view-all{
-        font-weight: 600;
-        color: $viewcolor;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        text-align: center;
-        margin: 40px 0;
-    }
-}
-.case-boxes {
+    .case-boxes {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem;
@@ -500,7 +515,7 @@ header {
         }
     }
 
-    
+
 }
 
 .last-section {
@@ -629,6 +644,84 @@ footer {
             padding: 4px;
             text-align: center;
             color: $textcolor;
+        }
+    }
+}
+
+
+
+.law-criminal-section {
+    text-align: center;
+
+    .low-area {
+        margin-top: 3rem;
+
+
+        .button-area {
+            display: flex;
+            justify-content: center;
+
+            button {
+                font-weight: 700;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                text-align: center;
+                padding: 0.75rem;
+                margin-bottom: 4rem;
+                margin-top: 2.5rem;
+                color: $textcolor;
+                background-color: $textheader-bgcolor ;
+            }
+        }
+
+        h3 {
+            font-size: 1.875rem;
+            line-height: 3rem;
+            padding: 2rem 0;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .country-city-area {
+            width: 63%;
+            display: inline-block;
+            text-align: center;
+
+            .country {
+                text-align: start;
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    background-color: rgb(12, 8, 8);
+                    color: #fff;
+                    padding: 0px 5px;
+                    cursor: pointer;
+                }
+
+                .plus {}
+
+                h3 {
+                    margin: 0 20px;
+                    font-size: 1.65rem;
+                    color: #194496;
+                    font-weight: 500;
+                    padding: 3px 0;
+                    cursor: pointer;
+                }
+
+            }
+
+            .city {
+                display: flex;
+                justify-content: space-between;
+                font-size: 21px;
+
+                li {
+                    padding: 4px 0;
+                }
+            }
+
         }
     }
 }

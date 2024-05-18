@@ -522,6 +522,67 @@ footer .copyright p {
   color: #f7eded;
 }
 
+.law-criminal-section {
+  text-align: center;
+}
+.law-criminal-section .low-area {
+  margin-top: 3rem;
+}
+.law-criminal-section .low-area .button-area {
+  display: flex;
+  justify-content: center;
+}
+.law-criminal-section .low-area .button-area button {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 0.75rem;
+  margin-bottom: 4rem;
+  margin-top: 2.5rem;
+  color: #f7eded;
+  background-color: rgb(215, 6, 6);
+}
+.law-criminal-section .low-area h3 {
+  font-size: 1.875rem;
+  line-height: 3rem;
+  padding: 2rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+.law-criminal-section .low-area .country-city-area {
+  width: 63%;
+  display: inline-block;
+  text-align: center;
+}
+.law-criminal-section .low-area .country-city-area .country {
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+.law-criminal-section .low-area .country-city-area .country .icon {
+  background-color: rgb(12, 8, 8);
+  color: #fff;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.law-criminal-section .low-area .country-city-area .country h3 {
+  margin: 0 20px;
+  font-size: 1.65rem;
+  color: #194496;
+  font-weight: 500;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.law-criminal-section .low-area .country-city-area .city {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+}
+.law-criminal-section .low-area .country-city-area .city li {
+  padding: 4px 0;
+}
+
 /* responsive css */
 .blog-section {
   width: 100%;
@@ -1074,10 +1135,13 @@ video {
   .middle-content .injury-area .injury-conent {
     margin: 0 2rem;
   }
-  .attorneys-section .attorney-header .attorney {
+  .middle-content .attorneys-section .attorney {
     flex-direction: column;
   }
-  .third-section .case-boxes {
+  .middle-content .injury-area .injury-conent p {
+    text-align: center;
+  }
+  .middle-content .case-boxes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1100,7 +1164,23 @@ video {
     width: 90%;
     margin: 0;
   }
-  footer .footer-area .footer-left .call, footer .footer-area .footer-right h2, footer .footer-area .footer-right p {
+  .middle-content .case-boxes {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  footer .footer-area .footer-left .call,
+  footer .footer-area .footer-right h2,
+  footer .footer-area .footer-right p {
     text-align: center;
+  }
+  .last-section .heading-content {
+    margin: 0;
+  }
+  .middle-content .injury-area h2,
+  .banner-area .banner-content .banner-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .banner-area .banner-content .banner-text p {
+    font-weight: 400;
   }
 }/*# sourceMappingURL=main.css.map */

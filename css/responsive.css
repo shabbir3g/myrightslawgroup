@@ -124,13 +124,16 @@
   .middle-content .case-boxes {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  footer .footer-area .footer-left .call, footer .footer-area .footer-right h2, footer .footer-area .footer-right p {
+  footer .footer-area .footer-left .call,
+  footer .footer-area .footer-right h2,
+  footer .footer-area .footer-right p {
     text-align: center;
   }
   .last-section .heading-content {
     margin: 0;
   }
-  .middle-content .injury-area h2, .banner-area .banner-content .banner-text h1 {
+  .middle-content .injury-area h2,
+  .banner-area .banner-content .banner-text h1 {
     font-size: 1.8rem;
     line-height: 1.5;
   }

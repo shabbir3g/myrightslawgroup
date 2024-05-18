@@ -12,6 +12,7 @@
         .header-last-area {
             display: none;
         }
+
         .header-child-area {
             justify-content: space-between;
             align-items: stretch;
@@ -171,33 +172,34 @@
         }
     }
 
-    .middle-content{
+    .middle-content {
         .injury-area {
-            .injury-header{
-                h3{
+            .injury-header {
+                h3 {
                     padding: 0;
                     margin: 0 2rem;
                 }
             }
 
-            .injury-conent{
+            .injury-conent {
                 margin: 0 2rem;
             }
         }
 
-        
+
 
     }
 
-    .middle-content .attorneys-section{
+    .middle-content .attorneys-section {
         .attorney {
-                flex-direction: column;
-            }
+            flex-direction: column;
+        }
     }
+
     .middle-content .injury-area .injury-conent p {
         text-align: center;
     }
-    
+
 
     .middle-content {
         .case-boxes {
@@ -236,22 +238,29 @@
             margin: 0;
         }
     }
+
     .middle-content {
         .case-boxes {
             grid-template-columns: repeat(1, minmax(0, 1fr));
         }
     }
-    
-    footer .footer-area .footer-left .call, footer .footer-area .footer-right h2, footer .footer-area .footer-right p {
+
+    footer .footer-area .footer-left .call,
+    footer .footer-area .footer-right h2,
+    footer .footer-area .footer-right p {
         text-align: center;
     }
+
     .last-section .heading-content {
         margin: 0;
     }
-    .middle-content .injury-area h2, .banner-area .banner-content .banner-text h1 {
+
+    .middle-content .injury-area h2,
+    .banner-area .banner-content .banner-text h1 {
         font-size: 1.8rem;
         line-height: 1.5;
     }
+
     .banner-area .banner-content .banner-text p {
         font-weight: 400;
     }
