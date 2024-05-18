@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: tahoma;
 }
 
 header nav {
@@ -189,7 +190,7 @@ header .page-heading a {
   background-image: url("../images/home_ok.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 .banner-area .banner-content {
   padding-top: 7rem;
@@ -204,6 +205,7 @@ header .page-heading a {
   font-size: 3rem;
   line-height: 1;
   padding-bottom: 1rem;
+  font-weight: 400;
 }
 .banner-area .banner-content .banner-text p {
   font-weight: 700;
@@ -254,6 +256,23 @@ header .page-heading a {
   padding: 2.25rem;
 }
 
+.media-section {
+  padding: 50px 0;
+}
+.media-section .media-heading {
+  text-align: center;
+}
+.media-section .media-heading h2 {
+  text-transform: uppercase;
+  width: 300px;
+  background-color: #041127;
+  margin: 50px auto;
+  padding: 10px;
+  color: #f7eded;
+  border-radius: 40px;
+  font-weight: 300;
+}
+
 .awards-section {
   background-color: #041127;
   margin-top: 2.5rem;
@@ -282,50 +301,46 @@ header .page-heading a {
   padding: 2.25rem;
 }
 
-.third-section .text {
+.middle-content .injury-area {
   margin-top: 3rem;
 }
-.third-section .text p {
+.middle-content .injury-area h2 {
   font-size: 3rem;
   line-height: 1;
   text-align: center;
+  font-weight: 500;
 }
-.third-section .text .devider {
+.middle-content .injury-area .devider {
   display: flex;
   justify-content: center;
   margin-top: 1.25rem;
   padding: 2rem 0;
 }
-.third-section .text .devider hr {
+.middle-content .injury-area .devider hr {
   border-top: 4px solid #180b0b;
   border-radius: 0.25rem;
   width: 33.333333%;
 }
-.third-section .text .second-text p {
+.middle-content .injury-area .injury-header h3 {
   font-size: 1.875rem;
-  line-height: 2.25rem;
-  padding: 2rem;
-  margin: 0 8rem;
+  line-height: 3rem;
+  padding: 2rem 0;
+  font-weight: 400;
+  text-align: center;
 }
-.third-section .text .middle-text {
-  margin: 0 8rem;
+.middle-content .injury-area .injury-conent {
+  margin: 0 2rem;
 }
-.third-section .text .middle-text p {
+.middle-content .injury-area .injury-conent p {
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-align: start;
 }
-.third-section .text .middle-text .last-text {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  padding: 2rem;
-}
-.third-section .text .middle-text .button-area {
+.middle-content .injury-area .injury-conent .button-area {
   display: flex;
   justify-content: center;
 }
-.third-section .text .middle-text .button-area button {
+.middle-content .injury-area .injury-conent .button-area button {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -336,16 +351,20 @@ header .page-heading a {
   color: #f7eded;
   background-color: rgb(215, 6, 6);
 }
-.third-section .owner {
+.middle-content .attorneys-section .attorney-header {
+  text-align: center;
+  padding: 40px 0;
+}
+.middle-content .attorneys-section .attorney {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.third-section .owner div img {
-  height: 190px;
+.middle-content .attorneys-section .attorney div img {
+  height: 280px;
   margin: auto;
 }
-.third-section .owner p {
+.middle-content .attorneys-section .attorney p {
   font-size: 22px;
   text-align: center;
   padding-top: 1.25rem;
@@ -353,14 +372,32 @@ header .page-heading a {
   font-weight: bold;
   color: #465268;
 }
-.third-section .owner a {
+.middle-content .attorneys-section .attorney a {
   font-size: 19px;
   display: flex;
   justify-content: center;
   font-weight: bold;
   color: rgb(153, 27, 27);
 }
-.third-section .case-boxes {
+.middle-content .case-area .case-header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.middle-content .case-area .case-header h3 {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.middle-content .case-area .view-all {
+  font-weight: 600;
+  color: rgb(153, 27, 27);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin: 40px 0;
+}
+.middle-content .case-boxes {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
@@ -369,22 +406,10 @@ header .page-heading a {
   line-height: 1.75rem;
   color: #f7eded;
 }
-.third-section .case-boxes .case {
+.middle-content .case-boxes .case {
   margin: 1rem;
   padding: 1.25rem;
   background-color: #0d44aa;
-}
-.third-section .page-heading {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-.third-section .page-heading a {
-  font-weight: 700;
-  color: rgb(153, 27, 27);
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  text-align: center;
 }
 
 .last-section {
@@ -866,6 +891,7 @@ figure,
 p,
 pre {
   margin: 0;
+  font-family: inherit;
 }
 
 fieldset {
@@ -1018,7 +1044,7 @@ video {
   header nav .header-area .header-middle .header-last-area .toogle-button {
     display: block;
   }
-  .third-section .case-boxes {
+  .middle-content .case-boxes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   footer .footer-area {
@@ -1041,22 +1067,23 @@ video {
   .awards-section .awards {
     flex-direction: column;
   }
-  .third-section .text .second-text p {
+  .middle-content .injury-area .injury-header h3 {
     padding: 0;
     margin: 0 2rem;
   }
-  .third-section .text .middle-text {
+  .middle-content .injury-area .injury-conent {
     margin: 0 2rem;
   }
-  .third-section .text .middle-text .last-text {
+  .middle-content .injury-area .injury-conent .last-text {
     margin: 0 2rem;
   }
-  .third-section .owner {
+  .attorney {
     flex-direction: column;
   }
-  .third-section .case-boxes {
+  .middle-content .case-boxes {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+<<<<<<< HEAD
 }
 @media all and (max-width: 768px) {
   .blog-section {
@@ -1077,4 +1104,63 @@ video {
     width: 90%;
     margin: 0;
   }
+||||||| 8553c4d
+=======
+  footer .footer-area .footer-left .social-icon li a {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .last-section .heading-content {
+    margin: 0;
+  }
+  .middle-content .injury-area .injury-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+  .middle-content .injury-area .injury-conent p {
+    text-align: center;
+  }
+  .middle-content .injury-area h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .banner-area .banner-content .banner-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .banner-area .banner-content .banner-text p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .media-section .media-heading h2 {
+    text-transform: uppercase;
+    width: 200px;
+    background-color: #041127;
+    margin: 50px auto;
+    padding: 10px;
+    color: #f7eded;
+    border-radius: 40px;
+    font-weight: 300;
+  }
+  footer .footer-area .footer-left .call {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  footer .footer-area .footer-left a {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  footer .footer-area .footer-left a img {
+    width: 184px;
+    height: auto;
+  }
+  footer .footer-area .footer-right {
+    margin-left: 1.2rem;
+  }
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
 }/*# sourceMappingURL=main.css.map */

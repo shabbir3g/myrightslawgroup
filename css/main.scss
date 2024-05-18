@@ -12,6 +12,7 @@ $bluecolor : #3274c9;
 body {
     margin: 0;
     padding: 0;
+    font-family: tahoma;
 }
 
 header {
@@ -244,9 +245,8 @@ header {
     background-image: url('../images/home_ok.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 6rem 0;
-
-    .banner-content {
+    padding: 5rem 0;
+    .banner-content{
         padding-top: 7rem;
         color: $textcolor;
         display: flex;
@@ -259,6 +259,7 @@ header {
                 font-size: 3rem;
                 line-height: 1;
                 padding-bottom: 1rem;
+                font-weight: 400;
             }
 
             p {
@@ -318,7 +319,23 @@ header {
         padding: 2.25rem;
     }
 }
+.media-section{
+    padding: 50px 0;
+    .media-heading{
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            width: 300px;
+            background-color: $bgcolor;
+            margin: 50px auto;
+            padding: 10px;
+            color: $textcolor;
+            border-radius: 40px;
+            font-weight: 300;
+        }
 
+    }
+}
 .awards-section {
     background-color: $bgcolor;
     margin-top: 2.5rem;
@@ -351,16 +368,15 @@ header {
     }
 }
 
-.third-section {
-    .text {
+.middle-content{
+    .injury-area {
         margin-top: 3rem;
-
-        p {
+        h2 {
             font-size: 3rem;
             line-height: 1;
             text-align: center;
+            font-weight: 500;
         }
-
         .devider {
             display: flex;
             justify-content: center;
@@ -374,31 +390,24 @@ header {
             }
         }
 
-        .second-text {
-            p {
+        .injury-header{
+            h3 {
                 font-size: 1.875rem;
-                line-height: 2.25rem;
-                padding: 2rem;
-                margin: 0 8rem;
+                line-height: 3rem;
+                padding: 2rem 0;
+                font-weight: 400;
+                text-align: center;
             }
         }
 
-        .middle-text {
-            margin: 0 8rem;
+        .injury-conent {
+            margin: 0 2rem;
 
             p {
                 font-size: 1.125rem;
                 line-height: 1.75rem;
                 text-align: start;
             }
-
-            .last-text {
-                font-size: 1.5rem;
-                line-height: 2rem;
-                text-align: center;
-                padding: 2rem;
-            }
-
             .button-area {
                 display: flex;
                 justify-content: center;
@@ -417,15 +426,18 @@ header {
             }
         }
     }
-
-    .owner {
+.attorneys-section{
+    .attorney-header{
+        text-align: center;
+        padding: 40px 0;
+    }
+    .attorney {
         display: flex;
         gap: 20px;
         justify-content: center;
-
-        div {
-            img {
-                height: 190px;
+        div{
+            img{
+                height: 280px;
                 margin: auto;
             }
         }
@@ -447,8 +459,31 @@ header {
             color: $viewcolor;
         }
     }
+}
 
-    .case-boxes {
+.case-area{
+    .case-header {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        h3{
+            text-align: center;
+            font-size: 1.875rem;
+            font-weight: 400;
+        }
+
+        
+    }
+    .view-all{
+        font-weight: 600;
+        color: $viewcolor;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: center;
+        margin: 40px 0;
+    }
+}
+.case-boxes {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem;
@@ -465,20 +500,7 @@ header {
         }
     }
 
-    .page-heading {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0;
-
-        a {
-            font-weight: 700;
-            color: $viewcolor;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-            text-align: center;
-
-        }
-    }
+    
 }
 
 .last-section {

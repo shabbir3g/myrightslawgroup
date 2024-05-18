@@ -62,7 +62,7 @@
   header nav .header-area .header-middle .header-last-area .toogle-button {
     display: block;
   }
-  .third-section .case-boxes {
+  .middle-content .case-boxes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   footer .footer-area {
@@ -85,22 +85,23 @@
   .awards-section .awards {
     flex-direction: column;
   }
-  .third-section .text .second-text p {
+  .middle-content .injury-area .injury-header h3 {
     padding: 0;
     margin: 0 2rem;
   }
-  .third-section .text .middle-text {
+  .middle-content .injury-area .injury-conent {
     margin: 0 2rem;
   }
-  .third-section .text .middle-text .last-text {
+  .middle-content .injury-area .injury-conent .last-text {
     margin: 0 2rem;
   }
-  .third-section .owner {
+  .attorney {
     flex-direction: column;
   }
-  .third-section .case-boxes {
+  .middle-content .case-boxes {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+<<<<<<< HEAD
 }
 @media all and (max-width: 768px) {
   .blog-section {
@@ -121,4 +122,63 @@
     width: 90%;
     margin: 0;
   }
+||||||| 8553c4d
+=======
+  footer .footer-area .footer-left .social-icon li a {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .last-section .heading-content {
+    margin: 0;
+  }
+  .middle-content .injury-area .injury-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+  .middle-content .injury-area .injury-conent p {
+    text-align: center;
+  }
+  .middle-content .injury-area h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .banner-area .banner-content .banner-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .banner-area .banner-content .banner-text p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .media-section .media-heading h2 {
+    text-transform: uppercase;
+    width: 200px;
+    background-color: #041127;
+    margin: 50px auto;
+    padding: 10px;
+    color: #f7eded;
+    border-radius: 40px;
+    font-weight: 300;
+  }
+  footer .footer-area .footer-left .call {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  footer .footer-area .footer-left a {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  footer .footer-area .footer-left a img {
+    width: 184px;
+    height: auto;
+  }
+  footer .footer-area .footer-right {
+    margin-left: 1.2rem;
+  }
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
 }/*# sourceMappingURL=responsive.css.map */

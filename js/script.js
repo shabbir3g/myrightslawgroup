@@ -3,6 +3,27 @@
 
 	$(document).ready(function(){
 
+		$(".owl-carousel").owlCarousel({
+			items:1,
+			merge:true,
+			loop:true,
+			margin:30,
+			video:true,
+			lazyLoad:true,
+			center:true,
+			autoPlay: true,
+			videoWidth: 400,
+			videoHeight: 300,
+			responsive:{
+				480:{
+					items:2
+				},
+				600:{
+					items:3
+				}
+			}
+		});
+
 		var theToggle = document.getElementById('toggle');
 
 		// hasClass

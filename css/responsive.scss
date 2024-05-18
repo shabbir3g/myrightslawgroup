@@ -12,7 +12,6 @@
         .header-last-area {
             display: none;
         }
-
         .header-child-area {
             justify-content: space-between;
             align-items: stretch;
@@ -68,6 +67,7 @@
 // Maximum width style 
 
 @media all and (max-width: 991px) {
+<<<<<<< HEAD
 
     .banner-area {
         padding: 0;
@@ -80,6 +80,31 @@
 
             .banner-text {
                 width: 80%;
+||||||| 8553c4d
+
+        .banner-area{
+            padding: 0;
+            .banner-content {
+                padding-top: 3rem;
+                color: #f7eded;
+                display: flex;
+                justify-content: center;
+                .banner-text{
+                    width: 80%;
+                }
+               
+=======
+        .banner-area{
+            padding: 0;
+            .banner-content {
+                padding-top: 3rem;
+                color: #f7eded;
+                display: flex;
+                justify-content: center;
+                .banner-text{
+                    width: 80%;
+                }
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
             }
 
         }
@@ -92,6 +117,7 @@
 }
 
 @media all and (max-width: 768px) {
+<<<<<<< HEAD
     header {
         nav {
 
@@ -104,6 +130,31 @@
 
                             .header-second-child-area {
                                 display: none;
+||||||| 8553c4d
+        header {
+            nav {
+        
+                .header-area {
+        
+                    .header-middle {
+                        .header-pre-last-area {
+                            .header-child-area {
+                                justify-content: center;
+                                .header-second-child-area {
+                                    display: none;
+                                }
+=======
+        header {
+            nav {
+                .header-area {
+                    .header-middle {
+                        .header-pre-last-area {
+                            .header-child-area {
+                                justify-content: center;
+                                .header-second-child-area {
+                                    display: none;
+                                }
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
                             }
                         }
                     }
@@ -116,11 +167,23 @@
                 }
             }
         }
+<<<<<<< HEAD
     }
 
     .third-section {
         .case-boxes {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+||||||| 8553c4d
+        .third-section{
+            .case-boxes{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+=======
+        .middle-content{
+            .case-boxes{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
         }
     }
 
@@ -171,17 +234,35 @@
             flex-direction: column;
         }
     }
+<<<<<<< HEAD
 
     .third-section {
         .text {
             .second-text {
                 p {
+||||||| 8553c4d
+    .third-section{
+        .text{
+            .second-text{
+                p{
+=======
+    .middle-content{
+        .injury-area{
+            .injury-header{
+                h3{
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
                     padding: 0;
                     margin: 0 2rem;
                 }
             }
+<<<<<<< HEAD
 
             .middle-text {
+||||||| 8553c4d
+            .middle-text{
+=======
+            .injury-conent{
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
                 margin: 0 2rem;
 
                 .last-text {
@@ -189,6 +270,7 @@
                 }
             }
         }
+<<<<<<< HEAD
 
         .owner {
             flex-direction: column;
@@ -200,9 +282,26 @@
         .case-boxes {
             grid-template-columns: repeat(1, minmax(0, 1fr));
         }
+||||||| 8553c4d
+        .owner{
+            flex-direction: column;
+        }
+
+    }
+    .third-section{
+        .case-boxes{
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+=======
+       
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
     }
 
+    .attorney{
+        flex-direction: column;
+    }
 
+<<<<<<< HEAD
 }
 
 
@@ -233,4 +332,69 @@
             margin: 0;
         }
     }
+||||||| 8553c4d
+=======
+   .middle-content{
+    .case-boxes{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+   }
+    
+   footer .footer-area .footer-left .social-icon li a {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+}
+.last-section .heading-content{
+    margin: 0;
+}
+.middle-content .injury-area .injury-header h3{
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+.middle-content .injury-area .injury-conent p{
+    text-align: center;
+}
+.middle-content .injury-area h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.banner-area .banner-content .banner-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+}
+.banner-area .banner-content .banner-text p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.media-section .media-heading h2 {
+    text-transform: uppercase;
+    width: 200px;
+    background-color: #041127;
+    margin: 50px auto;
+    padding: 10px;
+    color: #f7eded;
+    border-radius: 40px;
+    font-weight: 300;
+}
+footer .footer-area .footer-left .call {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+footer .footer-area .footer-left a {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+footer .footer-area .footer-left a img {
+    width: 184px;
+    height: auto;
+}
+footer .footer-area .footer-right {
+    margin-left: 1.2rem;
+}
+>>>>>>> dd15da9850f31ef3013ae8333353bb87bf10d860
 }
