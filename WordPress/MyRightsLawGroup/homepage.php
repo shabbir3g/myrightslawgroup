@@ -1,109 +1,21 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<?php
+/**
+ * Template Name: Home Page
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package MyRightsLawGroup
+ */
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>California Criminal Defense & Personal Injury Blog - My Rights Law</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+get_header(); ?>
 
-
-
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-	<link rel="stylesheet" type="text/css" href="style.css" media="all">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
-
-	<!-- Google Fonts -->
-
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-		rel="stylesheet">
-
-</head>
-
-<body>
-	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-	<header id="main-header" class="main-header">
-		<nav>
-			<div class="header-area">
-				<div class="header-middle ">
-					<div class="header-last-area ">
-						<div class="toogle-button">
-							<a class="navbar-toggler" href="#navbarSupportedContent" id="toggle"
-								data-toggle="collapse"><span></span></a>
-						</div>
-
-
-					</div>
-					<div class="header-pre-last-area ">
-						<div class="header-child-area ">
-							<div class="header-first-child-area">
-								<a href="#"><img src="images/logo_white.gif" alt="Your Company"></a>
-							</div>
-							<div class="header-second-child-area">
-								<div class="header-third-child-area">
-									<div class=" header-third-child-area-1 ">
-										<p>SE HABLA ESPAÑOL </p>
-										<i class="fa-solid fa-phone-volume"></i>
-										<a href="">(888) 702-8882</a>
-									</div>
-									<ul class="main-menu">
-										<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-										<li><a href="index.html" class=" hover:bg-gray-700 hover:text-white">Home</a>
-										</li>
-										<li><a href="blog.html" class=" hover:bg-gray-700 hover:text-white">Blog</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#"
-												class="text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#"
-												class="text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Mobile menu, show/hide based on menu state. -->
-				<div class="mobile-menu" id="mobile-menu">
-					<div class="sub-mobile-menu space-y-1 ">
-						<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-						<li><a href="index.html" class=" hover:bg-gray-700 hover:text-white">Home</a>
-						</li>
-						<li><a href="blog.html" class=" hover:bg-gray-700 hover:text-white">Blog</a></li>
-						<li><a href="#" class="hover:bg-gray-700 hover:text-white">Projects</a></li>
-						<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Calendar</a></li>
-					</div>
-				</div>
-		</nav>
-		<div class="page-heading">
-			<a href="#">CALL (888)702-8882 - OPEN 24/7</a>
-		</div>
-	</header>
-	<!-- Banner Area Section  -->
-	<section class="banner-area">
+<!-- Banner Area Section  -->
+<section class="banner-area">
 		<div class="banner-content">
 			<div class="banner-text">
 				<h1>Defending Your Rights Delivering Results</h1>
@@ -121,22 +33,22 @@
 			<p>Featured On</p>
 		</div>
 		<div class="logo">
-			<img src="images/abc-news-logo-navy-163x0.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/abc-news-logo-navy-163x0.png" alt="">
 		</div>
 		<div class="logo">
-			<img src="images/court-tv-logo-navy.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/court-tv-logo-navy.png" alt="">
+		</div>
+		<div class="<?php echo get_template_directory_uri(); ?>/logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/NewsNation-logo-navy.png" alt="">
 		</div>
 		<div class="logo">
-			<img src="images/NewsNation-logo-navy.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/nbc-logo-navy.png" alt="">
 		</div>
 		<div class="logo">
-			<img src="images/nbc-logo-navy.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/fox-news-channel-logo-navy.png" alt="">
 		</div>
 		<div class="logo">
-			<img src="images/fox-news-channel-logo-navy.png" alt="">
-		</div>
-		<div class="logo">
-			<img src="images/cbs-news-logo-navy-185x0.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/cbs-news-logo-navy-185x0.png" alt="">
 		</div>
 
 	</section>
@@ -168,19 +80,19 @@
 		</div>
 		<div class="awards">
 			<div class="awards-logo">
-				<img src="images/AVVO-10-Criminal-defense-1-e1659000434833.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/AVVO-10-Criminal-defense-1-e1659000434833.png" alt="">
 			</div>
 			<div class="awards-logo">
-				<img src="images/NTL-top-40-40-member-e1659000176439.webp" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/NTL-top-40-40-member-e1659000176439.webp" alt="">
 			</div>
 			<div class="awards-logo">
-				<img src="images/AIOTL-lit-year-2021-150x150-1-e1659000237749.webp" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/AIOTL-lit-year-2021-150x150-1-e1659000237749.webp" alt="">
 			</div>
 			<div class="awards-logo">
-				<img src="images/CA-DUI-LAW-Assoc.webp" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/CA-DUI-LAW-Assoc.webp" alt="">
 			</div>
 			<div class="awards-logo">
-				<img src="images/justia-lawyer-rating-e1659072790451.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/justia-lawyer-rating-e1659072790451.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -217,19 +129,19 @@
 				</h2>
 			</div>
 			<div class="attorney">
-				<div><img src="images/Bobby-Shamulian-Esq_med.webp" alt="">
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/Bobby-Shamulian-Esq_med.webp" alt="">
 					<p>Bobby Shamuilian, Esq.</p>
 					<a href="">VIEW BIO</a>
 				</div>
-				<div><img src="images/Rory-Daly-Esq_med2.webp" alt="">
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/Rory-Daly-Esq_med2.webp" alt="">
 					<p>Roderick Daly, Esq.</p>
 					<a href="">VIEW BIO</a>
 				</div>
-				<div><img src="images/Michael-Athari-Esq_med.webp" alt="">
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/Michael-Athari-Esq_med.webp" alt="">
 					<p>Michael Athari, Esq.</p>
 					<a href="">VIEW BIO</a>
 				</div>
-				<div><img src="images/Jonathan-Rapel-Esq.webp" alt="">
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/Jonathan-Rapel-Esq.webp" alt="">
 					<p>Jonathan Rapel, Esq.</p>
 					<a href="">VIEW BIO</a>
 				</div>
@@ -655,6 +567,7 @@
 	</section>
 
 
+
 	<section class="last-section">
 		<p class="content">My Rights Law’s founding attorney Bobby Shamuilian has dedicated his life to
 			defend those people who areinneed of the help of experienced, reliable, and aggressive Criminal, DUI,
@@ -669,69 +582,6 @@
 			</button>
 		</div>
 	</section>
+	
 
-
-
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-
-
-
-	<footer>
-		<div class="container">
-			<div class="footer-area flex ">
-				<div class="footer-left">
-					<a href="#"><img src="images/logo_white.gif" alt="Your Company"></a>
-					<p class="call">Call us 24/7</p>
-					<a href="#">(888) 702-8882</a>
-					<ul class="social-icon">
-						<li>
-							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa-brands fa-instagram"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa-brands fa-yelp"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="footer-right">
-					<h2>We Protect Your Rights</h2>
-					<p>
-						Being arrested does not make you guilty of the crime. We may be able to get
-						your
-						charges reduced
-						or even completely dismissed. Talk to us - you will feel and hear how much we can help.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="copyright">
-			<p>Copyright &copy; 2024 My Rights Law. All rights reserved.
-			</p>
-			<p>Disclaimer | SMS Disclaimer | Terms and Conditions | Privacy Policy |
-				Opt-Out
-				Preferences | Site Map</p>
-		</div>
-	</footer>
-
-
-
-	<script src="https://code.jquery.com/jquery-3.7.1.js"
-		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/owl.video.js"></script>
-	<script src="js/font-awesome.min.js"></script>
-	<script src="js/script.js"></script>
-
-
-</body>
-
-</html>
+<?php get_footer();

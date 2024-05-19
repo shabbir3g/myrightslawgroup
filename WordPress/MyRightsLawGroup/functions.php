@@ -196,7 +196,10 @@ add_action( 'widgets_init', 'mrlg_widgets_init' );
 /* customize login screen */
 function mbthirty_custom_login_page() {
     echo '<style type="text/css">
-        h1 a { background-image:url("'. get_stylesheet_directory_uri().'/images/logo.png") !important; height: 90px !important; width: 100px !important; margin: 0 auto !important; }
+		.login h1 a{
+			background-size: 230px !important;
+		}
+        h1 a { background-image:url("'. get_stylesheet_directory_uri().'/images/logo_white.gif") !important; height: 90px !important; width: 230px !important; margin: 0 auto !important; }
 		h1 a:focus { outline: 0 !important; box-shadow: none; }
         body.login { background-image:url("'. get_stylesheet_directory_uri().'/images/banner.png") !important; background-repeat: no-repeat !important; background-attachment: fixed !important; background-position: center !important; background-size: cover !important; position: relative; z-index: 999;}
   		body.login:before { background-color: rgba(0,0,0,0.7); position: absolute; width: 100%; height: 100%; left: 0; top: 0; content: ""; z-index: -1; }
@@ -234,13 +237,18 @@ add_filter( 'login_headerurl', 'mbthirty_login_logo_url' );
  * Enqueue scripts and styles.
  */
 function mrlg_scripts() {
-	
-	wp_enqueue_style( 'mrlg-css', get_template_directory_uri().'/css/style.css' );
+
+	wp_enqueue_style( 'mrlg-carousel', get_template_directory_uri().'/css/owl.carousel.css' );
+	wp_enqueue_style( 'mrlg-owl.theme.default', get_template_directory_uri().'/owl.theme.default.css' );
+	wp_enqueue_style( 'mrlg-main', get_template_directory_uri().'/css/main.css' );
 	wp_enqueue_style( 'mrlg-style', get_stylesheet_uri() );
-	
+	wp_enqueue_style( 'mrlg-responsive', get_template_directory_uri().'/css/responsive.css' );
 	
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'davide-imagesloaded', get_template_directory_uri() . '/libs/imagesloaded/imagesloaded.pkgd.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'davide-owl.carousel', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), '', true );
+	wp_enqueue_script( 'davide-owl.video', get_template_directory_uri() . '/js/owl.video.js', array('jquery'), '', true );
+	wp_enqueue_script( 'davide-font-awesome', get_template_directory_uri() . '/js/font-awesome.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'davide-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '', true );
 
 
 }

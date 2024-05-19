@@ -1,28 +1,69 @@
 (function ($) {
 	"use strict";
 
-	$(document).ready(function(){
+	$(document).ready(function () {
+
+		$('.toggle').click(function(e) {
+			e.preventDefault();
 		
+		  let $this = $(this);
 		
-		$('.navbar-nav li a').addClass('nav-link');
-		$('.navbar-nav li ul').addClass('dropdown-menu');
-		$('.navbar-nav li.menu-item-has-children').addClass('dropdown');
-		//$('.navbar-nav li.menu-item-has-children a').addClass('dropdown-toggle nav-link');
-       
-			
+		  if ($this.next().hasClass('show')) {
+			  $this.next().removeClass('show');
+			  $this.next().slideUp(350);
+		  } else {
+			  $this.parent().parent().find('li .inner').removeClass('show');
+			  $this.parent().parent().find('li .inner').slideUp(350);
+			  $this.next().toggleClass('show');
+			  $this.next().slideToggle(350);
+		  }
+
+		  	if ($this.hasClass('toggleIcon')) {
+			$this.removeClass('toggleIcon');
+			}else{
+				$this.parent().parent().find('li a').removeClass('toggleIcon');
+			  $this.toggleClass('toggleIcon');
+			}
+
+
+	  });
+
+
+
+		$(".owl-carousel").owlCarousel({
+			items: 1,
+			merge: true,
+			loop: true,
+			margin: 30,
+			video: true,
+			lazyLoad: true,
+			center: true,
+			autoPlay: true,
+			videoWidth: 400,
+			videoHeight: 300,
+			responsive: {
+				480: {
+					items: 2
+				},
+				600: {
+					items: 3
+				}
+			}
+		});
+
 		var theToggle = document.getElementById('toggle');
 
 		// hasClass
 		function hasClass(elem, className) {
 			return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 		}
-		
+
 		// toggleClass
 		function toggleClass(elem, className) {
-			var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+			var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
 			if (hasClass(elem, className)) {
-				while (newClass.indexOf(" " + className + " ") >= 0 ) {
-					newClass = newClass.replace( " " + className + " " , " " );
+				while (newClass.indexOf(" " + className + " ") >= 0) {
+					newClass = newClass.replace(" " + className + " ", " ");
 				}
 				elem.className = newClass.replace(/^\s+|\s+$/g, '');
 			} else {
@@ -30,45 +71,20 @@
 			}
 		}
 
-		theToggle.onclick = function() {
-		   toggleClass(this, 'on');
-		   return false;
+		theToggle.onclick = function () {
+			toggleClass(this, 'on');
+			return false;
 		}
-		
-		
-		$(window).scroll(function () {
-		 var shrinkHeader = 200;
-		  jQuery(window).scroll(function() {
-			var scroll = getCurrentScroll();
-			  if ( scroll >= shrinkHeader ) {
-				   jQuery('.header-top-fixed').addClass('shrink');
-				}
-				else {
-					jQuery('.header-top-fixed').removeClass('shrink');
-				}
-		  });
-		function getCurrentScroll() {
-			return window.pageYOffset || document.documentElement.scrollTop;
-			}
+
+		$('#toggle').on('click', function () {
+			// alert("hello");
+			$('#mobile-menu').slideToggle();
 		});
-		
-		
-		$(window).scroll(function () {
-            if ($(this).scrollTop() > 600) {
-                $('.to-top a').fadeIn();
-            } else {
-                $('.to-top a').fadeOut();
-            }
-        });
-		   $('.to-top a').on('click',function() {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 600);
-            return false;
-			});
-        
-		mixitup('.blog-post');
-			
+
+
 	});
 
 }(jQuery));
+
+
+

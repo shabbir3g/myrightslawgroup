@@ -1,0 +1,270 @@
+@media all and (min-width: 1024px) {
+    header {
+        .header-area {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    header {
+        .header-last-area {
+            display: none;
+        }
+
+        .header-child-area {
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+
+            .header-second-child-area {
+                display: block;
+                margin-left: 1.5rem;
+
+                .main-menu {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    header {
+        nav {
+            .header-area {
+                .header-middle {
+                    .header-last-area {
+                        .toogle-button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@media all and (min-width: 640px) {
+
+    header {
+        nav {
+            .header-area {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+
+                .header-pre-last-area {
+                    justify-content: space-between;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+// Maximum width style 
+
+@media all and (max-width: 991px) {
+
+    .banner-area {
+        padding: 0;
+
+        .banner-content {
+            padding-top: 3rem;
+            color: #f7eded;
+            display: flex;
+            justify-content: center;
+
+            .banner-text {
+                width: 80%;
+            }
+
+        }
+    }
+
+    .featured-section {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    header {
+        nav {
+
+            .header-area {
+
+                .header-middle {
+                    .header-pre-last-area {
+                        .header-child-area {
+                            justify-content: center;
+
+                            .header-second-child-area {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .header-last-area {
+                        .toogle-button {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .third-section {
+        .case-boxes {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    footer {
+        .footer-area {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .footer-left {
+                a {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media all and (max-width: 640px) {
+    header {
+        nav {
+            .header-area {
+                .header-middle {
+                    .header-pre-last-area {
+                        .header-child-area {
+                            .header-first-child-area {
+                                img {
+                                    width: 200px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .featured-section {
+        flex-direction: column;
+    }
+
+    .awards-section {
+        .awards {
+            flex-direction: column;
+        }
+    }
+
+    .middle-content {
+        .injury-area {
+            .injury-header {
+                h3 {
+                    padding: 0;
+                    margin: 0 2rem;
+                }
+            }
+
+            .injury-conent {
+                margin: 0 2rem;
+            }
+        }
+
+
+
+    }
+
+    .middle-content .attorneys-section {
+        .attorney {
+            flex-direction: column;
+        }
+    }
+
+    .middle-content .injury-area .injury-conent p {
+        text-align: center;
+    }
+
+
+    .middle-content {
+        .case-boxes {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+
+}
+
+
+// blog-section-area 
+
+@media all and (max-width: 768px) {
+    .blog-section {
+        flex-direction: column;
+
+
+        .rotate-left {
+            width: 100%;
+
+            h1 {
+                margin: 0;
+                text-align: center;
+            }
+
+        }
+
+        .rotate-right {
+            width: 91%;
+            margin: 0 19px;
+        }
+
+        .blog {
+            width: 90%;
+            margin: 0;
+        }
+    }
+
+    .middle-content {
+        .case-boxes {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+
+    footer .footer-area .footer-left .call,
+    footer .footer-area .footer-right h2,
+    footer .footer-area .footer-right p {
+        text-align: center;
+    }
+
+    .last-section .heading-content {
+        margin: 0;
+    }
+
+    .middle-content .injury-area h2,
+    .banner-area .banner-content .banner-text h1 {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .banner-area .banner-content .banner-text p {
+        font-weight: 400;
+    }
+    footer .footer-area .footer-left {
+        padding: 0;
+    }
+}

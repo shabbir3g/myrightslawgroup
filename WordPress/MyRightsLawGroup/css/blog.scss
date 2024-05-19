@@ -1,0 +1,159 @@
+$textcolor : rgb(80 72 72);
+$btncolor : rgb(173 20 20);
+
+.blog-section {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+
+    .rotate-left {
+        width: 66%;
+
+        .blog-content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-left: 17%;
+            font-weight: 400;
+            font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+
+        }
+
+        .next-page {
+            display: flex;
+            justify-content: center;
+
+            a {
+                padding: 10px 25px;
+                border: 1px solid rgb(232 222 222);
+                margin: 40px 0;
+            }
+        }
+
+    }
+
+    .blog {
+        width: 464px;
+        height: auto;
+        padding: 45px;
+        margin-right: 20px;
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+        color: $textcolor;
+
+        h1 {
+            margin-left: 0;
+            font-family: "Playfair Display";
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 19px;
+
+            a {
+                color: $btncolor;
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 16px;
+            padding-bottom: 44px;
+        }
+
+        button {
+            background-color: $btncolor;
+            color: #fff;
+            padding: 3px 2px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    }
+
+
+
+    .rotate-right {
+        background-color: rgb(243 243 243);
+        width: 427px;
+        padding: 30px;
+        margin-right: 7%;
+        margin-bottom: 300px;
+
+        h1 {
+            font-size: 42px;
+            font-weight: 100;
+            font-family: "Playfair Display";
+
+        }
+
+        .post-link {
+            a {
+                color: $btncolor;
+                font-weight: bold;
+                font-size: 21px;
+                margin: 49px 0;
+                display: block;
+
+            }
+
+        }
+
+
+        .input-area {
+            background-color: rgb(18, 18, 59);
+            padding: 10px;
+            display: flex;
+
+            input {
+                border: none;
+            }
+        }
+
+        h3 {
+            margin: 60px 0;
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        .tag-area {
+            a {
+                background-color: #fff;
+                border: 1px solid #e7dbdb;
+                padding: 7px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+            }
+        }
+
+        .criminal-defence-area {
+            a {
+                padding: 5px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+                color: $btncolor;
+                font-weight: bold;
+            }
+        }
+
+        .personal-injury-area {
+            a {
+                padding: 5px 5px;
+                font-size: 18px;
+                display: inline-block;
+                margin: 2px 0;
+                color: $btncolor;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}

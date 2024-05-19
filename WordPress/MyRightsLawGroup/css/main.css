@@ -1203,4 +1203,7 @@ video {
   .banner-area .banner-content .banner-text p {
     font-weight: 400;
   }
+  footer .footer-area .footer-left {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
