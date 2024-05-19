@@ -156,14 +156,117 @@ $btncolor : rgb(173 20 20);
     }
 
 
-<<<<<<< HEAD
 }
 
 
 // Criminal Defense Attorneys
-||||||| 3171875
-}
-=======
+
+
+.defence-banner-area {
+    background-image: url(../images/crime-bg.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0 0;
+    background-color: rgba(0, 26, 86, 0.64);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 400px;
+
+
+    .defence-banner-content {
+        padding-top: 0;
+        color: #F7EDEE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+
+        .defence-banner-text {
+            width: 80%;
+            line-height: 39px;
+
+            h1 {
+                font-weight: 100;
+                font-size: 1.5rem;
+                font-style: italic;
+                padding: 33px 0;
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: 3.5rem;
+                line-height: 3rem;
+            }
+
+            h3 {
+                font-weight: 100;
+                font-size: 1.5rem;
+                padding: 37px 0;
+
+            }
+
+            a {
+                margin-bottom: 4rem;
+                color: #f7eded;
+                font-weight: 700;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                padding-left: 2.25rem;
+                padding-right: 2.25rem;
+                text-align: center;
+                padding: 0.75rem;
+                background-color: rgb(215, 6, 6);
+                cursor: pointer;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color: #3274c9;
+                    ;
+                }
+            }
+        }
+    }
 }
 
->>>>>>> 020a63a1f6dcb099ccc3612d2d1bee095c6fd71b
+.crime-charge-section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .case-area {
+        width: 80%;
+        padding: 26px 0;
+
+        .charges-heading {
+            h3 {
+                text-transform: uppercase;
+                width: 300px;
+                background-color: #041127;
+                margin: 50px auto;
+                padding: 10px;
+                color: #f7eded;
+                border-radius: 40px;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        .charge-boxes {
+
+            .charge {
+                margin: 1rem;
+                padding: 2.25rem;
+                background-color: #4172cd;
+                align-content: center;
+            }
+        }
+
+    }
+
+}
+
+.courts-section {
+    padding: 71px;
+    text-align: center;
+    background-color: rgb(241, 245, 249);
+}
