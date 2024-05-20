@@ -1,5 +1,7 @@
 $textcolor : rgb(80 72 72);
 $btncolor : rgb(173 20 20);
+$bgcolor: #041127;
+$white: #fff;
 
 .blog-section {
     width: 100%;
@@ -27,50 +29,57 @@ $btncolor : rgb(173 20 20);
         .next-page {
             display: flex;
             justify-content: center;
-
-            a {
+            margin-bottom: 70px;
+            .current {
+                background-color: $bgcolor;
+                padding: 10px 25px;
+                border: 1px solid $white;
+                color: $white;
+                margin: 40px 0;
+            }
+            a, .dots {
                 padding: 10px 25px;
                 border: 1px solid rgb(232 222 222);
                 margin: 40px 0;
+                color: $btncolor;
             }
         }
 
     }
 
     .blog {
-        width: 464px;
+        width: 80%;
         height: auto;
         padding: 45px;
         margin-right: 20px;
         box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
         color: $textcolor;
-
-        h1 {
+        margin-bottom: 60px;
+        h2 {
             margin-left: 0;
             font-family: "Playfair Display";
             font-size: 2em;
             font-weight: 400;
         }
 
-        h2 {
+        span{
             font-weight: 500;
             font-size: 19px;
-
             a {
                 color: $btncolor;
             }
         }
 
-        h3 {
+        p{
             font-weight: 500;
             font-size: 16px;
             padding-bottom: 44px;
         }
 
-        button {
+        a.readmore {
             background-color: $btncolor;
             color: #fff;
-            padding: 3px 2px;
+            padding: 10px 40px;
             font-size: 19px;
             font-weight: bold;
         }
@@ -78,82 +87,264 @@ $btncolor : rgb(173 20 20);
 
 
 
-    .rotate-right {
-        background-color: rgb(243 243 243);
-        width: 427px;
-        padding: 30px;
-        margin-right: 7%;
-        margin-bottom: 300px;
+    .blog-sidebar {
+        width: 33%;
+        .sidebar-area{
+            background-color: rgb(243 243 243);
+            padding: 30px;
+            margin-right: 7%;
+            margin-bottom: 300px;
+    
+            h1 {
+                font-size: 42px;
+                font-weight: 100;
+                font-family: "Playfair Display";
+    
+            }
+    
+            .widget-area {
+                a { 
+                    color: $btncolor;
+                    font-weight: bold;
+                    font-size: 21px;
+                    margin: 20px 0;
+                    display: block;
+    
+                }
+                form.search-form{
+                    background: rgb(18, 18, 59);
+                    label{
+                        padding: 20px 10px;
+                        span{
+                            display: none;
+                        }
+                    }
+                    input[type='submit'] {
+                        padding: 18px 19px;
+                        color: #fff;
+                    }
+                    input {
+                        font-size: 20px;
+                        padding: 6px;
+                    }
+                }
+    
+            }
+    
+    
+            .input-area {
+                background-color: rgb(18, 18, 59);
+                padding: 10px;
+                display: flex;
+                .icon{
+                    margin-left: 14px;
+                    background-color: transparent !important;
+                    color: #fff;
+                }
+    
+                input {
+                    border: none;
+                }
+            }
+    
+            h3{
+                margin: 25px 0;
+                font-weight: normal;
+                font-size: 28px;
+            }
+    
+            .tagcloud {
+                a {
+                    background-color: #fff;
+                    border: 1px solid #e7dbdb;
+                    padding: 7px 15px;
+                    font-size: 18px !important;
+                    display: inline-block;
+                    margin: 2px 0;
+                    color: #041127;
+                    font-weight: normal;
+                }
+            }
+    
+            .cd-area {
+                a {
+                    padding: 5px 5px;
+                    font-size: 18px;
+                    display: block;
+                    margin: 2px 0;
+                    color: $btncolor;
+                    font-weight: bold;
+                }
+            }
+    
+            .pi-area {
+                a {
+                    padding: 5px 5px;
+                    font-size: 18px;
+                    display: block;
+                    margin: 2px 0;
+                    color: $btncolor;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        }
+       
+
+}
+
+.single-blog-section{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+
+    .rotate-left {
+        width: 66%;
+
+        .blog-content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         h1 {
-            font-size: 42px;
-            font-weight: 100;
-            font-family: "Playfair Display";
+            font-size: 50px;
+            font-weight: 400;
+            font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 
         }
 
-        .post-link {
-            a {
-                color: $btncolor;
-                font-weight: bold;
-                font-size: 21px;
-                margin: 49px 0;
-                display: block;
-
-            }
-
-        }
-
-
-        .input-area {
-            background-color: rgb(18, 18, 59);
-            padding: 10px;
+        .next-page {
             display: flex;
-
-            input {
-                border: none;
+            justify-content: center;
+            margin-bottom: 70px;
+            .current {
+                background-color: $bgcolor;
+                padding: 10px 25px;
+                border: 1px solid $white;
+                color: $white;
+                margin: 40px 0;
             }
-        }
-
-        h3 {
-            margin: 60px 0;
-            font-weight: normal;
-            font-size: 28px;
-        }
-
-        .tag-area {
-            a {
-                background-color: #fff;
-                border: 1px solid #e7dbdb;
-                padding: 7px 5px;
-                font-size: 18px;
-                display: inline-block;
-                margin: 2px 0;
-            }
-        }
-
-        .criminal-defence-area {
-            a {
-                padding: 5px 5px;
-                font-size: 18px;
-                display: inline-block;
-                margin: 2px 0;
+            a, .dots {
+                padding: 10px 25px;
+                border: 1px solid rgb(232 222 222);
+                margin: 40px 0;
                 color: $btncolor;
-                font-weight: bold;
             }
         }
 
-        .personal-injury-area {
-            a {
-                padding: 5px 5px;
-                font-size: 18px;
-                display: inline-block;
-                margin: 2px 0;
-                color: $btncolor;
-                font-weight: bold;
-            }
-        }
+    }
+    .blog {
+        height: auto;
+        padding: 45px;
+        margin-right: 20px;
+        color: $textcolor;
+        margin-bottom: 60px;
     }
 
-
+    .blog-sidebar {
+        width: 33%;
+        .sidebar-area{
+            background-color: rgb(243 243 243);
+            padding: 30px;
+            margin-right: 7%;
+            margin-bottom: 300px;
+    
+            h1 {
+                font-size: 42px;
+                font-weight: 100;
+                font-family: "Playfair Display";
+    
+            }
+    
+            .widget-area {
+                a { 
+                    color: $btncolor;
+                    font-weight: bold;
+                    font-size: 21px;
+                    margin: 20px 0;
+                    display: block;
+    
+                }
+                form.search-form{
+                    background: rgb(18, 18, 59);
+                    label{
+                        padding: 20px 10px;
+                        span{
+                            display: none;
+                        }
+                    }
+                    input[type='submit'] {
+                        padding: 18px 19px;
+                        color: #fff;
+                    }
+                    input {
+                        font-size: 20px;
+                        padding: 6px;
+                    }
+                }
+    
+            }
+    
+    
+            .input-area {
+                background-color: rgb(18, 18, 59);
+                padding: 10px;
+                display: flex;
+                .icon{
+                    margin-left: 14px;
+                    background-color: transparent !important;
+                    color: #fff;
+                }
+    
+                input {
+                    border: none;
+                }
+            }
+    
+            h3{
+                margin: 25px 0;
+                font-weight: normal;
+                font-size: 28px;
+            }
+    
+            .tagcloud {
+                a {
+                    background-color: #fff;
+                    border: 1px solid #e7dbdb;
+                    padding: 7px 15px;
+                    font-size: 18px !important;
+                    display: inline-block;
+                    margin: 2px 0;
+                    color: #041127;
+                    font-weight: normal;
+                }
+            }
+    
+            .cd-area {
+                a {
+                    padding: 5px 5px;
+                    font-size: 18px;
+                    display: block;
+                    margin: 2px 0;
+                    color: $btncolor;
+                    font-weight: bold;
+                }
+            }
+    
+            .pi-area {
+                a {
+                    padding: 5px 5px;
+                    font-size: 18px;
+                    display: block;
+                    margin: 2px 0;
+                    color: $btncolor;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        }
 }
