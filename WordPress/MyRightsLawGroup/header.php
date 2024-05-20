@@ -16,15 +16,19 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<!--[if (gte IE 9)|!(IE)]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<![endif]--> 
 
 
 	<!-- Google Fonts -->
@@ -49,42 +53,36 @@
 							<a class="navbar-toggler" href="#navbarSupportedContent" id="toggle"
 								data-toggle="collapse"><span></span></a>
 						</div>
-
-
 					</div>
 					<div class="header-pre-last-area ">
 						<div class="header-child-area ">
 							<div class="header-first-child-area">
-								<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.gif" alt="Your Company"></a>
+							<?php $logo_upload = get_field('logo_upload','options'); 
+							  if( $logo_upload): ?>
+								<a href="<?php echo home_url(); ?>"><img src="<?php echo $logo_upload; ?>" alt="<?php bloginfo('title'); ?>"></a>
+								<?php endif; ?>
 							</div>
 							<div class="header-second-child-area">
 								<div class="header-third-child-area">
 									<div class=" header-third-child-area-1 ">
-										<p>SE HABLA ESPAÑOL </p>
+									<?php $right_side_text = get_field('right_side_text','options'); 
+							  			if( $right_side_text): ?>
+										<p><?php echo $right_side_text; ?></p>
+										<?php endif; ?>
+
+										<?php $phone_number = get_field('phone_number','options'); 
+							  			if( $phone_number): ?>
 										<i class="fa-solid fa-phone-volume"></i>
-										<a href="">(888) 702-8882</a>
+										<a href="tel:<?php echo $phone_number; ?>"><?php echo $phone_number; ?></a>
+										<?php endif; ?>
 									</div>
-									<ul class="main-menu">
-										<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-										<li><a href="index.html" class=" hover:bg-gray-700 hover:text-white">Home</a>
-										</li>
-										<li><a href="blog.html" class=" hover:bg-gray-700 hover:text-white">Blog</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#" class=" hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#"
-												class="text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-										</li>
-										<li><a href="#"
-												class="text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-										</li>
-									</ul>
+									<?php 
+										wp_nav_menu([
+										'theme_location'    => 'main-menu',
+										'menu_class'      => 'main-menu',
+										]);
+										?>
+									
 								</div>
 							</div>
 						</div>
@@ -102,7 +100,16 @@
 					</div>
 				</div>
 		</nav>
+
+		<?php $page_header = get_field('page_header','options'); 
+		if( $page_header == 'show'): ?>
 		<div class="page-heading">
-			<a href="#">CALL (888)702-8882 - OPEN 24/7</a>
+		<?php $phone_number = get_field('phone_number','options'); 
+			if( $phone_number): ?>
+			<a href="tel: <?php echo $phone_number; ?>">CALL <?php echo $phone_number; ?> - OPEN 24/7</a>
+			<?php endif; ?>
 		</div>
+		<?php endif; ?>
+
+
 </header>
