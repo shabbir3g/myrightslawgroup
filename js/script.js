@@ -29,6 +29,25 @@
 		});
 
 
+		$(".owl-carousel .media-live").owlCarousel({
+			items: 1,
+			merge: true,
+			loop: true,
+			margin: 30,
+			lazyLoad: true,
+			center: true,
+			autoPlay: true,
+			responsive: {
+				480: {
+					items: 1
+				},
+				600: {
+					items: 1
+				}
+			}
+		});
+
+
 		$(".owl-carousel").owlCarousel({
 			items: 1,
 			merge: true,

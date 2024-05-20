@@ -756,10 +756,11 @@ footer .copyright p {
   font-size: 3.5rem;
   line-height: 3rem;
 }
-.defence-banner-area .defence-banner-content .defence-banner-text h3 {
+.defence-banner-area .defence-banner-content .defence-banner-text p {
   font-weight: 100;
   font-size: 1.5rem;
   padding: 37px 0;
+  color: #fff;
 }
 .defence-banner-area .defence-banner-content .defence-banner-text a {
   margin-bottom: 4rem;
@@ -788,7 +789,7 @@ footer .copyright p {
   width: 80%;
   padding: 26px 0;
 }
-.crime-charge-section .case-area .charges-heading h3 {
+.crime-charge-section .case-area .charges-heading h2 {
   text-transform: uppercase;
   width: 300px;
   background-color: #041127;
@@ -804,6 +805,167 @@ footer .copyright p {
   padding: 2.25rem;
   background-color: #4172cd;
   align-content: center;
+}
+
+.califoria-criminal-defence {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 80px;
+}
+.califoria-criminal-defence .left-area {
+  width: 55%;
+}
+.califoria-criminal-defence .left-area .lawyers a {
+  color: #c50e0e;
+  font-size: 20px;
+}
+.califoria-criminal-defence .left-area .lawyers a:hover {
+  color: #3274c9;
+}
+.califoria-criminal-defence .left-area .lawyers span {
+  font-size: 20px;
+  color: #495f82;
+}
+.califoria-criminal-defence .left-area .lawyers h2 {
+  padding-top: 42px;
+  font-size: 51px;
+  font-weight: normal;
+}
+.califoria-criminal-defence .left-area .lawyers .devider {
+  margin: 0.25rem 0;
+  padding: 2rem 0;
+}
+.califoria-criminal-defence .left-area .lawyers .devider hr {
+  border-top: 3px solid #180b0b;
+  border-radius: 0.25rem;
+  width: 29.333333%;
+}
+.califoria-criminal-defence .left-area .lawyers h3 {
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 25px;
+}
+.califoria-criminal-defence .left-area .lawyers p {
+  padding: 10px 0;
+  line-height: 34px;
+  font-size: 18px;
+  color: #495f82;
+}
+.califoria-criminal-defence .left-area .contents {
+  border: 1px solid black;
+  padding-top: 20px;
+  margin-right: 33%;
+  background: #f7f7f7;
+}
+.califoria-criminal-defence .left-area .contents span {
+  font-size: 25px;
+  padding-left: 10px;
+}
+.califoria-criminal-defence .left-area .contents span a {
+  font-size: 16px;
+}
+.califoria-criminal-defence .left-area .contents span a:hover {
+  color: #3274c9;
+}
+.califoria-criminal-defence .left-area .contents a {
+  color: #c50e0e;
+}
+.califoria-criminal-defence .left-area .contents .order-list {
+  padding-left: 43px;
+}
+.califoria-criminal-defence .left-area .contents .order-list li::before {
+  content: counter(ol);
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  list-style-type: decimal;
+}
+.califoria-criminal-defence .left-area .contents .order-list a {
+  color: #c50e0e;
+  font-size: 21px;
+  font-weight: 100;
+}
+.califoria-criminal-defence .left-area .contents .order-list a:hover {
+  color: #3274c9;
+}
+.califoria-criminal-defence .left-area p {
+  font-size: 18px;
+  padding: 22px 0;
+  color: #495f82;
+}
+.califoria-criminal-defence .left-area .alcohol-crime-lawyers h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #031a3e;
+  padding: 21px 0;
+}
+.califoria-criminal-defence .left-area .alcohol-crime-lawyers p {
+  font-size: 18px;
+  padding: 22px 0;
+  color: #495f82;
+  line-height: 2.25rem;
+}
+.califoria-criminal-defence .left-area .alcohol-crime-lawyers p a {
+  color: #c50e0e;
+}
+.califoria-criminal-defence .left-area .alcohol-crime-lawyers p a:hover {
+  color: #3274c9;
+}
+.califoria-criminal-defence .left-area .alcohol-crime-lawyers .alcohol-catagory {
+  list-style-type: disc;
+  padding-left: 38px;
+  line-height: 2.25rem;
+  color: #495f82;
+  font-size: 18px;
+}
+.califoria-criminal-defence .right-area {
+  width: 23%;
+  margin-left: 25px;
+}
+.califoria-criminal-defence .right-area .form-section {
+  background-color: #031a3e;
+  padding: 26px;
+  color: #fff;
+}
+.califoria-criminal-defence .right-area .form-section img {
+  width: 39%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.califoria-criminal-defence .right-area .form-section .form {
+  display: flex;
+  flex-direction: column;
+}
+.califoria-criminal-defence .right-area .form-section .form input {
+  padding: 10px 10px;
+  margin: 6px 0;
+  color: #0f0e0e;
+}
+
+.free-coun {
+  text-align: center;
+  margin: 83px 0;
+  color: #fff;
+  font-size: 18px;
+}
+.free-coun a {
+  background-color: #c50e0e;
+  padding: 20px;
+  text-transform: capitalize;
+  transition-duration: 0.3s;
+}
+.free-coun a span {
+  text-transform: uppercase;
+}
+.free-coun a:hover {
+  background-color: #3274c9;
 }
 
 .courts-section {
