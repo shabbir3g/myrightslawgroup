@@ -265,3 +265,30 @@
         font-weight: 400;
     }
 }
+
+// Criminal Defense Attorneys
+
+@media all and (max-width: 800px) {
+    .defence-banner-area {
+        .defence-banner-content {
+            padding-top: 0px;
+
+            .defence-banner-text {
+                h1 {
+                    font-size: 19px;
+                    padding: 16px 0;
+                }
+
+                h2 {
+                    font-size: 36px;
+
+                }
+
+                h3 {
+                    font-size: 19px;
+                    padding: 16px 0;
+                }
+            }
+        }
+    }
+}

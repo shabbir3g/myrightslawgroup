@@ -140,4 +140,20 @@
   .banner-area .banner-content .banner-text p {
     font-weight: 400;
   }
+}
+@media all and (max-width: 800px) {
+  .defence-banner-area .defence-banner-content {
+    padding-top: 0px;
+  }
+  .defence-banner-area .defence-banner-content .defence-banner-text h1 {
+    font-size: 19px;
+    padding: 16px 0;
+  }
+  .defence-banner-area .defence-banner-content .defence-banner-text h2 {
+    font-size: 36px;
+  }
+  .defence-banner-area .defence-banner-content .defence-banner-text h3 {
+    font-size: 19px;
+    padding: 16px 0;
+  }
 }/*# sourceMappingURL=responsive.css.map */

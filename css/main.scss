@@ -679,26 +679,34 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 
 
 .law-section{
+=======
+.law-section {
+>>>>>>> refs/remotes/origin/main
     width: 90%;
     margin: auto;
-    .low-area{
-        h3{
+
+    .low-area {
+        h3 {
             font-size: 1.875rem;
             line-height: 3rem;
             padding: 2rem 0;
             font-weight: 400;
             text-align: center;
         }
-        .accordion{
+
+        .accordion {
             list-style: none;
             padding: 0;
+
             li {
                 margin: 0.5em 0;
-                a{
-                    &.toggle{
+
+                a {
+                    &.toggle {
                         margin: 0 20px;
                         font-size: 1.65rem;
                         font-weight: 500;
@@ -708,11 +716,12 @@ footer {
                         display: block;
                         color: #194496;
                         border-radius: 0.15em;
-                        &:hover{
+
+                        &:hover {
                             opacity: .7;
                         }
 
-                        &:before{
+                        &:before {
                             float: left !important;
                             content: '\002B';
                             padding-right: 5px;
@@ -723,26 +732,31 @@ footer {
                             font-size: 1rem;
                             margin-top: 8px;
                         }
-                        &.toggleIcon{
-                            &:before{
+
+                        &.toggleIcon {
+                            &:before {
                                 float: left !important;
                                 content: "\2212";
-                                
+
                             }
                         }
                     }
-                    
+
                 }
+
                 .inner {
                     padding-left: 3em;
                     overflow: hidden;
                     display: none;
+
                     .city {
                         display: flex;
                         justify-content: space-between;
                         font-size: 21px;
-                        .col{
+
+                        .col {
                             list-style: disc;
+
                             a {
                                 padding: 4px 0;
                                 display: block;
@@ -751,7 +765,7 @@ footer {
                     }
                 }
             }
-            
+
         }
 
         .button-area {
@@ -771,8 +785,13 @@ footer {
             }
         }
     }
+<<<<<<< HEAD
     
     }
+=======
+
+}
+>>>>>>> refs/remotes/origin/main
 
 /* responsive css */
 @import 'blog.scss';
