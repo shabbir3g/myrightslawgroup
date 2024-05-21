@@ -366,4 +366,8 @@
   padding: 71px;
   text-align: center;
   background-color: rgb(241, 245, 249);
+}
+
+.member-contuct-info {
+  display: flex;
 }/*# sourceMappingURL=blog.css.map */
