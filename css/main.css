@@ -194,23 +194,20 @@ header nav .header-area .mobile-menu .sub-mobile-menu a {
   line-height: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
-header .page-heading {
-  background-color: rgb(215, 6, 6);
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-header .page-heading:hover {
-  background-color: #041127;
-  cursor: pointer;
-}
 header .page-heading a {
+  padding: 1rem 0;
+  background-color: rgb(215, 6, 6);
   color: #f7eded;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-decoration: inherit;
   text-align: center;
+  display: block;
+}
+header .page-heading a:hover {
+  background-color: #041127;
+  cursor: pointer;
 }
 
 .banner-area {
@@ -263,6 +260,7 @@ header .page-heading a {
   display: flex;
   flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
 }
 .featured-section .sub-company {
   flex-basis: 25%;
@@ -548,6 +546,23 @@ footer .copyright p {
   text-align: center;
   color: #f7eded;
 }
+footer .copyright .footer-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+footer .copyright .footer-menu ul li a {
+  color: #f7eded;
+}
+footer .copyright .footer-menu ul li:after {
+  content: "|";
+  padding: 0 0.5rem;
+  color: #f7eded;
+}
+footer .copyright .footer-menu ul li:last-child:after {
+  content: "";
+}
 
 .law-section {
   width: 90%;
@@ -627,6 +642,10 @@ footer .copyright p {
   margin-top: 2.5rem;
   color: #f7eded;
   background-color: rgb(215, 6, 6);
+}
+
+.google-reviews {
+  margin-top: 50px;
 }
 
 /* responsive css */

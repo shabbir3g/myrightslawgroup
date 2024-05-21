@@ -644,6 +644,10 @@ footer .copyright .footer-menu ul li:last-child:after {
   background-color: rgb(215, 6, 6);
 }
 
+.google-reviews {
+  margin-top: 50px;
+}
+
 /* responsive css */
 .blog-section {
   width: 100%;
@@ -717,63 +721,64 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 19px;
   font-weight: bold;
 }
-.blog-section .blog-sidebar {
+
+.blog-sidebar {
   width: 33%;
 }
-.blog-section .blog-sidebar .sidebar-area {
+.blog-sidebar .sidebar-area {
   background-color: rgb(243, 243, 243);
   padding: 30px;
   margin-right: 7%;
   margin-bottom: 300px;
 }
-.blog-section .blog-sidebar .sidebar-area h1 {
+.blog-sidebar .sidebar-area h1 {
   font-size: 42px;
   font-weight: 100;
   font-family: "Playfair Display";
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area a {
+.blog-sidebar .sidebar-area .widget-area a {
   color: rgb(173, 20, 20);
   font-weight: bold;
   font-size: 21px;
   margin: 20px 0;
   display: block;
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area form.search-form {
+.blog-sidebar .sidebar-area .widget-area form.search-form {
   background: rgb(18, 18, 59);
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area form.search-form label {
+.blog-sidebar .sidebar-area .widget-area form.search-form label {
   padding: 20px 10px;
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area form.search-form label span {
+.blog-sidebar .sidebar-area .widget-area form.search-form label span {
   display: none;
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area form.search-form input[type=submit] {
+.blog-sidebar .sidebar-area .widget-area form.search-form input[type=submit] {
   padding: 18px 19px;
   color: #fff;
 }
-.blog-section .blog-sidebar .sidebar-area .widget-area form.search-form input {
+.blog-sidebar .sidebar-area .widget-area form.search-form input {
   font-size: 20px;
   padding: 6px;
 }
-.blog-section .blog-sidebar .sidebar-area .input-area {
+.blog-sidebar .sidebar-area .input-area {
   background-color: rgb(18, 18, 59);
   padding: 10px;
   display: flex;
 }
-.blog-section .blog-sidebar .sidebar-area .input-area .icon {
+.blog-sidebar .sidebar-area .input-area .icon {
   margin-left: 14px;
   background-color: transparent !important;
   color: #fff;
 }
-.blog-section .blog-sidebar .sidebar-area .input-area input {
+.blog-sidebar .sidebar-area .input-area input {
   border: none;
 }
-.blog-section .blog-sidebar .sidebar-area h3 {
+.blog-sidebar .sidebar-area h3 {
   margin: 25px 0;
   font-weight: normal;
   font-size: 28px;
 }
-.blog-section .blog-sidebar .sidebar-area .tagcloud a {
+.blog-sidebar .sidebar-area .tagcloud a {
   background-color: #fff;
   border: 1px solid #e7dbdb;
   padding: 7px 15px;
@@ -783,7 +788,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   color: #041127;
   font-weight: normal;
 }
-.blog-section .blog-sidebar .sidebar-area .cd-area a {
+.blog-sidebar .sidebar-area .cd-area a {
   padding: 5px 5px;
   font-size: 18px;
   display: block;
@@ -791,7 +796,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   color: rgb(173, 20, 20);
   font-weight: bold;
 }
-.blog-section .blog-sidebar .sidebar-area .pi-area a {
+.blog-sidebar .sidebar-area .pi-area a {
   padding: 5px 5px;
   font-size: 18px;
   display: block;
@@ -928,7 +933,6 @@ footer .copyright .footer-menu ul li:last-child:after {
 }
 
 .defence-banner-area {
-  background-image: url(../images/crime-bg.avif);
   background-repeat: no-repeat;
   background-position: center center;
   padding: 0 0;
@@ -990,7 +994,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   justify-content: center;
 }
 .crime-charge-section .case-area {
-  width: 80%;
+  width: 90%;
   padding: 26px 0;
 }
 .crime-charge-section .case-area .charges-heading h2 {
@@ -1005,7 +1009,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   text-align: center;
 }
 .crime-charge-section .case-area .charge-boxes .charge {
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 2.25rem;
   background-color: #4172cd;
   align-content: center;
