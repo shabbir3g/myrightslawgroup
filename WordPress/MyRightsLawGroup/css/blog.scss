@@ -2,6 +2,7 @@ $textcolor : rgb(80 72 72);
 $btncolor : rgb(173 20 20);
 $bgcolor: #041127;
 $white: #fff;
+$hoverclr : #3274c9;
 
 .blog-section {
     width: 100%;
@@ -347,4 +348,330 @@ $white: #fff;
         }
     
         }
+}
+
+
+
+// Criminal Defense Attorneys
+
+$fontclr : #c50e0e;
+$ptextclr : #495f82;
+$h3color : #031a3e;
+
+
+.defence-banner-area {
+    background-image: url(../images/crime-bg.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0 0;
+    background-color: rgba(0, 26, 86, 0.64);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 400px;
+
+
+    .defence-banner-content {
+        padding-top: 0;
+        color: #F7EDEE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+
+        .defence-banner-text {
+            width: 80%;
+            line-height: 39px;
+
+            h1 {
+                font-weight: 100;
+                font-size: 1.5rem;
+                font-style: italic;
+                padding: 33px 0;
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: 3.5rem;
+                line-height: 3rem;
+            }
+
+            p {
+                font-weight: 100;
+                font-size: 1.5rem;
+                padding: 37px 0;
+                color: #fff;
+            }
+
+            a {
+                margin-bottom: 4rem;
+                color: #f7eded;
+                font-weight: 700;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                padding-left: 2.25rem;
+                padding-right: 2.25rem;
+                text-align: center;
+                padding: 0.75rem;
+                background-color: rgb(215, 6, 6);
+                cursor: pointer;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color: $hoverclr;
+                    ;
+                }
+            }
+        }
+    }
+}
+
+.crime-charge-section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .case-area {
+        width: 80%;
+        padding: 26px 0;
+
+        .charges-heading {
+            h2 {
+                text-transform: uppercase;
+                width: 300px;
+                background-color: #041127;
+                margin: 50px auto;
+                padding: 10px;
+                color: #f7eded;
+                border-radius: 40px;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        .charge-boxes {
+
+            .charge {
+                margin: 1rem;
+                padding: 2.25rem;
+                background-color: #4172cd;
+                align-content: center;
+            }
+        }
+
+    }
+
+}
+
+.califoria-criminal-defence {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+
+    .left-area {
+        width: 55%;
+
+        .lawyers {
+            a {
+                color: $fontclr;
+                font-size: 20px;
+
+                &:hover {
+                    color: $hoverclr;
+                }
+            }
+
+            span {
+
+                font-size: 20px;
+                color: $ptextclr;
+
+            }
+
+            h2 {
+                padding-top: 42px;
+                font-size: 51px;
+                font-weight: normal;
+            }
+
+            .devider {
+
+                margin: 0.25rem 0;
+                padding: 2rem 0;
+
+                hr {
+                    border-top: 3px solid #180b0b;
+                    border-radius: 0.25rem;
+                    width: 29.333333%;
+                }
+            }
+
+            h3 {
+                font-size: 33px;
+                text-transform: uppercase;
+                font-weight: normal;
+                padding-bottom: 25px;
+            }
+
+            p {
+                padding: 10px 0;
+                line-height: 34px;
+                font-size: 18px;
+                color: $ptextclr;
+            }
+        }
+
+        .contents {
+            border: 1px solid black;
+            padding-top: 20px;
+            margin-right: 33%;
+            background: #f7f7f7;
+
+            span {
+                font-size: 25px;
+                padding-left: 10px;
+
+                a {
+                    font-size: 16px;
+
+                    &:hover {
+                        color: $hoverclr;
+                    }
+                }
+            }
+
+            a {
+                color: $fontclr;
+            }
+
+            .order-list {
+
+                padding-left: 43px;
+
+                li::before {
+                    content: counter(ol);
+                    color: red;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                    list-style-type: decimal;
+
+                }
+
+
+                a {
+                    color: #c50e0e;
+                    font-size: 21px;
+                    font-weight: 100;
+
+                    &:hover {
+                        color: $hoverclr;
+                    }
+                }
+            }
+
+        }
+
+        p {
+            font-size: 18px;
+            padding: 22px 0;
+            color: $ptextclr;
+        }
+
+        .alcohol-crime-lawyers {
+            h3 {
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: normal;
+                color: $h3color;
+                padding: 21px 0;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 22px 0;
+                color: $ptextclr;
+                line-height: 2.25rem;
+
+                a {
+                    color: $fontclr;
+
+                    &:hover {
+                        color: $hoverclr ;
+                    }
+                }
+            }
+
+            .alcohol-catagory {
+                list-style-type: disc;
+                padding-left: 38px;
+                line-height: 2.25rem;
+                color: $ptextclr;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .right-area {
+        width: 23%;
+        margin-left: 25px;
+
+        .form-section {
+            background-color: #031a3e;
+            padding: 26px;
+            color: #fff;
+
+            img {
+                width: 39%;
+                height: auto;
+                border-radius: 50%;
+                margin-left: 76px;
+                object-fit: cover;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    padding: 10px 10px;
+                    margin: 6px 0;
+                    color: #0f0e0e;
+                }
+            }
+        }
+    }
+}
+
+
+
+.free-coun {
+    text-align: center;
+    margin: 83px 0;
+    color: #fff;
+    font-size: 18px;
+
+    a {
+
+        background-color: $fontclr;
+        padding: 20px;
+        text-transform: capitalize;
+        transition-duration: 0.3s;
+
+        span {
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            background-color: $hoverclr;
+
+        }
+    }
+}
+
+
+.courts-section {
+    padding: 71px;
+    text-align: center;
+    background-color: rgb(241, 245, 249);
 }
