@@ -435,7 +435,7 @@ $h3color : #031a3e;
         padding: 26px 0;
 
         .charges-heading {
-            h2 {
+            h3 {
                 text-transform: uppercase;
                 width: 300px;
                 background-color: #041127;
@@ -452,9 +452,11 @@ $h3color : #031a3e;
 
             .charge {
                 margin: .5rem;
-                padding: 2.25rem;
-                background-color: #4172cd;
                 align-content: center;
+                img{
+                    max-height: 125px;
+                    object-fit: cover;
+                }
             }
         }
 

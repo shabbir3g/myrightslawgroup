@@ -75,44 +75,47 @@ get_header(); ?>
     <?php endif; ?>
     <?php endif; ?>
    
+	
+	
 
 	<!-- in a media Section  -->
 	<section class="crime-charge-section">
 		<div class="case-area">
 			<div class="charges-heading">
-				<h2>In The Media</h2>
+				<h3>In The Media</h3>
 			</div>
 			<div class="charge-boxes owl-carousel">
+
+                <?php 
+				$post_slider_category = get_field('post_slider_category'); 
+
+				$cat_id = $post_slider_category['post_slider_cat_id']; 
+                
+                $practice = new WP_Query([
+                    'post_type'     => 'practice-sub-page',
+                    'posts_per_page'=> -1,
+                    'tax_query' => [
+						[
+							'taxonomy' => 'subpage_category',
+							'field'    => 'id',
+							'terms'    => $cat_id,
+						],
+					],
+				]);
+                
+                while($practice->have_posts()): $practice->the_post(); ?>
 				<div>
                     <div class="charge">
-                        <a href="#">Crimes Against Government</a>
+					<?php $featured_image = get_field('second_featured_image'); ?>
+					
+					
+						<?php the_post_thumbnail(); ?>
+                        <h4><?php the_title(); ?></h4>
                     </div>
-                        <h2>Crimes Against Government</h2>
                 </div>
-                <div> 
-                    <div class="charge">
-                        <a href="#">Traffic Violations </a>
-                    </div>
-                    <h2>Crimes Against Government</h2>
-                </div>
-                <div> 
-                    <div class="charge">
-                        <a href="#">Theft Attorneys</a>
-                    </div>
-                        <h2>Crimes Against Government</h2>
-                </div>
-                <div> 
-                    <div class="charge">
-                        <a href="#">Sex Crimes</a>
-                    </div>
-                        <h2>Crimes Against Government</h2>
-                </div>
-                <div> 
-                    <div class="charge">
-                        <a href="#">Gun Charges</a>
-                    </div>
-                        <h2>Crimes Against Government</h2>
-                </div>
+                <?php endwhile; ?>
+
+                
 			</div>
 		</div>
 	</section>

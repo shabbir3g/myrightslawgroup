@@ -23,8 +23,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<?php $favicon = get_field('favicon','options'); 
+		if( $favicon): ?>
+	<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $favicon['url']; ?>" />
+	<?php endif; ?>
+
+
 	<!--[if (gte IE 9)|!(IE)]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">

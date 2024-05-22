@@ -997,7 +997,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   width: 90%;
   padding: 26px 0;
 }
-.crime-charge-section .case-area .charges-heading h2 {
+.crime-charge-section .case-area .charges-heading h3 {
   text-transform: uppercase;
   width: 300px;
   background-color: #041127;
@@ -1010,9 +1010,12 @@ footer .copyright .footer-menu ul li:last-child:after {
 }
 .crime-charge-section .case-area .charge-boxes .charge {
   margin: 0.5rem;
-  padding: 2.25rem;
-  background-color: #4172cd;
   align-content: center;
+}
+.crime-charge-section .case-area .charge-boxes .charge img {
+  max-height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .califoria-criminal-defence {
