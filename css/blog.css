@@ -498,4 +498,114 @@
 .court-area .court-serve .courts a {
   font-size: 1rem;
   color: #031a3e;
+}
+
+.introduce {
+  margin-top: 70px;
+}
+.introduce h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: #041127;
+  text-transform: capitalize;
+  text-align: center;
+}
+.introduce .devider {
+  display: flex;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+.introduce .devider hr {
+  border-top: 3px solid #180b0b;
+  border-radius: 0.25rem;
+  width: 23.333333%;
+}
+
+.attorny-profile-information {
+  background-color: #fff !important;
+}
+
+.attorny-profile-info {
+  display: flex;
+  background-color: #e8eff9;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  margin: 35px 0;
+  gap: 40px;
+  padding: 0px 42px;
+}
+.attorny-profile-info .image {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  padding: 29px;
+}
+.attorny-profile-info .image img {
+  width: 100%;
+  height: auto;
+}
+.attorny-profile-info .info {
+  width: 60%;
+  padding-top: 76px;
+}
+.attorny-profile-info .info h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #041127;
+  line-height: 55px;
+}
+.attorny-profile-info .info span {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 51px;
+  color: #c50e0e;
+}
+.attorny-profile-info .info p {
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 24px 0;
+  line-height: 39px;
+  color: rgb(80, 72, 72);
+}
+.attorny-profile-info .info a {
+  font-size: 1.25rem;
+  color: #c50e0e;
+  text-transform: uppercase;
+}
+.attorny-profile-info .info a:hover {
+  color: #3274c9;
+}
+
+.ready-team {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.ready-team .court-serve {
+  width: 80%;
+  margin-left: 7%;
+  padding-bottom: 22px;
+}
+.ready-team .court-serve h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #031a3e;
+}
+.ready-team .court-serve .call {
+  padding-top: 10px;
+}
+.ready-team .court-serve .call span {
+  font-size: 1.75rem;
+  color: #031a3e;
+  text-transform: capitalize;
+}
+.ready-team .court-serve .call a {
+  font-size: 1.75rem;
+  color: #c50e0e;
+}
+.ready-team .court-serve .call a:hover {
+  color: #3274c9;
 }/*# sourceMappingURL=blog.css.map */
