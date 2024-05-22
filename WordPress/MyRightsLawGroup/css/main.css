@@ -745,6 +745,7 @@ footer .copyright .footer-menu ul li:last-child:after {
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form {
   background: rgb(18, 18, 59);
+  padding: 20px 0;
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form label {
   padding: 20px 10px;
@@ -753,7 +754,6 @@ footer .copyright .footer-menu ul li:last-child:after {
   display: none;
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form input[type=submit] {
-  padding: 18px 19px;
   color: #fff;
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form input {
@@ -1016,6 +1016,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   max-height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
+  background: #3274c9;
 }
 
 .califoria-criminal-defence {
@@ -1183,6 +1184,144 @@ footer .copyright .footer-menu ul li:last-child:after {
   padding: 71px;
   text-align: center;
   background-color: rgb(241, 245, 249);
+}
+
+.member-contact-info {
+  display: flex;
+  background-color: #e8eff9;
+  width: 100%;
+  justify-content: center;
+  margin: 35px 0;
+  gap: 40px;
+}
+.member-contact-info .image {
+  width: 30%;
+  padding-left: 40px;
+}
+.member-contact-info .image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.member-contact-info .info {
+  width: 60%;
+  align-content: center;
+}
+.member-contact-info .info h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: #041127;
+  line-height: 55px;
+}
+.member-contact-info .info h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-bottom: 51px;
+}
+.member-contact-info .info ul {
+  display: flex;
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+}
+.member-contact-info .info ul li {
+  padding-right: 15px;
+}
+.member-contact-info .info ul li a {
+  color: #c50e0e;
+}
+.member-contact-info .info ul li a:hover {
+  color: #3274c9;
+}
+.member-contact-info .info ul li a:after {
+  content: "|";
+  padding: 0 0.5rem;
+  color: rgb(80, 72, 72);
+}
+.member-contact-info .info ul li a:last-child:after {
+  content: "";
+}
+
+.content {
+  width: 100%;
+}
+.content .text {
+  width: 80%;
+  margin-left: 7%;
+}
+.content .text a {
+  color: #c50e0e;
+  font-size: 1.25rem;
+}
+.content .text a:hover {
+  color: #3274c9;
+}
+.content .text p {
+  color: rgb(80, 72, 72);
+  font-size: 1.25rem;
+  line-height: 36px;
+  padding: 13px 0;
+}
+.content .text p span {
+  color: #031a3e;
+}
+.content .text h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 28px 0;
+  color: #041127;
+}
+.content .text h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  color: #041127;
+}
+.content .text ul {
+  padding-left: 40px;
+}
+.content .text ul li {
+  list-style-type: disc;
+  line-height: 40px;
+  font-size: 1.25rem;
+  color: rgb(80, 72, 72);
+}
+.content .text .click {
+  text-align: center;
+}
+.content .text .click a {
+  color: #c50e0e;
+  font-size: 1.25rem;
+  margin-bottom: 69px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.court-area {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(241, 245, 249);
+  text-align: center;
+  align-content: center;
+}
+.court-area .court-serve {
+  width: 80%;
+  margin-left: 7%;
+}
+.court-area .court-serve .court-heading {
+  padding: 10px;
+}
+.court-area .court-serve .court-heading h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: #031a3e;
+}
+.court-area .court-serve .courts {
+  padding-top: 10px;
+}
+.court-area .court-serve .courts a {
+  font-size: 1rem;
+  color: #031a3e;
 }
 
 /* responsive css */

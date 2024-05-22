@@ -292,3 +292,27 @@
         }
     }
 }
+
+
+
+// member contact info
+
+@media all and (max-width: 870px) {
+    .member-contact-info {
+        flex-direction: column;
+
+
+        .image {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .info {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}

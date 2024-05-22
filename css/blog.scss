@@ -484,3 +484,176 @@ $h3color : #031a3e;
     text-align: center;
     background-color: rgb(241, 245, 249);
 }
+
+
+
+// Team area style start from here
+
+$contact-bgclr : rgb(241, 245, 249);
+$headlineclr : #041127;
+
+
+
+.member-contact-info {
+    display: flex;
+    background-color: #e8eff9;
+    width: 100%;
+    justify-content: center;
+    margin: 35px 0;
+    gap: 40px;
+
+    .image {
+        width: 30%;
+        padding-left: 40px;
+
+        img {
+            width: 400px;
+            height: 463px;
+            object-fit: fill;
+        }
+    }
+
+    .info {
+        width: 60%;
+        align-content: center;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            color: $headlineclr;
+            line-height: 55px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            padding-bottom: 51px;
+        }
+
+        ul {
+            display: flex;
+            font-size: 1.25rem;
+            flex-wrap: wrap;
+
+            li {
+                padding-right: 15px;
+
+                a {
+                    color: $fontclr;
+
+                    &:hover {
+                        color: $hoverclr;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+
+    .text {
+        width: 80%;
+        margin-left: 7%;
+
+        a {
+            color: $fontclr;
+            font-size: 1.25rem;
+
+
+
+            &:hover {
+                color: $hoverclr;
+
+            }
+        }
+
+
+        p {
+            color: $textcolor;
+            font-size: 1.25rem;
+            line-height: 36px;
+            padding: 13px 0;
+
+            span {
+                color: #031a3e;
+            }
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 28px 0;
+            color: $headlineclr;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: normal;
+            color: $headlineclr;
+        }
+
+
+
+        ul {
+            padding-left: 40px;
+
+            li {
+                list-style-type: disc;
+                line-height: 40px;
+                font-size: 1.25rem;
+                color: $textcolor;
+            }
+        }
+
+        .click {
+            text-align: center;
+
+            a {
+                color: #c50e0e;
+                font-size: 1.25rem;
+                margin-bottom: 69px;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
+
+.court-area {
+    height: 200px;
+    width: 100%;
+    background-color: $contact-bgclr;
+    text-align: center;
+    align-content: center;
+
+    .court-serve {
+        width: 80%;
+        margin-left: 7%;
+
+        .court-heading {
+            padding: 10px;
+
+            h3 {
+                font-weight: 200;
+                text-transform: uppercase;
+                font-size: 1.75rem;
+                color: $h3color;
+            }
+        }
+
+        .courts {
+            padding-top: 10px;
+
+            a {
+                font-size: 1rem;
+                color: $h3color;
+            }
+        }
+    }
+}

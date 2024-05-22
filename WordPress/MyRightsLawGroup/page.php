@@ -106,10 +106,14 @@ get_header(); ?>
                 while($practice->have_posts()): $practice->the_post(); ?>
 				<div>
                     <div class="charge">
-					<?php $featured_image = get_field('second_featured_image'); ?>
+					<?php $featured_image = get_field('second_featured_image');
 					
-					
-						<?php the_post_thumbnail(); ?>
+					if($featured_image): ?>
+
+					<img src="<?php echo $featured_image; ?>" alt="">
+					<?php else: 
+					 the_post_thumbnail(); 
+					 endif; ?>
                         <h4><?php the_title(); ?></h4>
                     </div>
                 </div>
