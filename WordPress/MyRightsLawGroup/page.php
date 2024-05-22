@@ -14,41 +14,162 @@
 
 get_header(); ?>
 
+<!-- Banner Area Section  -->
+<?php $hero_section =  get_field('hero_section'); 
+                ?>
+<section class="defence-banner-area" style="background-image: url(<?php echo $hero_section['hero_image']; ?>);">
+		<div class="defence-banner-content">
+   
+			<div class="defence-banner-text" style="text-align: <?php echo $hero_section['content_position'];  ?>;">
 
-<div class="blog-area">
+                <?php $hero_tagline  = $hero_section['hero_tagline'];
+                if($hero_tagline): ?>
+                    <h1><?php  echo $hero_tagline; ?></h1>
+                <?php endif; ?>
 
-<div class="blog-section ">
-    <div class="rotate-left">
-        <h1><?php single_post_title(); ?></h1>
-        <div class="blog-content">
-            <?php if(have_posts()):  
-            while(have_posts()): the_post();?>
-            <div class="blog">
-                <h2><?php the_title(); ?></h2>
-                <span>Published On: <?php the_date('M j, Y') ?>|Categories: <?php the_category(); ?></span> <br>
-                <p class="caption"> <?php echo wp_trim_words(get_the_content(), 65, false); ?></p><br><br>
-                <a class="readmore" href="<?php the_permalink(); ?>">READ MORE</a>
-            </div>
-            <?php endwhile; endif; ?>
-            
-        </div>
-        <div class="next-page">
-        <?php the_posts_pagination(array(
-            'screen_reader_text'	=> ' ',
-            'prev_text'	=> '<span >PREV <i class="fa-solid fa-greater-than"></i></span>',
-            'next_text'	=> '<span>NEXT <i class="fa-solid fa-greater-than"></i></span>',
-        )); ?>
-            <!-- <a class="current" href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">NEXT <i class="fa-solid fa-greater-than"></i></a> -->
-        </div>
-    </div>
+                <?php $hero_title  = $hero_section['hero_title'];
+                if($hero_title): ?>
+				<h2><?php  echo $hero_title; ?></h2>
+                <?php endif; ?>
 
-    <?php get_sidebar(); ?>
+                <?php $hero_subtitle  = $hero_section['hero_subtitle'];
+                if($hero_subtitle): ?>
+				<p><?php  echo $hero_subtitle; ?></p>
+                <?php endif; ?>
 
-</div>
+                <?php $hero_button_url  = $hero_section['hero_button_url'];
+                if($hero_button_url): ?>
+				<a href="<?php  echo $hero_button_url; ?>">Start Your Free Consultation</a>
+                <?php endif; ?>
+			</div>
+		</div>
 
-</div>
+	</section>
+	<!-- Featured Logo Section  -->
+	<section class="featured-section">
+    <?php $feature_title = get_field('feature_title','options'); 
+			if( $feature_title): ?>
+		<div class="sub-company">
+			<p><?php echo $feature_title; ?></p>
+		</div>
+        <?php endif; ?>
+        
+        <?php $feature_logo = get_field('feature_logo','options'); 
+			if( $feature_logo):
+            foreach($feature_logo as $logo):  ?>
+		<div class="logo">
+			<img src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['title'] ?>">
+		</div>
+        <?php endforeach; endif; ?>
+	</section>
 
+    <?php $visibility = get_field('reviews'); 
+
+	if( $visibility['google_review_visibility'] == 'show'): ?>
+      
+    <?php $google_reviews = get_field('google_reviews','options'); 
+			if( $google_reviews): ?>
+    <section class="google-reviews">
+        <?php echo do_shortcode($google_reviews) ?>
+    </section>
+    <?php endif; ?>
+    <?php endif; ?>
+   
+
+	<!-- in a media Section  -->
+	<section class="crime-charge-section">
+		<div class="case-area">
+			<div class="charges-heading">
+				<h2>In The Media</h2>
+			</div>
+			<div class="charge-boxes owl-carousel">
+				<div>
+                    <div class="charge">
+                        <a href="#">Crimes Against Government</a>
+                    </div>
+                        <h2>Crimes Against Government</h2>
+                </div>
+                <div> 
+                    <div class="charge">
+                        <a href="#">Traffic Violations </a>
+                    </div>
+                    <h2>Crimes Against Government</h2>
+                </div>
+                <div> 
+                    <div class="charge">
+                        <a href="#">Theft Attorneys</a>
+                    </div>
+                        <h2>Crimes Against Government</h2>
+                </div>
+                <div> 
+                    <div class="charge">
+                        <a href="#">Sex Crimes</a>
+                    </div>
+                        <h2>Crimes Against Government</h2>
+                </div>
+                <div> 
+                    <div class="charge">
+                        <a href="#">Gun Charges</a>
+                    </div>
+                        <h2>Crimes Against Government</h2>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="califoria-criminal-defence">
+		<div class="left-area">
+			<div class="lawyers">
+				<div class="breadcrumb"> 
+                    <a href="<?php echo home_url(); ?>">Home</a> <span> » <?php single_post_title(); ?></span>
+                </div>
+				
+                <div class="content-box"> 
+                    <h2><?php the_title(); ?></h2>
+                    <div class="devider">
+                        <hr>
+                    </div>
+                    <?php the_content(); ?>
+
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                    <?php $faqs_content =  get_field('faqs_content'); echo  $faqs_content; ?>
+
+                </div>
+			</div>
+		</div>
+        
+        <?php get_sidebar(); ?>
+       
+		
+	</section>
+
+	<div class="free-coun">
+		<a href="">start your <span>free</span> counsultation</a>
+	</div>
+
+	<section class="courts-section">
+		<h3>California courts er serve</h3>
+		<div class="courts">
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+			<a href="">Alhambra,</a>
+		</div>
+	</section>
 
 <?php get_footer();

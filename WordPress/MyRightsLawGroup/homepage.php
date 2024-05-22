@@ -15,7 +15,7 @@
 get_header(); ?>
 
 <!-- Banner Area Section  -->
-<section class="banner-area">
+	<section class="banner-area">
 		<div class="banner-content">
 			<div class="banner-text">
 				<h1>Defending Your Rights Delivering Results</h1>
@@ -51,6 +51,12 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/cbs-news-logo-navy-185x0.png" alt="">
 		</div>
 
+	</section>
+
+	<section class="review-section"> 
+		
+
+	
 	</section>
 
 	<!-- in a media Section  -->

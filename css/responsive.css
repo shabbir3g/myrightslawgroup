@@ -156,4 +156,20 @@
     font-size: 19px;
     padding: 16px 0;
   }
+}
+@media all and (max-width: 870px) {
+  .member-contact-info {
+    flex-direction: column;
+  }
+  .member-contact-info .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+  }
+  .member-contact-info .info {
+    width: 100%;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
