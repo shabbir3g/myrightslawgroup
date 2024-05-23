@@ -795,10 +795,75 @@ $headlineclr : #041127;
 // contact side style start from here
 
 
+
+.background-section {
+    background-image: url(../images/home_ok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .right-area {
+        width: 500px;
+        margin-top: 27px;
+        margin-right: 8%;
+
+        .form-section {
+            background-color: #031a3e;
+            padding: 36px;
+            color: #fff;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    padding: 10px 10px;
+                    margin: 6px 0;
+                    color: #0f0e0e;
+                }
+
+                .checkbox {
+                    display: flex;
+                    padding-top: 30px;
+
+                    input {
+                        margin: 10px;
+                    }
+                }
+
+                button {
+                    background-color: $fontclr;
+                    padding: 10px 10px;
+                    margin: 30px 93px;
+
+                }
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.75rem;
+                text-align: center;
+                padding-bottom: 19px;
+            }
+        }
+    }
+}
+
+
 .contact-info {
     margin-top: 70px;
     text-align: center;
     line-height: 5.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
 
     h1 {
         font-size: 50px;
@@ -857,6 +922,10 @@ $headlineclr : #041127;
                     font-size: 1.25rem;
                     text-transform: uppercase;
                     color: $h3color;
+
+                    &:hover {
+                        color: $fontclr;
+                    }
                 }
 
                 p {
@@ -877,6 +946,10 @@ $headlineclr : #041127;
                     font-size: 1.25rem;
                     text-transform: uppercase;
                     color: $h3color;
+
+                    &:hover {
+                        color: $fontclr;
+                    }
                 }
 
                 p {
@@ -897,6 +970,10 @@ $headlineclr : #041127;
                     font-size: 1.25rem;
                     text-transform: uppercase;
                     color: $h3color;
+
+                    &:hover {
+                        color: $fontclr;
+                    }
                 }
 
                 p {
@@ -917,6 +994,8 @@ $headlineclr : #041127;
 .call-now {
     margin-top: 70px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 
     .team-details {
         line-height: 4.5rem;

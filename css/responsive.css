@@ -172,4 +172,19 @@
     width: 100%;
     padding: 20px;
   }
+}
+@media all and (max-width: 1134px) {
+  .contact-item {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 870px) {
+  .background-section .right-area {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .all-call-details {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=responsive.css.map */
