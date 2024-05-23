@@ -791,3 +791,195 @@ $headlineclr : #041127;
         }
     }
 }
+
+// contact side style start from here
+
+
+.contact-info {
+    margin-top: 70px;
+    text-align: center;
+    line-height: 5.5rem;
+
+    h1 {
+        font-size: 50px;
+        font-weight: normal;
+        color: $headlineclr;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .devider {
+
+        display: flex;
+        margin-top: 1.25rem;
+        justify-content: center;
+
+        hr {
+            border-top: 4px solid #180b0b;
+            border-radius: 0.25rem;
+            width: 23.333333%;
+        }
+    }
+
+    h2 {
+        font-size: 24pt;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: $headlineclr;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: $h3color;
+
+    }
+
+    .contact {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+            width: 74%;
+            line-height: 3rem;
+
+            .email {
+                padding: 0 10px;
+
+                .icon {
+                    font-size: 38px;
+                    color: $fontclr;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    text-transform: uppercase;
+                    color: $h3color;
+                }
+
+                p {
+                    color: $textcolor;
+                    font-size: 1.25rem;
+                }
+            }
+
+            .phone {
+                padding: 0 10px;
+
+                .icon {
+                    font-size: 38px;
+                    color: $fontclr;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    text-transform: uppercase;
+                    color: $h3color;
+                }
+
+                p {
+                    color: $textcolor;
+                    font-size: 1.25rem;
+                }
+            }
+
+            .time {
+                padding: 0 10px;
+
+                .icon {
+                    font-size: 38px;
+                    color: $fontclr;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    text-transform: uppercase;
+                    color: $h3color;
+                }
+
+                p {
+                    color: $textcolor;
+                    font-size: 1.25rem;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+.call-now {
+    margin-top: 70px;
+    text-align: center;
+
+    .team-details {
+        line-height: 4.5rem;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: normal;
+        color: $headlineclr;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+    h3 {
+        font-size: 30px;
+        font-weight: normal;
+        color: $headlineclr;
+    }
+
+    h4 {
+        font-size: 26px;
+        font-weight: normal;
+        color: $headlineclr;
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: $h3color;
+
+    }
+
+    .contact {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .all-call-details {
+            display: flex;
+            justify-content: space-between;
+            width: 74%;
+            line-height: 3rem;
+
+            .call-details {
+                padding: 15px 0;
+
+                .call {
+                    line-height: 23px;
+                    padding: 14px 0;
+
+                    a {
+                        color: $h3color;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        color: $ptextclr;
+                    }
+                }
+            }
+
+        }
+    }
+}

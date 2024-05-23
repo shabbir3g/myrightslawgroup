@@ -608,4 +608,152 @@
 }
 .ready-team .court-serve .call a:hover {
   color: #3274c9;
+}
+
+.contact-info {
+  margin-top: 70px;
+  text-align: center;
+  line-height: 5.5rem;
+}
+.contact-info h1 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #041127;
+  text-transform: capitalize;
+  text-align: center;
+}
+.contact-info .devider {
+  display: flex;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+.contact-info .devider hr {
+  border-top: 4px solid #180b0b;
+  border-radius: 0.25rem;
+  width: 23.333333%;
+}
+.contact-info h2 {
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #041127;
+}
+.contact-info p {
+  font-size: 1.25rem;
+  color: #031a3e;
+}
+.contact-info .contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contact-info .contact .contact-item {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+  line-height: 3rem;
+}
+.contact-info .contact .contact-item .email {
+  padding: 0 10px;
+}
+.contact-info .contact .contact-item .email .icon {
+  font-size: 38px;
+  color: #c50e0e;
+}
+.contact-info .contact .contact-item .email h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #031a3e;
+}
+.contact-info .contact .contact-item .email p {
+  color: rgb(80, 72, 72);
+  font-size: 1.25rem;
+}
+.contact-info .contact .contact-item .phone {
+  padding: 0 10px;
+}
+.contact-info .contact .contact-item .phone .icon {
+  font-size: 38px;
+  color: #c50e0e;
+}
+.contact-info .contact .contact-item .phone h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #031a3e;
+}
+.contact-info .contact .contact-item .phone p {
+  color: rgb(80, 72, 72);
+  font-size: 1.25rem;
+}
+.contact-info .contact .contact-item .time {
+  padding: 0 10px;
+}
+.contact-info .contact .contact-item .time .icon {
+  font-size: 38px;
+  color: #c50e0e;
+}
+.contact-info .contact .contact-item .time h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #031a3e;
+}
+.contact-info .contact .contact-item .time p {
+  color: rgb(80, 72, 72);
+  font-size: 1.25rem;
+}
+
+.call-now {
+  margin-top: 70px;
+  text-align: center;
+}
+.call-now .team-details {
+  line-height: 4.5rem;
+}
+.call-now h2 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #041127;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-now h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #041127;
+}
+.call-now h4 {
+  font-size: 26px;
+  font-weight: normal;
+  color: #041127;
+  text-decoration: underline;
+}
+.call-now p {
+  font-size: 1.25rem;
+  color: #031a3e;
+}
+.call-now .contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.call-now .contact .all-call-details {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+  line-height: 3rem;
+}
+.call-now .contact .all-call-details .call-details {
+  padding: 15px 0;
+}
+.call-now .contact .all-call-details .call-details .call {
+  line-height: 23px;
+  padding: 14px 0;
+}
+.call-now .contact .all-call-details .call-details .call a {
+  color: #031a3e;
+  font-weight: bold;
+}
+.call-now .contact .all-call-details .call-details .call p {
+  font-size: 1rem;
+  color: #495f82;
 }/*# sourceMappingURL=blog.css.map */
