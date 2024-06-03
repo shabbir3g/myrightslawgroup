@@ -1,13 +1,88 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --heading-font-family: "Playfair Display", serif;
+  --body-font-family: "Lato", sans-serif;
+  --h1-large: 50px;
+  --h1-size: 34px;
+  --h2-size: 30px;
+  --h3-size: 24px;
+  --h4-size: 22px;
+  --p-medium-size: 20px;
+  --p-size: 18px;
+  --p-small: 14px;
+  --btn-text-size: 20px;
+  /* color */
+  --body-text-color: #061b3e;
+  --btn-primary-bg: #a00402;
+  --btn-primary-hover-bg: #3274c9;
+  --btn-secondary-bg: #3274c9;
+  --btn-secondary-hover-bg: #0f5cbf;
+  --dark-bg: #041127;
+  --white: #ffffff;
+  --white-dark:#f4f7f9
+  --panel-title: #1c65c3;
+  --span-color: #132642;
+  --body-seconday-text-color: #103058;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: tahoma;
+  font-family: var(--body-font-family);
+  font-size: var(--p-medium-size);
+  font-weight: 400;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact-button a.btn-primary {
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--h4-size);
+  line-height: 1.75rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  text-align: center;
+  padding: 16px 35px;
+  background-color: var(--btn-primary-bg);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-family: var(--body-font-family);
+}
+.contact-button a.btn-primary:hover {
+  background-color: var(--btn-primary-hover-bg);
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--white);
+}
+.btn-group .btn-secondary {
+  margin: 5px 15px;
+  padding: 1.25rem;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.27);
+  background-color: var(--btn-secondary-bg);
+}
+.btn-group .btn-secondary:hover {
+  background-color: var(--btn-secondary-hover-bg);
 }
 
 header nav {
   padding: 1.5rem;
-  background-color: #041127;
+  background-color: var(--dark-bg);
 }
 header nav .header-area {
   margin: auto;
@@ -59,7 +134,7 @@ header nav .header-area .header-middle .header-last-area .toogle-button #toggle 
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   transition: all 0.3s;
   backface-visibility: hidden;
   border-radius: 2px;
@@ -71,7 +146,7 @@ header nav .header-area .header-middle .header-last-area .toogle-button #toggle 
   top: -9px;
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   transition: all 0.3s;
   backface-visibility: hidden;
   border-radius: 2px;
@@ -83,7 +158,7 @@ header nav .header-area .header-middle .header-last-area .toogle-button #toggle 
   top: 9px;
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   transition: all 0.3s;
   backface-visibility: hidden;
   border-radius: 2px;
@@ -117,7 +192,7 @@ header nav .header-area .header-middle .header-pre-last-area .header-child-area 
   padding-bottom: 1rem;
   justify-content: flex-end;
   align-items: center;
-  color: #f7eded;
+  color: var(--white);
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .header-third-child-area-1 p {
   font-weight: 700;
@@ -132,14 +207,14 @@ header nav .header-area .header-middle .header-pre-last-area .header-child-area 
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu {
   display: flex;
   text-transform: uppercase;
-  color: #f7eded;
+  color: var(--white);
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li {
   position: relative;
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li .sub-menu {
   display: none;
-  background: #041127;
+  background: var(--dark-bg);
   position: absolute;
   top: 100%;
   left: 0;
@@ -149,8 +224,8 @@ header nav .header-area .header-middle .header-pre-last-area .header-child-area 
   display: block;
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li .sub-menu li a:hover {
-  background-color: #f7eded;
-  color: rgb(215, 6, 6);
+  background-color: var(--white);
+  color: var(--btn-primary-bg);
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li .sub-menu .sub-menu {
   top: 0;
@@ -166,10 +241,9 @@ header nav .header-area .header-middle .header-pre-last-area .header-child-area 
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   text-decoration: inherit;
-  border-radius: 0.375rem;
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li a:hover {
-  color: rgb(215, 6, 6);
+  color: var(--btn-primary-bg);
 }
 header nav .header-area .header-middle .header-pre-last-area .header-child-area .header-second-child-area .main-menu li:hover > ul.sub-menu {
   display: block;
@@ -184,8 +258,8 @@ header nav .header-area .mobile-menu .sub-mobile-menu {
   padding-right: 0.5rem;
 }
 header nav .header-area .mobile-menu .sub-mobile-menu a {
-  background-color: #041127;
-  color: #f7eded;
+  background-color: var(--dark-bg);
+  color: var(--white);
   display: block;
   border-radius: 0.375rem;
   text-decoration: inherit;
@@ -196,8 +270,8 @@ header nav .header-area .mobile-menu .sub-mobile-menu a {
 }
 header .page-heading a {
   padding: 1rem 0;
-  background-color: rgb(215, 6, 6);
-  color: #f7eded;
+  background-color: var(--btn-primary-bg);
+  color: var(--white);
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -206,28 +280,28 @@ header .page-heading a {
   display: block;
 }
 header .page-heading a:hover {
-  background-color: #041127;
+  background-color: var(--dark-bg);
   cursor: pointer;
 }
 
 .banner-area {
-  background-image: url("../images/home_ok.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   padding: 5rem 0;
+  background-size: cover;
 }
 .banner-area .banner-content {
   padding-top: 7rem;
-  color: #f7eded;
+  color: var(--white);
   display: flex;
-  justify-content: flex-end;
 }
 .banner-area .banner-content .banner-text {
   width: 45%;
 }
 .banner-area .banner-content .banner-text h1 {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: var(--h1-large);
+  font-family: var(--heading-font-family);
+  line-height: 1.2;
   padding-bottom: 1rem;
   font-weight: 400;
 }
@@ -238,44 +312,29 @@ header .page-heading a:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.banner-area .banner-content .banner-text button {
-  margin-bottom: 4rem;
-  color: #f7eded;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-  text-align: center;
-  padding: 0.75rem;
-  background-color: rgb(215, 6, 6);
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.banner-area .banner-content .banner-text button:hover {
-  background: #3274c9;
-}
 
 .featured-section {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.featured-section .logo-area {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-items: center;
 }
-.featured-section .sub-company {
+.featured-section .logo-area .sub-company {
   flex-basis: 25%;
   padding: 2.25rem;
 }
-.featured-section .sub-company p {
+.featured-section .logo-area .sub-company p {
   display: flex;
   justify-content: center;
   font-weight: bold;
   margin-top: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #565661;
+  color: var(--body-text-color);
 }
-.featured-section .logo {
+.featured-section .logo-area .logo {
   display: flex;
   justify-content: center;
   padding: 2.25rem;
@@ -283,6 +342,8 @@ header .page-heading a:hover {
 
 .media-section {
   padding: 50px 0;
+  width: 95%;
+  margin: auto;
 }
 .media-section .media-heading {
   text-align: center;
@@ -290,16 +351,16 @@ header .page-heading a:hover {
 .media-section .media-heading h2 {
   text-transform: uppercase;
   width: 300px;
-  background-color: #041127;
+  background-color: var(--dark-bg);
   margin: 50px auto;
   padding: 10px;
-  color: #f7eded;
+  color: var(--white);
   border-radius: 40px;
   font-weight: 300;
 }
 
 .awards-section {
-  background-color: #041127;
+  background-color: var(--dark-bg);
   margin-top: 2.5rem;
 }
 .awards-section .awards-heading {
@@ -308,7 +369,7 @@ header .page-heading a:hover {
   padding: 1rem 0;
 }
 .awards-section .awards-heading h2 {
-  color: #f7eded;
+  color: var(--white);
   font-size: 1.875rem;
   line-height: 2.25rem;
   margin-top: 2.25rem;
@@ -330,8 +391,10 @@ header .page-heading a:hover {
   margin-top: 3rem;
 }
 .middle-content .injury-area h2 {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: var(--h1-large);
+  line-height: 1.2;
+  color: var(--dark-bg);
+  font-family: var(--body-font-family);
   text-align: center;
   font-weight: 500;
 }
@@ -342,16 +405,18 @@ header .page-heading a:hover {
   padding: 2rem 0;
 }
 .middle-content .injury-area .devider hr {
-  border-top: 4px solid #180b0b;
+  border-top: 4px solid var(--dark-bg);
   border-radius: 0.25rem;
   width: 33.333333%;
 }
 .middle-content .injury-area .injury-header h3 {
-  font-size: 1.875rem;
+  font-size: var(--h2-size);
+  font-family: var(--body-font-family);
   line-height: 3rem;
   padding: 2rem 0;
   font-weight: 400;
   text-align: center;
+  color: var(--dark-bg);
 }
 .middle-content .injury-area .injury-conent {
   margin: 0 2rem;
@@ -361,33 +426,56 @@ header .page-heading a:hover {
   line-height: 1.75rem;
   text-align: start;
 }
-.middle-content .injury-area .injury-conent .button-area {
-  display: flex;
-  justify-content: center;
-}
-.middle-content .injury-area .injury-conent .button-area button {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-align: center;
-  padding: 0.75rem;
-  margin-bottom: 4rem;
-  margin-top: 2.5rem;
-  color: #f7eded;
-  background-color: rgb(215, 6, 6);
-}
 .middle-content .attorneys-section .attorney-header {
   text-align: center;
   padding: 40px 0;
+}
+.middle-content .attorneys-section .attorney-header h2 {
+  color: var(--dark-bg);
+  font-size: var(--h2-size);
+  font-family: var(--body-font-family);
 }
 .middle-content .attorneys-section .attorney {
   display: flex;
   gap: 20px;
   justify-content: center;
-}
-.middle-content .attorneys-section .attorney div img {
-  height: 280px;
+  width: 90%;
   margin: auto;
+}
+.middle-content .attorneys-section .attorney .attrney-image {
+  position: relative;
+}
+.middle-content .attorneys-section .attorney .attrney-image img {
+  height: 170px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.middle-content .attorneys-section .attorney .attrney-image .attrney-caption {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  transition-duration: 0.2s;
+}
+.middle-content .attorneys-section .attorney .attrney-image .attrney-caption:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.middle-content .attorneys-section .attorney .attrney-image .attrney-caption:hover h2 {
+  margin-bottom: 10px;
+}
+.middle-content .attorneys-section .attorney .attrney-image .attrney-caption h2 {
+  color: var(--white);
+  transition-duration: 0.2s;
+  text-align: center;
+  font-size: var(--h4-size);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--body-font-family);
 }
 .middle-content .attorneys-section .attorney p {
   font-size: 22px;
@@ -395,14 +483,14 @@ header .page-heading a:hover {
   padding-top: 1.25rem;
   padding-bottom: 0.25rem;
   font-weight: bold;
-  color: #465268;
+  color: var(--btn-secondary-bg);
 }
 .middle-content .attorneys-section .attorney a {
   font-size: 19px;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  color: rgb(153, 27, 27);
+  color: var(--btn-primary-bg);
 }
 .middle-content .case-area .case-header {
   display: flex;
@@ -411,30 +499,52 @@ header .page-heading a:hover {
 }
 .middle-content .case-area .case-header h3 {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: var(--h3-size);
   font-weight: 400;
+  font-family: var(--body-font-family);
+  color: var(--dark-bg);
 }
-.middle-content .case-area .view-all {
+.middle-content .view-all {
   font-weight: 600;
-  color: rgb(153, 27, 27);
+  color: var(--btn-primary-bg);
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: center;
   margin: 40px 0;
 }
-.middle-content .case-boxes {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+
+.attorneys-members .attorneys-section .attorney-header {
   text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: #f7eded;
+  padding: 40px 0;
 }
-.middle-content .case-boxes .case {
-  margin: 1rem;
-  padding: 1.25rem;
-  background-color: #0d44aa;
+.attorneys-members .attorneys-section h2 {
+  color: var(--dark-bg);
+  font-size: var(--h2-size);
+  font-family: var(--body-font-family);
+}
+.attorneys-members .attorneys-section .attorney {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.attorneys-members .attorneys-section .attorney article img {
+  height: 280px;
+  margin: auto;
+}
+.attorneys-members .attorneys-section .attorney p {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+  color: var(--btn-secondary-bg);
+}
+.attorneys-members .attorneys-section .attorney a {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--btn-primary-bg);
 }
 
 .last-section {
@@ -451,28 +561,22 @@ header .page-heading a:hover {
   padding: 2rem;
   font-weight: 700;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: var(--h3-size);
   line-height: 2rem;
-  color: #041127;
+  color: var(--dark-bg);
 }
-.last-section .button-area {
+
+section.single-video {
+  background: var(--dark-bg);
+  padding: 50px;
+}
+section.single-video .video-container {
   display: flex;
   justify-content: center;
 }
-.last-section .button-area button {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-align: center;
-  padding: 0.75rem;
-  margin-bottom: 4rem;
-  margin-top: 2.5rem;
-  color: #f7eded;
-  background-color: rgb(215, 6, 6);
-}
 
 footer {
-  background-color: #041127;
+  background-color: var(--dark-bg);
 }
 footer .footer-area {
   display: flex;
@@ -487,29 +591,28 @@ footer .footer-area .footer-left img {
   width: auto;
 }
 footer .footer-area .footer-left .call {
-  color: #f7eded;
+  color: var(--white);
   padding: 0.5rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: var(--h1-size);
   margin-top: 1rem;
 }
 footer .footer-area .footer-left a {
-  font-size: 2.25rem;
+  font-size: var(--h1-size);
   line-height: 2.5rem;
-  color: #f7eded;
+  color: var(--white);
   text-decoration: none;
 }
 footer .footer-area .footer-left .social-icon {
   font-size: 3rem;
   line-height: 1;
   padding-top: 1rem;
-  color: #f7eded;
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   gap: 16px;
 }
 footer .footer-area .footer-left .social-icon li a {
-  background-color: #1c65c3;
+  background-color: var(--panel-title);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -526,17 +629,18 @@ footer .footer-area .footer-right {
   margin-left: 1.5rem;
   padding: 2.25rem;
   flex-grow: 1;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #f7eded;
+  color: var(--white);
 }
 footer .footer-area .footer-right h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: var(--h1-size);
+  font-family: var(--heading-font-family);
+  font-weight: normal;
 }
 footer .footer-area .footer-right p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: var(--h3-size);
+  line-height: 1.9;
   margin-top: 1rem;
+  font-family: var(--body-font-family);
 }
 footer .copyright {
   padding: 1.25rem;
@@ -544,7 +648,7 @@ footer .copyright {
 footer .copyright p {
   padding: 4px;
   text-align: center;
-  color: #f7eded;
+  color: var(--white);
 }
 footer .copyright .footer-menu ul {
   margin: 0;
@@ -553,12 +657,12 @@ footer .copyright .footer-menu ul {
   justify-content: center;
 }
 footer .copyright .footer-menu ul li a {
-  color: #f7eded;
+  color: var(--white);
 }
 footer .copyright .footer-menu ul li:after {
   content: "|";
   padding: 0 0.5rem;
-  color: #f7eded;
+  color: var(--white);
 }
 footer .copyright .footer-menu ul li:last-child:after {
   content: "";
@@ -569,11 +673,14 @@ footer .copyright .footer-menu ul li:last-child:after {
   margin: auto;
 }
 .law-section .low-area h3 {
-  font-size: 1.875rem;
+  font-size: var(--h2-size);
   line-height: 3rem;
   padding: 2rem 0;
   font-weight: 400;
   text-align: center;
+  color: var(--dark-bg);
+  text-transform: uppercase;
+  font-family: var(--body-font-family);
 }
 .law-section .low-area .accordion {
   list-style: none;
@@ -584,13 +691,14 @@ footer .copyright .footer-menu ul li:last-child:after {
 }
 .law-section .low-area .accordion li a.toggle {
   margin: 0 20px;
-  font-size: 1.65rem;
+  font-size: var(--h3-size);
+  font-family: var(--body-font-family);
   font-weight: 500;
   padding: 3px 0;
   cursor: pointer;
   width: 100%;
   display: block;
-  color: #194496;
+  color: var(--panel-title);
   border-radius: 0.15em;
 }
 .law-section .low-area .accordion li a.toggle:hover {
@@ -600,8 +708,8 @@ footer .copyright .footer-menu ul li:last-child:after {
   float: left !important;
   content: "+";
   padding-right: 5px;
-  background: rgb(12, 8, 8);
-  color: #fff;
+  background: var(--dark-bg);
+  color: var(--white);
   padding: 0px 7px;
   margin-right: 15px;
   font-size: 1rem;
@@ -628,27 +736,38 @@ footer .copyright .footer-menu ul li:last-child:after {
   padding: 4px 0;
   display: block;
 }
-.law-section .low-area .button-area {
-  display: flex;
-  justify-content: center;
-}
-.law-section .low-area .button-area button {
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-align: center;
-  padding: 0.75rem;
-  margin-bottom: 4rem;
-  margin-top: 2.5rem;
-  color: #f7eded;
-  background-color: rgb(215, 6, 6);
-}
 
 .google-reviews {
   margin-top: 50px;
 }
 
 /* responsive css */
+:root {
+  --heading-font-family: "Playfair Display", serif;
+  --body-font-family: "Lato", sans-serif;
+  --h1-large: 50px;
+  --h1-size: 34px;
+  --h2-size: 30px;
+  --h3-size: 24px;
+  --h4-size: 22px;
+  --p-medium-size: 20px;
+  --p-size: 18px;
+  --p-small: 14px;
+  --btn-text-size: 20px;
+  /* color */
+  --body-text-color: #061b3e;
+  --btn-primary-bg: #a00402;
+  --btn-primary-hover-bg: #3274c9;
+  --btn-secondary-bg: #3274c9;
+  --btn-secondary-hover-bg: #0f5cbf;
+  --dark-bg: #041127;
+  --white: #ffffff;
+  --white-dark:#f4f7f9;
+  --panel-title: #1c65c3;
+  --span-color: #132642;
+  --seconday-text-color:#103058;
+}
+
 .blog-section {
   width: 100%;
   margin-top: 32px;
@@ -664,10 +783,10 @@ footer .copyright .footer-menu ul li:last-child:after {
   align-items: center;
 }
 .blog-section .rotate-left h1 {
-  font-size: 50px;
+  font-size: var(--h1-large);
   margin-left: 17%;
   font-weight: 400;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-family: var(--heading-font-family);
 }
 .blog-section .rotate-left .next-page {
   display: flex;
@@ -675,17 +794,17 @@ footer .copyright .footer-menu ul li:last-child:after {
   margin-bottom: 70px;
 }
 .blog-section .rotate-left .next-page .current {
-  background-color: #041127;
+  background-color: var(--dark-bg);
   padding: 10px 25px;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--white);
+  color: var(--white);
   margin: 40px 0;
 }
 .blog-section .rotate-left .next-page a, .blog-section .rotate-left .next-page .dots {
   padding: 10px 25px;
-  border: 1px solid rgb(232, 222, 222);
+  border: 1px solid var(--white);
   margin: 40px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
 }
 .blog-section .blog {
   width: 80%;
@@ -693,7 +812,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   padding: 45px;
   margin-right: 20px;
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
-  color: rgb(80, 72, 72);
+  color: var(--dark-bg);
   margin-bottom: 60px;
 }
 .blog-section .blog h2 {
@@ -707,7 +826,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 19px;
 }
 .blog-section .blog span a {
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
 }
 .blog-section .blog p {
   font-weight: 500;
@@ -715,8 +834,8 @@ footer .copyright .footer-menu ul li:last-child:after {
   padding-bottom: 44px;
 }
 .blog-section .blog a.readmore {
-  background-color: rgb(173, 20, 20);
-  color: #fff;
+  background-color: var(--btn-primary-bg);
+  color: var(--white);
   padding: 10px 40px;
   font-size: 19px;
   font-weight: bold;
@@ -737,7 +856,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-family: "Playfair Display";
 }
 .blog-sidebar .sidebar-area .widget-area a {
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
   font-size: 21px;
   margin: 20px 0;
@@ -754,7 +873,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   display: none;
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form input[type=submit] {
-  color: #fff;
+  color: var(--white);
 }
 .blog-sidebar .sidebar-area .widget-area form.search-form input {
   font-size: 20px;
@@ -768,7 +887,7 @@ footer .copyright .footer-menu ul li:last-child:after {
 .blog-sidebar .sidebar-area .input-area .icon {
   margin-left: 14px;
   background-color: transparent !important;
-  color: #fff;
+  color: var(--white);
 }
 .blog-sidebar .sidebar-area .input-area input {
   border: none;
@@ -779,13 +898,13 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 28px;
 }
 .blog-sidebar .sidebar-area .tagcloud a {
-  background-color: #fff;
-  border: 1px solid #e7dbdb;
+  background-color: var(--white);
+  border: 1px solid var(--white);
   padding: 7px 15px;
   font-size: 18px !important;
   display: inline-block;
   margin: 2px 0;
-  color: #041127;
+  color: var(--dark-bg);
   font-weight: normal;
 }
 .blog-sidebar .sidebar-area .cd-area a {
@@ -793,7 +912,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 18px;
   display: block;
   margin: 2px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
 }
 .blog-sidebar .sidebar-area .pi-area a {
@@ -801,7 +920,7 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 18px;
   display: block;
   margin: 2px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
 }
 
@@ -820,9 +939,9 @@ footer .copyright .footer-menu ul li:last-child:after {
   align-items: center;
 }
 .single-blog-section .rotate-left h1 {
-  font-size: 50px;
+  font-size: var(--h1-large);
   font-weight: 400;
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-family: var(--heading-font-family);
 }
 .single-blog-section .rotate-left .next-page {
   display: flex;
@@ -830,48 +949,48 @@ footer .copyright .footer-menu ul li:last-child:after {
   margin-bottom: 70px;
 }
 .single-blog-section .rotate-left .next-page .current {
-  background-color: #041127;
+  background-color: var(--dark-bg);
   padding: 10px 25px;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--white);
+  color: var(--white);
   margin: 40px 0;
 }
 .single-blog-section .rotate-left .next-page a, .single-blog-section .rotate-left .next-page .dots {
   padding: 10px 25px;
-  border: 1px solid rgb(232, 222, 222);
+  border: 1px solid var(--white-dark);
   margin: 40px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
 }
 .single-blog-section .blog {
   height: auto;
   padding: 45px;
   margin-right: 20px;
-  color: rgb(80, 72, 72);
+  color: var(--dark-bg);
   margin-bottom: 60px;
 }
 .single-blog-section .blog-sidebar {
   width: 33%;
 }
 .single-blog-section .blog-sidebar .sidebar-area {
-  background-color: rgb(243, 243, 243);
+  background-color: var(--white-dark);
   padding: 30px;
   margin-right: 7%;
   margin-bottom: 300px;
 }
 .single-blog-section .blog-sidebar .sidebar-area h1 {
-  font-size: 42px;
+  font-size: var(--h1-size);
   font-weight: 100;
-  font-family: "Playfair Display";
+  font-family: var(--heading-font-family);
 }
 .single-blog-section .blog-sidebar .sidebar-area .widget-area a {
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--h4-size);
   margin: 20px 0;
   display: block;
 }
 .single-blog-section .blog-sidebar .sidebar-area .widget-area form.search-form {
-  background: rgb(18, 18, 59);
+  background: var(--body-text-color);
 }
 .single-blog-section .blog-sidebar .sidebar-area .widget-area form.search-form label {
   padding: 20px 10px;
@@ -881,21 +1000,21 @@ footer .copyright .footer-menu ul li:last-child:after {
 }
 .single-blog-section .blog-sidebar .sidebar-area .widget-area form.search-form input[type=submit] {
   padding: 18px 19px;
-  color: #fff;
+  color: var(--white);
 }
 .single-blog-section .blog-sidebar .sidebar-area .widget-area form.search-form input {
-  font-size: 20px;
+  font-size: var(--btn-text-size);
   padding: 6px;
 }
 .single-blog-section .blog-sidebar .sidebar-area .input-area {
-  background-color: rgb(18, 18, 59);
+  background-color: var(--body-text-color);
   padding: 10px;
   display: flex;
 }
 .single-blog-section .blog-sidebar .sidebar-area .input-area .icon {
   margin-left: 14px;
   background-color: transparent !important;
-  color: #fff;
+  color: var(--white);
 }
 .single-blog-section .blog-sidebar .sidebar-area .input-area input {
   border: none;
@@ -903,16 +1022,16 @@ footer .copyright .footer-menu ul li:last-child:after {
 .single-blog-section .blog-sidebar .sidebar-area h3 {
   margin: 25px 0;
   font-weight: normal;
-  font-size: 28px;
+  font-size: var(--h2-size);
 }
 .single-blog-section .blog-sidebar .sidebar-area .tagcloud a {
-  background-color: #fff;
-  border: 1px solid #e7dbdb;
+  background-color: var(--white);
+  border: 1px solid var(--white);
   padding: 7px 15px;
-  font-size: 18px !important;
+  font-size: var(--p-size) !important;
   display: inline-block;
   margin: 2px 0;
-  color: #041127;
+  color: var(--dark-bg);
   font-weight: normal;
 }
 .single-blog-section .blog-sidebar .sidebar-area .cd-area a {
@@ -920,15 +1039,15 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-size: 18px;
   display: block;
   margin: 2px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
 }
 .single-blog-section .blog-sidebar .sidebar-area .pi-area a {
   padding: 5px 5px;
-  font-size: 18px;
+  font-size: var(--p-size);
   display: block;
   margin: 2px 0;
-  color: rgb(173, 20, 20);
+  color: var(--btn-primary-bg);
   font-weight: bold;
 }
 
@@ -936,14 +1055,14 @@ footer .copyright .footer-menu ul li:last-child:after {
   background-repeat: no-repeat;
   background-position: center center;
   padding: 0 0;
-  background-color: rgba(0, 26, 86, 0.64);
+  background-color: var(--dark-bg);
   background-size: cover;
   background-blend-mode: soft-light;
   height: 400px;
 }
 .defence-banner-area .defence-banner-content {
   padding-top: 0;
-  color: #F7EDEE;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -968,11 +1087,11 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-weight: 100;
   font-size: 1.5rem;
   padding: 37px 0;
-  color: #fff;
+  color: var(--white);
 }
 .defence-banner-area .defence-banner-content .defence-banner-text a {
   margin-bottom: 4rem;
-  color: #f7eded;
+  color: var(--white);
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -980,12 +1099,12 @@ footer .copyright .footer-menu ul li:last-child:after {
   padding-right: 2.25rem;
   text-align: center;
   padding: 0.75rem;
-  background-color: rgb(215, 6, 6);
+  background-color: var(--btn-primary-bg);
   cursor: pointer;
   transition-duration: 0.3s;
 }
 .defence-banner-area .defence-banner-content .defence-banner-text a:hover {
-  background-color: #3274c9;
+  background-color: var(--btn-primary-hover-bg);
 }
 
 .crime-charge-section {
@@ -993,101 +1112,97 @@ footer .copyright .footer-menu ul li:last-child:after {
   align-content: center;
   justify-content: center;
 }
-.crime-charge-section .case-area {
-  width: 90%;
-  padding: 26px 0;
-}
-.crime-charge-section .case-area .charges-heading h3 {
+.crime-charge-section .container .charges-heading h3 {
   text-transform: uppercase;
   width: 300px;
-  background-color: #041127;
+  background-color: var(--dark-bg);
   margin: 50px auto;
   padding: 10px;
-  color: #f7eded;
+  color: var(--white);
   border-radius: 40px;
   font-weight: 300;
   text-align: center;
 }
-.crime-charge-section .case-area .charge-boxes .charge {
+.crime-charge-section .container .charge-boxes .charge {
   margin: 0.5rem;
   align-content: center;
 }
-.crime-charge-section .case-area .charge-boxes .charge img {
+.crime-charge-section .container .charge-boxes .charge img {
   max-height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
-  background: #3274c9;
+  background: var(--btn-primary-hover-bg);
 }
 
-.califoria-criminal-defence {
+.califoria-criminal-defence .row {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 80px;
 }
-.califoria-criminal-defence .left-area {
+.califoria-criminal-defence .row .left-area {
   width: 55%;
 }
-.califoria-criminal-defence .left-area .lawyers a {
-  color: #c50e0e;
-  font-size: 20px;
+.califoria-criminal-defence .row .left-area .lawyers a {
+  color: var(--btn-primary-bg);
+  font-size: var(--p-medium-size);
 }
-.califoria-criminal-defence .left-area .lawyers a:hover {
-  color: #3274c9;
+.califoria-criminal-defence .row .left-area .lawyers a:hover {
+  color: var(--btn-primary-hover-bg);
 }
-.califoria-criminal-defence .left-area .lawyers span {
-  font-size: 20px;
-  color: #495f82;
+.califoria-criminal-defence .row .left-area .lawyers span {
+  font-size: var(--p-medium-size);
+  color: var(--span-color);
 }
-.califoria-criminal-defence .left-area .lawyers h2 {
+.califoria-criminal-defence .row .left-area .lawyers h2 {
   padding-top: 42px;
-  font-size: 51px;
+  font-size: var(--h1-large);
   font-weight: normal;
 }
-.califoria-criminal-defence .left-area .lawyers .devider {
+.califoria-criminal-defence .row .left-area .lawyers .devider {
   margin: 0.25rem 0;
   padding: 2rem 0;
 }
-.califoria-criminal-defence .left-area .lawyers .devider hr {
-  border-top: 3px solid #180b0b;
+.califoria-criminal-defence .row .left-area .lawyers .devider hr {
+  border-top: 3px solid var(--dark-bg);
   border-radius: 0.25rem;
   width: 29.333333%;
 }
-.califoria-criminal-defence .left-area .lawyers h3 {
-  font-size: 33px;
+.califoria-criminal-defence .row .left-area .lawyers h3 {
+  font-size: var(--h1-size);
   text-transform: uppercase;
   font-weight: normal;
   padding-bottom: 25px;
 }
-.califoria-criminal-defence .left-area .lawyers p {
+.califoria-criminal-defence .row .left-area .lawyers p {
   padding: 10px 0;
   line-height: 34px;
-  font-size: 18px;
-  color: #495f82;
+  font-size: var(--p-size);
+  color: var(--seconday-text-color);
 }
-.califoria-criminal-defence .left-area .contents {
-  border: 1px solid black;
+.califoria-criminal-defence .row .left-area .contents {
+  border: 1px solid var(--dark-bg);
   padding-top: 20px;
   margin-right: 33%;
-  background: #f7f7f7;
+  background: var(--white);
 }
-.califoria-criminal-defence .left-area .contents span {
-  font-size: 25px;
+.califoria-criminal-defence .row .left-area .contents span {
+  font-size: var(--h3-size);
   padding-left: 10px;
 }
-.califoria-criminal-defence .left-area .contents span a {
-  font-size: 16px;
+.califoria-criminal-defence .row .left-area .contents span a {
+  font-size: var(--p-size);
 }
-.califoria-criminal-defence .left-area .contents span a:hover {
-  color: #3274c9;
+.califoria-criminal-defence .row .left-area .contents span a:hover {
+  color: var(--btn-primary-hover-bg);
 }
-.califoria-criminal-defence .left-area .contents a {
-  color: #c50e0e;
+.califoria-criminal-defence .row .left-area .contents a {
+  color: var(--btn-primary-bg);
 }
-.califoria-criminal-defence .left-area .contents .order-list {
+.califoria-criminal-defence .row .left-area .contents .order-list {
   padding-left: 43px;
 }
-.califoria-criminal-defence .left-area .contents .order-list li::before {
+.califoria-criminal-defence .row .left-area .contents .order-list li::before {
   content: counter(ol);
   color: red;
   display: inline-block;
@@ -1095,55 +1210,55 @@ footer .copyright .footer-menu ul li:last-child:after {
   margin-left: -1em;
   list-style-type: decimal;
 }
-.califoria-criminal-defence .left-area .contents .order-list a {
-  color: #c50e0e;
-  font-size: 21px;
+.califoria-criminal-defence .row .left-area .contents .order-list a {
+  color: var(--btn-primary-bg);
+  font-size: var(--h4-size);
   font-weight: 100;
 }
-.califoria-criminal-defence .left-area .contents .order-list a:hover {
-  color: #3274c9;
+.califoria-criminal-defence .row .left-area .contents .order-list a:hover {
+  color: var(--btn-primary-hover-bg);
 }
-.califoria-criminal-defence .left-area p {
-  font-size: 18px;
+.califoria-criminal-defence .row .left-area p {
+  font-size: var(--p-size);
   padding: 22px 0;
-  color: #495f82;
+  color: var(--btn-secondary-bg);
 }
-.califoria-criminal-defence .left-area .alcohol-crime-lawyers h3 {
-  font-size: 30px;
+.califoria-criminal-defence .row .left-area .alcohol-crime-lawyers h3 {
+  font-size: var(--h2-size);
   text-transform: uppercase;
   font-weight: normal;
-  color: #031a3e;
+  color: var(--body-text-color);
   padding: 21px 0;
 }
-.califoria-criminal-defence .left-area .alcohol-crime-lawyers p {
-  font-size: 18px;
+.califoria-criminal-defence .row .left-area .alcohol-crime-lawyers p {
+  font-size: var(--p-size);
   padding: 22px 0;
-  color: #495f82;
+  color: var(--btn-secondary-bg);
   line-height: 2.25rem;
 }
-.califoria-criminal-defence .left-area .alcohol-crime-lawyers p a {
-  color: #c50e0e;
+.califoria-criminal-defence .row .left-area .alcohol-crime-lawyers p a {
+  color: var(--btn-primary-bg);
 }
-.califoria-criminal-defence .left-area .alcohol-crime-lawyers p a:hover {
-  color: #3274c9;
+.califoria-criminal-defence .row .left-area .alcohol-crime-lawyers p a:hover {
+  color: var(--btn-primary-hover-bg);
 }
-.califoria-criminal-defence .left-area .alcohol-crime-lawyers .alcohol-catagory {
+.califoria-criminal-defence .row .left-area .alcohol-crime-lawyers .alcohol-catagory {
   list-style-type: disc;
   padding-left: 38px;
   line-height: 2.25rem;
-  color: #495f82;
-  font-size: 18px;
+  color: var(--btn-secondary-bg);
+  font-size: var(--p-size);
 }
-.califoria-criminal-defence .right-area {
+.califoria-criminal-defence .row .right-area {
   width: 23%;
   margin-left: 25px;
 }
-.califoria-criminal-defence .right-area .form-section {
-  background-color: #031a3e;
+.califoria-criminal-defence .row .right-area .form-section {
+  background-color: var(--body-text-color);
   padding: 26px;
-  color: #fff;
+  color: var(--white);
 }
-.califoria-criminal-defence .right-area .form-section img {
+.califoria-criminal-defence .row .right-area .form-section img {
   width: 39%;
   height: auto;
   border-radius: 50%;
@@ -1151,24 +1266,140 @@ footer .copyright .footer-menu ul li:last-child:after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.califoria-criminal-defence .right-area .form-section .form {
+.califoria-criminal-defence .row .right-area .form-section .form {
   display: flex;
   flex-direction: column;
 }
-.califoria-criminal-defence .right-area .form-section .form input {
+.califoria-criminal-defence .row .right-area .form-section .form input {
   padding: 10px 10px;
   margin: 6px 0;
-  color: #0f0e0e;
+  color: var(--dark-bg);
+}
+
+.full-width-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 80px;
+}
+.full-width-section .full-container {
+  width: 90%;
+}
+.full-width-section .full-container .lawyers a {
+  color: var(--btn-primary-bg);
+  font-size: var(--p-medium-size);
+}
+.full-width-section .full-container .lawyers a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+.full-width-section .full-container .lawyers span {
+  font-size: var(--p-medium-size);
+  color: var(--btn-secondary-bg);
+}
+.full-width-section .full-container .lawyers h2 {
+  padding-top: 42px;
+  font-size: var(--h1-large);
+  font-weight: normal;
+}
+.full-width-section .full-container .lawyers .devider {
+  margin: 0.25rem 0;
+  padding: 2rem 0;
+}
+.full-width-section .full-container .lawyers .devider hr {
+  border-top: 3px solid var(--dark-bg);
+  border-radius: 0.25rem;
+  width: 29.333333%;
+}
+.full-width-section .full-container .lawyers h3 {
+  font-size: var(--h1-size);
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 25px;
+}
+.full-width-section .full-container .lawyers p {
+  padding: 10px 0;
+  line-height: 34px;
+  font-size: var(--p-size);
+  color: var(--seconday-text-color);
+}
+.full-width-section .full-container .contents {
+  border: 1px solid black;
+  padding-top: 20px;
+  margin-right: 33%;
+  background: var(--white);
+}
+.full-width-section .full-container .contents span {
+  font-size: var(--h3-size);
+  padding-left: 10px;
+}
+.full-width-section .full-container .contents span a {
+  font-size: 16px;
+}
+.full-width-section .full-container .contents span a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+.full-width-section .full-container .contents a {
+  color: var(--btn-primary-bg);
+}
+.full-width-section .full-container .contents .order-list {
+  padding-left: 43px;
+}
+.full-width-section .full-container .contents .order-list li::before {
+  content: counter(ol);
+  color: var(--btn-primary-bg);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  list-style-type: decimal;
+}
+.full-width-section .full-container .contents .order-list a {
+  color: var(--btn-primary-bg);
+  font-size: var(--h4-size);
+  font-weight: 100;
+}
+.full-width-section .full-container .contents .order-list a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+.full-width-section .full-container p {
+  font-size: var(--p-size);
+  padding: 22px 0;
+  color: var(--btn-secondary-bg);
+}
+.full-width-section .full-container .alcohol-crime-lawyers h3 {
+  font-size: var(--h2-size);
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--btn-primary-bg);
+  padding: 21px 0;
+}
+.full-width-section .full-container .alcohol-crime-lawyers p {
+  font-size: var(--p-size);
+  padding: 22px 0;
+  color: var(--btn-secondary-bg);
+  line-height: 2.25rem;
+}
+.full-width-section .full-container .alcohol-crime-lawyers p a {
+  color: var(--btn-primary-bg);
+}
+.full-width-section .full-container .alcohol-crime-lawyers p a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+.full-width-section .full-container .alcohol-crime-lawyers .alcohol-catagory {
+  list-style-type: disc;
+  padding-left: 38px;
+  line-height: 2.25rem;
+  color: var(--btn-secondary-bg);
+  font-size: var(--p-size);
 }
 
 .free-coun {
   text-align: center;
   margin: 83px 0;
-  color: #fff;
-  font-size: 18px;
+  color: var(--white);
+  font-size: var(--p-size);
 }
 .free-coun a {
-  background-color: #c50e0e;
+  background-color: var(--btn-primary-bg);
   padding: 20px;
   text-transform: capitalize;
   transition-duration: 0.3s;
@@ -1177,68 +1408,78 @@ footer .copyright .footer-menu ul li:last-child:after {
   text-transform: uppercase;
 }
 .free-coun a:hover {
-  background-color: #3274c9;
+  background-color: var(--btn-primary-hover-bg);
 }
 
 .courts-section {
   padding: 71px;
   text-align: center;
-  background-color: rgb(241, 245, 249);
+  background-color: var(--white-dark);
+}
+.courts-section h3 {
+  font-size: var(--h3-size);
+  font-family: var(--body-font-family);
+}
+.courts-section .courts a {
+  color: var(--btn-primary-bg);
+}
+.courts-section .courts a:hover {
+  color: var(--btn-primary-hover-bg);
 }
 
-.member-contact-info {
+.member-contact-info .row {
   display: flex;
-  background-color: #e8eff9;
+  background-color: var(--white);
   width: 100%;
   justify-content: center;
   margin: 35px 0;
   gap: 40px;
 }
-.member-contact-info .image {
+.member-contact-info .row .image {
   width: 30%;
   padding-left: 40px;
 }
-.member-contact-info .image img {
+.member-contact-info .row .image img {
   -o-object-fit: fill;
      object-fit: fill;
 }
-.member-contact-info .info {
+.member-contact-info .row .info {
   width: 60%;
   align-content: center;
 }
-.member-contact-info .info h1 {
+.member-contact-info .row .info h1 {
   font-size: 3rem;
   font-weight: normal;
-  color: #041127;
+  color: var(--dark-bg);
   line-height: 55px;
 }
-.member-contact-info .info h2 {
+.member-contact-info .row .info h2 {
   font-size: 2rem;
   font-weight: 100;
   text-transform: uppercase;
   padding-bottom: 51px;
 }
-.member-contact-info .info ul {
+.member-contact-info .row .info ul {
   display: flex;
   font-size: 1.25rem;
   flex-wrap: wrap;
 }
-.member-contact-info .info ul li {
+.member-contact-info .row .info ul li {
   padding-right: 15px;
 }
-.member-contact-info .info ul li a {
-  color: #c50e0e;
+.member-contact-info .row .info ul li:last-child a:after {
+  content: " " !important;
 }
-.member-contact-info .info ul li a:hover {
-  color: #3274c9;
+.member-contact-info .row .info ul li a {
+  color: var(--btn-primary-bg);
 }
-.member-contact-info .info ul li a:after {
-  content: "|";
-  padding: 0 0.5rem;
-  color: rgb(80, 72, 72);
+.member-contact-info .row .info ul li a:hover {
+  color: var(--btn-primary-hover-bg);
 }
-.member-contact-info .info ul li a:last-child:after {
-  content: "";
+.member-contact-info .row .info ul li a:after {
+  content: "•" !important;
+  margin-left: 12px;
+  color: var(--dark-bg);
 }
 
 .content {
@@ -1249,32 +1490,32 @@ footer .copyright .footer-menu ul li:last-child:after {
   margin-left: 7%;
 }
 .content .text a {
-  color: #c50e0e;
+  color: var(--btn-primary-bg);
   font-size: 1.25rem;
 }
 .content .text a:hover {
-  color: #3274c9;
+  color: var(--btn-primary-hover-bg);
 }
 .content .text p {
-  color: rgb(80, 72, 72);
+  color: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 36px;
   padding: 13px 0;
 }
 .content .text p span {
-  color: #031a3e;
+  color: var(--body-text-color);
 }
 .content .text h2 {
   font-size: 2.25rem;
   font-weight: normal;
   text-transform: uppercase;
   padding: 28px 0;
-  color: #041127;
+  color: var(--dark-bg);
 }
 .content .text h3 {
   font-size: 1.75rem;
   font-weight: normal;
-  color: #041127;
+  color: var(--dark-bg);
 }
 .content .text ul {
   padding-left: 40px;
@@ -1283,13 +1524,13 @@ footer .copyright .footer-menu ul li:last-child:after {
   list-style-type: disc;
   line-height: 40px;
   font-size: 1.25rem;
-  color: rgb(80, 72, 72);
+  color: var(--dark-bg);
 }
 .content .text .click {
   text-align: center;
 }
 .content .text .click a {
-  color: #c50e0e;
+  color: var(--btn-primary-bg);
   font-size: 1.25rem;
   margin-bottom: 69px;
   display: block;
@@ -1299,7 +1540,7 @@ footer .copyright .footer-menu ul li:last-child:after {
 .court-area {
   height: 200px;
   width: 100%;
-  background-color: rgb(241, 245, 249);
+  background-color: var(--white);
   text-align: center;
   align-content: center;
 }
@@ -1314,14 +1555,122 @@ footer .copyright .footer-menu ul li:last-child:after {
   font-weight: 200;
   text-transform: uppercase;
   font-size: 1.75rem;
-  color: #031a3e;
+  color: var(--body-text-color);
 }
 .court-area .court-serve .courts {
   padding-top: 10px;
 }
 .court-area .court-serve .courts a {
   font-size: 1rem;
-  color: #031a3e;
+  color: var(--body-text-color);
+}
+
+.introduce {
+  margin-top: 40px;
+}
+.introduce h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--dark-bg);
+  text-transform: capitalize;
+  text-align: center;
+}
+.introduce .devider {
+  display: flex;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+.introduce .devider hr {
+  border-top: 3px solid var(--dark-bg);
+  border-radius: 0.25rem;
+  width: 23.333333%;
+}
+
+.attorny-profile-lite {
+  background-color: var(--white);
+}
+
+.attorny-profile-info {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 42px;
+}
+.attorny-profile-info .image {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  padding: 29px;
+}
+.attorny-profile-info .image img {
+  width: 100%;
+  height: auto;
+}
+.attorny-profile-info .info {
+  width: 60%;
+  padding-top: 76px;
+}
+.attorny-profile-info .info h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--dark-bg);
+  line-height: 55px;
+}
+.attorny-profile-info .info span {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 51px;
+  color: var(--btn-primary-bg);
+}
+.attorny-profile-info .info p {
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 24px 0;
+  line-height: 39px;
+  color: var(--dark-bg);
+}
+.attorny-profile-info .info a {
+  font-size: 1.25rem;
+  color: var(--btn-primary-bg);
+  text-transform: uppercase;
+}
+.attorny-profile-info .info a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+
+.ready-team {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.ready-team .court-serve {
+  width: 80%;
+  margin-left: 7%;
+  padding-bottom: 22px;
+}
+.ready-team .court-serve h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: var(--body-text-color);
+}
+.ready-team .court-serve .call {
+  padding-top: 10px;
+}
+.ready-team .court-serve .call span {
+  font-size: 1.75rem;
+  color: var(--body-text-color);
+  text-transform: capitalize;
+}
+.ready-team .court-serve .call a {
+  font-size: 1.75rem;
+  color: var(--btn-primary-bg);
+}
+.ready-team .court-serve .call a:hover {
+  color: var(--btn-primary-hover-bg);
 }
 
 /* responsive css */
@@ -1705,7 +2054,7 @@ video {
   }
   .banner-area .banner-content {
     padding-top: 3rem;
-    color: #f7eded;
+    color: var(--white);
     display: flex;
     justify-content: center;
   }
@@ -1806,5 +2155,35 @@ video {
   }
   footer .footer-area .footer-left {
     padding: 0;
+  }
+}
+/*Container Style*/
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
   }
 }/*# sourceMappingURL=main.css.map */

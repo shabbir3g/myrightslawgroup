@@ -10,10 +10,10 @@
 get_header(); ?>
 
 	
-<div class="blog-area">
+<section class="blog-area">
 
 		<div class="single-blog-section">
-			<div class="rotate-left">
+			<article class="rotate-left">
 				<div class="blog-content">
 					<?php if(have_posts()):  
 					while(have_posts()): the_post();?>
@@ -27,13 +27,13 @@ get_header(); ?>
 					
 				</div>
 				
-			</div>
+			</article>
 
 			<?php get_sidebar(); ?>
 
 		</div>
 
-	</div>
+	</section>
 
 	
 

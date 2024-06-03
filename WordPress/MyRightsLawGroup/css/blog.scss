@@ -1,8 +1,36 @@
-$textcolor : rgb(80 72 72);
-$btncolor : rgb(173 20 20);
-$bgcolor: #041127;
-$white: #fff;
-$hoverclr : #3274c9;
+// Attribute area
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root{
+	--heading-font-family: "Playfair Display", serif;
+	--body-font-family: "Lato", sans-serif;
+
+	--h1-large: 50px;
+	--h1-size: 34px; 
+	--h2-size: 30px; 
+	--h3-size: 24px; 
+	--h4-size: 22px; 
+	--p-medium-size: 20px; 
+	--p-size: 18px; 
+	--p-small: 14px; 
+	--btn-text-size: 20px; 
+	
+	/* color */
+	--body-text-color: #061b3e; 
+	--btn-primary-bg: #a00402; 
+	--btn-primary-hover-bg: #3274c9; 
+	--btn-secondary-bg: #3274c9; 
+	--btn-secondary-hover-bg: #0f5cbf; 
+	--dark-bg: #041127; 
+	--white: #ffffff;
+    --white-dark:#f4f7f9;
+    --panel-title: #1c65c3;
+    --span-color: #132642;
+    --seconday-text-color:#103058;
+}
+
 
 .blog-section {
     width: 100%;
@@ -20,10 +48,10 @@ $hoverclr : #3274c9;
         }
 
         h1 {
-            font-size: 50px;
+            font-size: var(--h1-large);
             margin-left: 17%;
             font-weight: 400;
-            font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+            font-family: var(--heading-font-family);
 
         }
 
@@ -32,17 +60,17 @@ $hoverclr : #3274c9;
             justify-content: center;
             margin-bottom: 70px;
             .current {
-                background-color: $bgcolor;
+                background-color: var(--dark-bg);
                 padding: 10px 25px;
-                border: 1px solid $white;
-                color: $white;
+                border: 1px solid var(--white);
+                color: var(--white);
                 margin: 40px 0;
             }
             a, .dots {
                 padding: 10px 25px;
-                border: 1px solid rgb(232 222 222);
+                border: 1px solid var(--white);
                 margin: 40px 0;
-                color: $btncolor;
+                color: var(--btn-primary-bg);
             }
         }
 
@@ -54,7 +82,7 @@ $hoverclr : #3274c9;
         padding: 45px;
         margin-right: 20px;
         box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
-        color: $textcolor;
+        color: var(--dark-bg);
         margin-bottom: 60px;
         h2 {
             margin-left: 0;
@@ -65,23 +93,23 @@ $hoverclr : #3274c9;
 
         span{
             font-weight: 500;
-            font-size: 19px;
+            font-size: var(--p-size);
             a {
-                color: $btncolor;
+                color: var(--btn-primary-bg);
             }
         }
 
         p{
             font-weight: 500;
-            font-size: 16px;
+            font-size: var(--p-size);
             padding-bottom: 44px;
         }
 
         a.readmore {
-            background-color: $btncolor;
-            color: #fff;
+            background-color: var(--btn-primary-bg);
+            color: var(--white);
             padding: 10px 40px;
-            font-size: 19px;
+            font-size: var(--p-medium-size);
             font-weight: bold;
         }
     }
@@ -101,7 +129,7 @@ $hoverclr : #3274c9;
         margin-bottom: 300px;
 
         h1 {
-            font-size: 42px;
+            font-size: var(--h1-large);
             font-weight: 100;
             font-family: "Playfair Display";
 
@@ -109,9 +137,9 @@ $hoverclr : #3274c9;
 
         .widget-area {
             a { 
-                color: $btncolor;
+                color: var(--btn-primary-bg);
                 font-weight: bold;
-                font-size: 21px;
+                font-size: var(--p-medium-size);
                 margin: 20px 0;
                 display: block;
 
@@ -126,10 +154,10 @@ $hoverclr : #3274c9;
                     }
                 }
                 input[type='submit'] {
-                    color: #fff;
+                    color: var(--white);
                 }
                 input {
-                    font-size: 20px;
+                    font-size: var(--p-medium-size);
                     padding: 6px;
                 }
             }
@@ -144,7 +172,7 @@ $hoverclr : #3274c9;
             .icon{
                 margin-left: 14px;
                 background-color: transparent !important;
-                color: #fff;
+                color: var(--white);
             }
 
             input {
@@ -155,18 +183,18 @@ $hoverclr : #3274c9;
         h3{
             margin: 25px 0;
             font-weight: normal;
-            font-size: 28px;
+            font-size: var(--h2-size);
         }
 
         .tagcloud {
             a {
-                background-color: #fff;
-                border: 1px solid #e7dbdb;
+                background-color: var(--white);
+                border: 1px solid var(--white);
                 padding: 7px 15px;
-                font-size: 18px !important;
+                font-size: var(--h2-size) !important;
                 display: inline-block;
                 margin: 2px 0;
-                color: #041127;
+                color: var(--dark-bg);
                 font-weight: normal;
             }
         }
@@ -174,10 +202,10 @@ $hoverclr : #3274c9;
         .cd-area {
             a {
                 padding: 5px 5px;
-                font-size: 18px;
+                font-size: var(--h2-size);;
                 display: block;
                 margin: 2px 0;
-                color: $btncolor;
+                color: var(--btn-primary-bg);
                 font-weight: bold;
             }
         }
@@ -185,10 +213,10 @@ $hoverclr : #3274c9;
         .pi-area {
             a {
                 padding: 5px 5px;
-                font-size: 18px;
+                font-size: var(--h2-size);;
                 display: block;
                 margin: 2px 0;
-                color: $btncolor;
+                color: var(--btn-primary-bg);
                 font-weight: bold;
             }
         }
@@ -212,9 +240,9 @@ $hoverclr : #3274c9;
         }
 
         h1 {
-            font-size: 50px;
+            font-size: var(--h1-large);
             font-weight: 400;
-            font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+            font-family: var(--heading-font-family);
 
         }
 
@@ -223,17 +251,17 @@ $hoverclr : #3274c9;
             justify-content: center;
             margin-bottom: 70px;
             .current {
-                background-color: $bgcolor;
+                background-color: var(--dark-bg);
                 padding: 10px 25px;
-                border: 1px solid $white;
-                color: $white;
+                border: 1px solid var(--white);
+                color: var(--white);
                 margin: 40px 0;
             }
             a, .dots {
                 padding: 10px 25px;
-                border: 1px solid rgb(232 222 222);
+                border: 1px solid var(--white-dark);
                 margin: 40px 0;
-                color: $btncolor;
+                color: var(--btn-primary-bg);
             }
         }
 
@@ -242,36 +270,36 @@ $hoverclr : #3274c9;
         height: auto;
         padding: 45px;
         margin-right: 20px;
-        color: $textcolor;
+        color: var(--dark-bg);
         margin-bottom: 60px;
     }
 
     .blog-sidebar {
         width: 33%;
         .sidebar-area{
-            background-color: rgb(243 243 243);
+            background-color: var(--white-dark);
             padding: 30px;
             margin-right: 7%;
             margin-bottom: 300px;
     
             h1 {
-                font-size: 42px;
+                font-size: var(--h1-size);
                 font-weight: 100;
-                font-family: "Playfair Display";
+                font-family: var(--heading-font-family);
     
             }
     
             .widget-area {
                 a { 
-                    color: $btncolor;
+                    color: var(--btn-primary-bg);
                     font-weight: bold;
-                    font-size: 21px;
+                    font-size: var(--h4-size);
                     margin: 20px 0;
                     display: block;
     
                 }
                 form.search-form{
-                    background: rgb(18, 18, 59);
+                    background: var(--body-text-color);
                     label{
                         padding: 20px 10px;
                         span{
@@ -280,10 +308,10 @@ $hoverclr : #3274c9;
                     }
                     input[type='submit'] {
                         padding: 18px 19px;
-                        color: #fff;
+                        color: var(--white);
                     }
                     input {
-                        font-size: 20px;
+                        font-size: var(--btn-text-size);
                         padding: 6px;
                     }
                 }
@@ -292,13 +320,13 @@ $hoverclr : #3274c9;
     
     
             .input-area {
-                background-color: rgb(18, 18, 59);
+                background-color: var(--body-text-color);
                 padding: 10px;
                 display: flex;
                 .icon{
                     margin-left: 14px;
                     background-color: transparent !important;
-                    color: #fff;
+                    color: var(--white);
                 }
     
                 input {
@@ -309,18 +337,18 @@ $hoverclr : #3274c9;
             h3{
                 margin: 25px 0;
                 font-weight: normal;
-                font-size: 28px;
+                font-size: var(--h2-size);
             }
     
             .tagcloud {
                 a {
-                    background-color: #fff;
-                    border: 1px solid #e7dbdb;
+                    background-color: var(--white);
+                    border: 1px solid var(--white);
                     padding: 7px 15px;
-                    font-size: 18px !important;
+                    font-size: var(--p-size) !important;
                     display: inline-block;
                     margin: 2px 0;
-                    color: #041127;
+                    color: var(--dark-bg);
                     font-weight: normal;
                 }
             }
@@ -328,10 +356,10 @@ $hoverclr : #3274c9;
             .cd-area {
                 a {
                     padding: 5px 5px;
-                    font-size: 18px;
+                    font-size: var(--h2-size);;
                     display: block;
                     margin: 2px 0;
-                    color: $btncolor;
+                    color: var(--btn-primary-bg);
                     font-weight: bold;
                 }
             }
@@ -339,10 +367,10 @@ $hoverclr : #3274c9;
             .pi-area {
                 a {
                     padding: 5px 5px;
-                    font-size: 18px;
+                    font-size:  var(--p-size);
                     display: block;
                     margin: 2px 0;
-                    color: $btncolor;
+                    color: var(--btn-primary-bg);
                     font-weight: bold;
                 }
             }
@@ -352,19 +380,11 @@ $hoverclr : #3274c9;
 }
 
 
-
-// Criminal Defense Attorneys
-
-$fontclr : #c50e0e;
-$ptextclr : #495f82;
-$h3color : #031a3e;
-
-
 .defence-banner-area {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 0 0;
-    background-color: rgba(0, 26, 86, 0.64);
+    background-color: var(--dark-bg);
     background-size: cover;
     background-blend-mode: soft-light;
     height: 400px;
@@ -372,7 +392,7 @@ $h3color : #031a3e;
 
     .defence-banner-content {
         padding-top: 0;
-        color: #F7EDEE;
+        color: var(--white);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -399,12 +419,12 @@ $h3color : #031a3e;
                 font-weight: 100;
                 font-size: 1.5rem;
                 padding: 37px 0;
-                color: #fff;
+                color: var(--white);
             }
 
             a {
                 margin-bottom: 4rem;
-                color: #f7eded;
+                color: var(--white);
                 font-weight: 700;
                 font-size: 1.125rem;
                 line-height: 1.75rem;
@@ -412,13 +432,12 @@ $h3color : #031a3e;
                 padding-right: 2.25rem;
                 text-align: center;
                 padding: 0.75rem;
-                background-color: rgb(215, 6, 6);
+                background-color: var(--btn-primary-bg);
                 cursor: pointer;
                 transition-duration: 0.3s;
 
                 &:hover {
-                    background-color: $hoverclr;
-                    ;
+                    background-color: var(--btn-primary-hover-bg);
                 }
             }
         }
@@ -430,18 +449,15 @@ $h3color : #031a3e;
     align-content: center;
     justify-content: center;
 
-    .case-area {
-        width: 90%;
-        padding: 26px 0;
-
+    .container {
         .charges-heading {
             h3 {
                 text-transform: uppercase;
                 width: 300px;
-                background-color: #041127;
+                background-color: var(--dark-bg);
                 margin: 50px auto;
                 padding: 10px;
-                color: #f7eded;
+                color: var(--white);
                 border-radius: 40px;
                 font-weight: 300;
                 text-align: center;
@@ -456,7 +472,7 @@ $h3color : #031a3e;
                 img{
                     max-height: 125px;
                     object-fit: cover;
-                    background: $hoverclr;
+                    background: var(--btn-primary-hover-bg);
                 }
             }
         }
@@ -466,34 +482,217 @@ $h3color : #031a3e;
 }
 
 .califoria-criminal-defence {
+    .row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 80px;
+    
+        .left-area {
+            width: 55%;
+            .lawyers {
+                a {
+                    color: var(--btn-primary-bg);
+                    font-size: var(--p-medium-size);
+    
+                    &:hover {
+                        color: var(--btn-primary-hover-bg);
+                    }
+                }
+    
+                span {
+    
+                    font-size: var(--p-medium-size);
+                    color: var(--span-color);
+    
+                }
+    
+                h2 {
+                    padding-top: 42px;
+                    font-size: var(--h1-large);
+                    font-weight: normal;
+                }
+    
+                .devider {
+    
+                    margin: 0.25rem 0;
+                    padding: 2rem 0;
+    
+                    hr {
+                        border-top: 3px solid var(--dark-bg);
+                        border-radius: 0.25rem;
+                        width: 29.333333%;
+                    }
+                }
+    
+                h3 {
+                    font-size: var(--h1-size);
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    padding-bottom: 25px;
+                }
+    
+                p {
+                    padding: 10px 0;
+                    line-height: 34px;
+                    font-size: var(--p-size);
+                    color: var(--seconday-text-color);
+                }
+            }
+    
+            .contents {
+                border: 1px solid var(--dark-bg);
+                padding-top: 20px;
+                margin-right: 33%;
+                background: var(--white);
+    
+                span {
+                    font-size: var(--h3-size);
+                    padding-left: 10px;
+    
+                    a {
+                        font-size: var(--p-size);
+    
+                        &:hover {
+                            color: var(--btn-primary-hover-bg);
+                        }
+                    }
+                }
+    
+                a {
+                    color: var(--btn-primary-bg);
+                }
+    
+                .order-list {
+    
+                    padding-left: 43px;
+    
+                    li::before {
+                        content: counter(ol);
+                        color: red;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                        list-style-type: decimal;
+    
+                    }
+    
+    
+                    a {
+                        color: var(--btn-primary-bg);
+                        font-size: var(--h4-size);
+                        font-weight: 100;
+    
+                        &:hover {
+                            color: var(--btn-primary-hover-bg);
+                        }
+                    }
+                }
+    
+            }
+    
+            p {
+                font-size: var(--p-size);
+                padding: 22px 0;
+                color: var(--btn-secondary-bg);
+            }
+    
+            .alcohol-crime-lawyers {
+                h3 {
+                    font-size: var(--h2-size);
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    color: var(--body-text-color);
+                    padding: 21px 0;
+                }
+    
+                p {
+                    font-size: var(--p-size);
+                    padding: 22px 0;
+                    color: var(--btn-secondary-bg);
+                    line-height: 2.25rem;
+    
+                    a {
+                        color: var(--btn-primary-bg);
+    
+                        &:hover {
+                            color: var(--btn-primary-hover-bg);
+                        }
+                    }
+                }
+    
+                .alcohol-catagory {
+                    list-style-type: disc;
+                    padding-left: 38px;
+                    line-height: 2.25rem;
+                    color: var(--btn-secondary-bg);
+                    font-size: var(--p-size);
+                }
+            }
+        }
+    
+        .right-area {
+            width: 23%;
+            margin-left: 25px;
+    
+            .form-section {
+                background-color: var(--body-text-color);
+                padding: 26px;
+                color: var(--white);
+    
+                img {
+                    width: 39%;
+                    height: auto;
+                    border-radius: 50%;
+                    margin-left: 76px;
+                    object-fit: cover;
+                }
+    
+                .form {
+                    display: flex;
+                    flex-direction: column;
+    
+                    input {
+                        padding: 10px 10px;
+                        margin: 6px 0;
+                        color: var(--dark-bg);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.full-width-section {
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 80px;
 
-    .left-area {
-        width: 55%;
+    .full-container {
+        width: 90%;
 
         .lawyers {
             a {
-                color: $fontclr;
-                font-size: 20px;
+                color: var(--btn-primary-bg);
+                font-size: var(--p-medium-size);
 
                 &:hover {
-                    color: $hoverclr;
+                    color: var(--btn-primary-hover-bg);
                 }
             }
 
             span {
 
-                font-size: 20px;
-                color: $ptextclr;
+                font-size: var(--p-medium-size);
+                color: var(--btn-secondary-bg);
 
             }
 
             h2 {
                 padding-top: 42px;
-                font-size: 51px;
+                font-size: var(--h1-large);
                 font-weight: normal;
             }
 
@@ -503,14 +702,14 @@ $h3color : #031a3e;
                 padding: 2rem 0;
 
                 hr {
-                    border-top: 3px solid #180b0b;
+                    border-top: 3px solid var(--dark-bg);
                     border-radius: 0.25rem;
                     width: 29.333333%;
                 }
             }
 
             h3 {
-                font-size: 33px;
+                font-size: var(--h1-size);
                 text-transform: uppercase;
                 font-weight: normal;
                 padding-bottom: 25px;
@@ -519,8 +718,8 @@ $h3color : #031a3e;
             p {
                 padding: 10px 0;
                 line-height: 34px;
-                font-size: 18px;
-                color: $ptextclr;
+                font-size: var(--p-size);
+                color: var(--seconday-text-color);
             }
         }
 
@@ -528,23 +727,23 @@ $h3color : #031a3e;
             border: 1px solid black;
             padding-top: 20px;
             margin-right: 33%;
-            background: #f7f7f7;
+            background: var(--white);
 
             span {
-                font-size: 25px;
+                font-size: var(--h3-size);
                 padding-left: 10px;
 
                 a {
-                    font-size: 16px;
+                    font-size: var(--p-size);
 
                     &:hover {
-                        color: $hoverclr;
+                        color: var(--btn-primary-hover-bg);
                     }
                 }
             }
 
             a {
-                color: $fontclr;
+                color: var(--btn-primary-bg);
             }
 
             .order-list {
@@ -553,7 +752,7 @@ $h3color : #031a3e;
 
                 li::before {
                     content: counter(ol);
-                    color: red;
+                    color: var(--btn-primary-bg);
                     display: inline-block;
                     width: 1em;
                     margin-left: -1em;
@@ -563,12 +762,12 @@ $h3color : #031a3e;
 
 
                 a {
-                    color: #c50e0e;
-                    font-size: 21px;
+                    color: var(--btn-primary-bg);
+                    font-size: var(--h4-size);
                     font-weight: 100;
 
                     &:hover {
-                        color: $hoverclr;
+                        color: var(--btn-primary-hover-bg);
                     }
                 }
             }
@@ -576,31 +775,31 @@ $h3color : #031a3e;
         }
 
         p {
-            font-size: 18px;
+            font-size: var(--p-size);
             padding: 22px 0;
-            color: $ptextclr;
+            color: var(--btn-secondary-bg);
         }
 
         .alcohol-crime-lawyers {
             h3 {
-                font-size: 30px;
+                font-size: var(--h2-size);
                 text-transform: uppercase;
                 font-weight: normal;
-                color: $h3color;
+                color: var(--btn-primary-bg);
                 padding: 21px 0;
             }
 
             p {
-                font-size: 18px;
+                font-size: var(--p-size);
                 padding: 22px 0;
-                color: $ptextclr;
+                color: var(--btn-secondary-bg);
                 line-height: 2.25rem;
 
                 a {
-                    color: $fontclr;
+                    color: var(--btn-primary-bg);
 
                     &:hover {
-                        color: $hoverclr ;
+                        color: var(--btn-primary-hover-bg);
                     }
                 }
             }
@@ -609,41 +808,13 @@ $h3color : #031a3e;
                 list-style-type: disc;
                 padding-left: 38px;
                 line-height: 2.25rem;
-                color: $ptextclr;
-                font-size: 18px;
+                color: var(--btn-secondary-bg);
+                font-size: var(--p-size);
             }
         }
     }
 
-    .right-area {
-        width: 23%;
-        margin-left: 25px;
-
-        .form-section {
-            background-color: #031a3e;
-            padding: 26px;
-            color: #fff;
-
-            img {
-                width: 39%;
-                height: auto;
-                border-radius: 50%;
-                margin-left: 76px;
-                object-fit: cover;
-            }
-
-            .form {
-                display: flex;
-                flex-direction: column;
-
-                input {
-                    padding: 10px 10px;
-                    margin: 6px 0;
-                    color: #0f0e0e;
-                }
-            }
-        }
-    }
+   
 }
 
 
@@ -651,12 +822,12 @@ $h3color : #031a3e;
 .free-coun {
     text-align: center;
     margin: 83px 0;
-    color: #fff;
-    font-size: 18px;
+    color: var(--white);
+    font-size: var(--p-size);
 
     a {
 
-        background-color: $fontclr;
+        background-color: var(--btn-primary-bg);
         padding: 20px;
         text-transform: capitalize;
         transition-duration: 0.3s;
@@ -666,7 +837,7 @@ $h3color : #031a3e;
         }
 
         &:hover {
-            background-color: $hoverclr;
+            background-color: var(--btn-primary-hover-bg);
 
         }
     }
@@ -676,82 +847,94 @@ $h3color : #031a3e;
 .courts-section {
     padding: 71px;
     text-align: center;
-    background-color: rgb(241, 245, 249);
+    background-color: var(--white-dark);
+    h3{
+        font-size: var(--h3-size);
+        font-family: var(--body-font-family)
+    }
+    .courts{
+        a{
+            color: var(--btn-primary-bg);
+            &:hover{
+                color: var(--btn-primary-hover-bg);
+            }
+        }
+    }
 }
 
 
 
-// Team area style start from here
-
-$contact-bgclr : rgb(241, 245, 249);
-$headlineclr : #041127;
-
-
-
 .member-contact-info {
-    display: flex;
-    background-color: #e8eff9;
-    width: 100%;
-    justify-content: center;
-    margin: 35px 0;
-    gap: 40px;
-
-    .image {
-        width: 30%;
-        padding-left: 40px;
-
-        img {
-            object-fit: fill;
+    .row{
+        display: flex;
+        background-color: var(--white);
+        width: 100%;
+        justify-content: center;
+        margin: 35px 0;
+        gap: 40px;
+        .image {
+            width: 30%;
+            padding-left: 40px;
+    
+            img {
+                object-fit: fill;
+            }
         }
-    }
-
-    .info {
-        width: 60%;
-        align-content: center;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: normal;
-            color: $headlineclr;
-            line-height: 55px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-weight: 100;
-            text-transform: uppercase;
-            padding-bottom: 51px;
-        }
-
-        ul {
-            display: flex;
-            font-size: 1.25rem;
-            flex-wrap: wrap;
-
-            li {
-                padding-right: 15px;
-
-                a {
-                    color: $fontclr;
-
-                    &:hover {
-                        color: $hoverclr;
+    
+        .info {
+            width: 60%;
+            align-content: center;
+    
+            h1 {
+                font-size: 3rem;
+                font-weight: normal;
+                color: var(--dark-bg);
+                line-height: 55px;
+            }
+    
+            h2 {
+                font-size: 2rem;
+                font-weight: 100;
+                text-transform: uppercase;
+                padding-bottom: 51px;
+            }
+    
+            ul {
+                display: flex;
+                font-size: 1.25rem;
+                flex-wrap: wrap;
+    
+                li {
+                    padding-right: 15px;
+    
+                    &:last-child{
+                        a:after {
+                        content: ' ' !important;
+                      }
                     }
-
-                    &:after {
-                        content: '|';
-                        padding: 0 .5rem;
-                        color: $textcolor;
-                      }
-                      
-                     &:last-child:after {
-                        content: '';
-                      }
-
+    
+                    a {
+                        color: var(--btn-primary-bg);
+    
+                        &:hover {
+                            color: var(--btn-primary-hover-bg);
+                        }
+    
+                        &:after {
+                            content: '•' !important;
+                            margin-left: 12px;
+                            color: var(--dark-bg);
+                          }
+                          
+                        
+    
+                    }
                 }
             }
         }
     }
+
+   
 }
 
 .content {
@@ -762,26 +945,26 @@ $headlineclr : #041127;
         margin-left: 7%;
 
         a {
-            color: $fontclr;
+            color: var(--btn-primary-bg);
             font-size: 1.25rem;
 
 
 
             &:hover {
-                color: $hoverclr;
+                color: var(--btn-primary-hover-bg);
 
             }
         }
 
 
         p {
-            color: $textcolor;
+            color: var(--dark-bg);
             font-size: 1.25rem;
             line-height: 36px;
             padding: 13px 0;
 
             span {
-                color: #031a3e;
+                color: var(--body-text-color);
             }
         }
 
@@ -790,13 +973,13 @@ $headlineclr : #041127;
             font-weight: normal;
             text-transform: uppercase;
             padding: 28px 0;
-            color: $headlineclr;
+            color: var(--dark-bg);
         }
 
         h3 {
             font-size: 1.75rem;
             font-weight: normal;
-            color: $headlineclr;
+            color: var(--dark-bg);;
         }
 
 
@@ -808,7 +991,7 @@ $headlineclr : #041127;
                 list-style-type: disc;
                 line-height: 40px;
                 font-size: 1.25rem;
-                color: $textcolor;
+                color: var(--dark-bg);
             }
         }
 
@@ -816,7 +999,7 @@ $headlineclr : #041127;
             text-align: center;
 
             a {
-                color: #c50e0e;
+                color: var(--btn-primary-bg);
                 font-size: 1.25rem;
                 margin-bottom: 69px;
                 display: block;
@@ -830,7 +1013,7 @@ $headlineclr : #041127;
 .court-area {
     height: 200px;
     width: 100%;
-    background-color: $contact-bgclr;
+    background-color: var(--white);
     text-align: center;
     align-content: center;
 
@@ -845,7 +1028,7 @@ $headlineclr : #041127;
                 font-weight: 200;
                 text-transform: uppercase;
                 font-size: 1.75rem;
-                color: $h3color;
+                color: var(--body-text-color);
             }
         }
 
@@ -854,7 +1037,140 @@ $headlineclr : #041127;
 
             a {
                 font-size: 1rem;
-                color: $h3color;
+                color: var(--body-text-color);
+            }
+        }
+    }
+}
+
+
+
+// attrony profile info style start from here
+
+
+.introduce {
+    margin-top: 40px;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: normal;
+        color: var(--dark-bg);
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .devider {
+
+        display: flex;
+        margin-top: 1.25rem;
+        justify-content: center;
+
+        hr {
+            border-top: 3px solid var(--dark-bg);
+            border-radius: 0.25rem;
+            width: 23.333333%;
+        }
+    }
+}
+
+.attorny-profile-lite {
+    background-color: var(--white);
+}
+
+.attorny-profile-info {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 42px;
+
+    .image {
+        width: 30%;
+        align-items: center;
+        display: flex;
+        padding: 29px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .info {
+        width: 60%;
+        padding-top: 76px;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            color: var(--dark-bg);
+            line-height: 55px;
+        }
+
+        span {
+            font-size: 1.25rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding-bottom: 51px;
+            color: var(--btn-primary-bg);
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 100;
+            padding: 24px 0;
+            line-height: 39px;
+            color: var(--dark-bg);
+        }
+
+        a {
+            font-size: 1.25rem;
+            color: var(--btn-primary-bg);
+            text-transform: uppercase;
+
+            &:hover {
+                color: var(--btn-primary-hover-bg);
+            }
+        }
+
+    }
+}
+
+.ready-team {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+
+    .court-serve {
+        width: 80%;
+        margin-left: 7%;
+        padding-bottom: 22px;
+
+        h3 {
+            font-weight: 200;
+            font-size: 1.50rem;
+            color: var(--body-text-color);
+
+        }
+
+        .call {
+            padding-top: 10px;
+
+            span {
+                font-size: 1.75rem;
+                color: var(--body-text-color);
+                text-transform: capitalize;
+            }
+
+            a {
+                font-size: 1.75rem;
+                color: var(--btn-primary-bg);
+
+                &:hover {
+                    color: var(--btn-primary-hover-bg);
+                }
             }
         }
     }

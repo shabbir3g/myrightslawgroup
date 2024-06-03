@@ -14,10 +14,10 @@
 
 get_header(); ?>
 
-	<div class="blog-area">
+	<section class="blog-area">
 
 		<div class="blog-section ">
-			<div class="rotate-left">
+			<article class="rotate-left">
 				<h1><?php single_post_title(); ?></h1>
 				<div class="blog-content">
 					<?php if(have_posts()):  
@@ -41,13 +41,13 @@ get_header(); ?>
 					<a href="#">2</a>
 					<a href="#">NEXT <i class="fa-solid fa-greater-than"></i></a> -->
 				</div>
-			</div>
+			</article>
 
 			<?php get_sidebar(); ?>
 
 		</div>
 
-	</div>
+	</section>
 
 	
 

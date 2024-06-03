@@ -7,67 +7,87 @@
 
 get_header();
 ?>
+<section class="member-contact-info">
+        <div class="container"> 
+            <div class="row"> 
+            <div class="image">
+            <?php the_post_thumbnail(); ?>
+        </div>
+        <div class="info">
+            <h1><?php the_title(); ?></h1>
+            <?php $member_details = get_field('member_details');
+            $job_title = $member_details['job_title']; 
+            if($job_title): ?>
+            <h2><?php echo $job_title; ?></h2>
+            <?php endif; ?>
+         
+            <div class="menu">
+                    <ul>
+                    <?php $member_phone = $member_details['member_phone']; 
+                    if($member_phone): ?>
+                    <li><a href="tel:<?php echo $member_phone; ?>"><?php echo $member_phone; ?></a></li>
+                    <?php endif; ?>
 
-<main id="primary" class="site-main">
-    <header class="page-header">
-        <h1 class="page-title"><?php the_title(); ?></h1>
-    </header><!-- .page-header -->
+                    <?php $member_email = $member_details['member_email']; 
+                    if($member_email): ?>
+                    <li><a href="mailto:<?php echo $member_email; ?>">Email</a></li>
+                    <?php endif; ?>
 
-    <?php
-    // Start the loop.
-    while ( have_posts() ) :
-        the_post();
-        ?>
-        <div class="page-content">
-            <?php the_content(); ?>
-        </div><!-- .page-content -->
-    <?php endwhile; // End of the loop. ?>
+                    <?php $member_martindale = $member_details['member_martindale']; 
+                    if($member_martindale): ?>
+                    <li><a href="<?php echo $member_martindale; ?>">Martindale</a></li>
+                    <?php endif; ?>
 
-    <div class="attorney-profiles">
-        <?php
-        // Define custom query parameters
-        $args = array(
-            'post_type' => 'attorney', // Assuming 'attorney' is the custom post type
-            'posts_per_page' => -1,    // Show all attorneys
-        );
+                    <?php $member_avvo = $member_details['member_avvo']; 
+                    if($member_avvo): ?>
+                    <li><a href="<?php echo $member_avvo; ?>">Avvo</a></li>
+                    <?php endif; ?>
 
-        // Custom query.
-        $attorney_query = new WP_Query( $args );
+                    <?php $linkedin = $member_details['linkedin']; 
+                    if($linkedin): ?>
+                    <li><a href="<?php echo $linkedin; ?>">LinkedIn</a></li>
+                    <?php endif; ?>
 
-        // Check if the custom query has posts.
-        if ( $attorney_query->have_posts() ) :
-            // Loop through the posts.
-            while ( $attorney_query->have_posts() ) : $attorney_query->the_post();
-                ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <header class="entry-header">
-                        <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-                    </header><!-- .entry-header -->
 
-                    <div class="entry-content">
-                        <?php
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( 'thumbnail' );
-                        }
-                        the_excerpt();
-                        ?>
-                        <a href="<?php the_permalink(); ?>" class="read-more"><?php esc_html_e( 'Read More', 'your-theme-textdomain' ); ?></a>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-<?php the_ID(); ?> -->
-                <?php
-            endwhile;
-        else :
-            ?>
-            <p><?php esc_html_e( 'No attorney profiles found.', 'your-theme-textdomain' ); ?></p>
-            <?php
-        endif;
+                </ul>
+            </div>
+        </div>
+            </div>
+        </div>
+</section>
 
-        // Restore original Post Data
-        wp_reset_postdata();
-        ?>
-    </div><!-- .attorney-profiles -->
-</main><!-- #main -->
+    <section class="content">
+       <div class="container"> 
+       <div class="text">
+            <div class="info">
+                <?php the_content(); ?>
+            </div>
+            
+            <div class="click">
+                <a href="#">our team</a>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="court-area">
+       <div class="container"> 
+       <div class="court-serve">
+            <div class="court-heading">
+                <h3>california courts we serve</h3>
+            </div>
+            <div class="courts">
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+                <a href="#">Alhambra,</a>
+            </div>
+        </div>
+
+       </div>
+    </section>
 
 <?php
-get_sidebar();
 get_footer();

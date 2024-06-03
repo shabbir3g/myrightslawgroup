@@ -1,3 +1,4 @@
+
 @media all and (min-width: 1024px) {
     header {
         .header-area {
@@ -74,7 +75,7 @@
 
         .banner-content {
             padding-top: 3rem;
-            color: #f7eded;
+            color: var(--white);
             display: flex;
             justify-content: center;
 
@@ -268,3 +269,43 @@
         padding: 0;
     }
 }
+
+
+/*Container Style*/
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+  }
+
+
+
+  

@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: Full Width
+ *
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -18,8 +19,6 @@ get_header(); ?>
 <?php $hero_section =  get_field('hero_section'); 
                 ?>
 <section class="defence-banner-area" style="background-image: url(<?php echo $hero_section['hero_image']; ?>);">
-		<div class="container"> 
-
 		<div class="defence-banner-content">
    
 			<div class="defence-banner-text" style="text-align: <?php echo $hero_section['content_position'];  ?>;">
@@ -45,20 +44,17 @@ get_header(); ?>
                 <?php endif; ?>
 			</div>
 		</div>
-		</div>
 
-</section>
+	</section>
 	<!-- Featured Logo Section  -->
 
 	<?php get_template_part('template-parts/featured-logo') ?>
-	
 
     <?php $visibility = get_field('reviews'); 
 
 	if( $visibility['google_review_visibility'] == 'show'): ?>
 
-	<?php get_template_part('template-parts/google-reviews') ?>
-      
+   <?php get_template_part('template-parts/google-reviews') ?>
    
     <?php endif; ?>
    
@@ -67,7 +63,7 @@ get_header(); ?>
 
 	<!-- in a media Section  -->
 	<section class="crime-charge-section">
-		<div class="container">
+		<div class="case-area">
 			<div class="charges-heading">
 				<h3>In The Media</h3>
 			</div>
@@ -111,10 +107,8 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="califoria-criminal-defence">
-		<div class="container">
-		<div class="row">
-		<article class="left-area">
+	<section class="full-width-section">
+		<div class="full-container">
 			<div class="lawyers">
 				<div class="breadcrumb"> 
                     <a href="<?php echo home_url(); ?>">Home</a> <span> » <?php single_post_title(); ?></span>
@@ -132,19 +126,16 @@ get_header(); ?>
 
                 </div>
 			</div>
-		</article>
+		</div>
         
-        <?php get_sidebar(); ?>
-		</div>
        
-		</div>
+       
+		
 	</section>
 
-	
+
 	<?php get_template_part('template-parts/page-contact-btn') ?>
-	
+
 	<?php get_template_part('template-parts/page-courts') ?>
-	
-	
 
 <?php get_footer();

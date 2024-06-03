@@ -178,7 +178,7 @@ add_filter( 'login_headerurl', 'mbthirty_login_logo_url' );
 function mrlg_scripts() {
 
 	wp_enqueue_style( 'mrlg-carousel', get_template_directory_uri().'/css/owl.carousel.css' );
-	wp_enqueue_style( 'mrlg-owl.theme.default', get_template_directory_uri().'/owl.theme.default.css' );
+	wp_enqueue_style( 'mrlg-owl.theme.default', get_template_directory_uri().'/css/owl.theme.default.css' );
 	wp_enqueue_style( 'mrlg-main', get_template_directory_uri().'/css/main.css' );
 	wp_enqueue_style( 'mrlg-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'mrlg-responsive', get_template_directory_uri().'/css/responsive.css' );
@@ -208,10 +208,7 @@ require get_template_directory() .  '/inc/post-type.php';
 
 
 
-
-
 // NAP Shortcode 
-
 /*
  * Load languages
  */

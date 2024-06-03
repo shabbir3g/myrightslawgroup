@@ -10,10 +10,10 @@
 
 ?>
 
-<div class="blog-sidebar">
+<aside class="blog-sidebar">
 	<div class="sidebar-area"> 
 
 		<?php dynamic_sidebar( 'blog-sidebar' ) ?>
 
 	</div>
-</div>
+</aside>

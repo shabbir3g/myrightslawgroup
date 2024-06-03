@@ -2,6 +2,8 @@
 	"use strict";
 
 	$(document).ready(function () {
+		 
+		$('.attorney-members .attorny-profile-info:even').addClass('attorny-profile-lite');
 
 		$(".owl-carousel.charge-boxes").owlCarousel({
 			items: 5,
@@ -21,26 +23,26 @@
 		});
 
 
-		// $(".owl-carousel").owlCarousel({
-		// 	items: 1,
-		// 	merge: true,
-		// 	loop: true,
-		// 	margin: 30,
-		// 	video: true,
-		// 	lazyLoad: true,
-		// 	center: true,
-		// 	autoPlay: true,
-		// 	videoWidth: 400,
-		// 	videoHeight: 300,
-		// 	responsive: {
-		// 		480: {
-		// 			items: 2
-		// 		},
-		// 		600: {
-		// 			items: 3
-		// 		}
-		// 	}
-		// });
+		$(".owl-carousel.owl-theme").owlCarousel({
+			items: 1,
+			merge: true,
+			loop: true,
+			margin: 30,
+			video: true,
+			lazyLoad: true,
+			center: true,
+			autoPlay: true,
+			videoWidth: 400,
+			videoHeight: 300,
+			responsive: {
+				480: {
+					items: 2
+				},
+				600: {
+					items: 3
+				}
+			}
+		});
 
 
 		$('.toggle').click(function(e) {
